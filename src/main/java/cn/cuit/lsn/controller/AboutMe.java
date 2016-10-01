@@ -1,5 +1,14 @@
 package cn.cuit.lsn.controller;
 
-public class AboutMe {
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
 
+@Controller
+public class AboutMe {
+	@RequestMapping("/about_me")
+	public String test(Model model){
+		return "test";
+		
+	}
 }
