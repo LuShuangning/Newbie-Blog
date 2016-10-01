@@ -1,0 +1,23 @@
+.main-header{
+	/* 设置头部的高度 */
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	/* line-height: 300px; */
+	background: #ffffff;
+}
+
+.header-center{
+	/* 使头部水平居中 */
+	position: relative;
+	margin: 0px,auto;
+	padding: 0px;
+	top: 10%;
+	left: 26%;
+	width: 50%;
+}
+
+.header-text{
+	/* 文字颜色 */
+	color: #000000;
+}
