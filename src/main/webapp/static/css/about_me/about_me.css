@@ -1,0 +1,38 @@
+div{
+	padding: 5px;
+	margin: 2px;
+}
+.list-view {
+	margin: 0 auto; 
+	background: #ff6a00;
+	width: 800px; 
+	height: 150px;
+}
+
+.left-img, .right-content{
+	background: #ebebeb;
+	display: inline-block;
+	vertical-align:top;
+}
+
+.left-img{
+	width: 200px;
+	height: 120px;
+}
+
+.right-content{
+	width: 500px;
+	height: 120px;
+}
+
+.title{
+	background: #ff6a00;
+	width: 450px;
+	height: 30px;
+}
+
+.brief-intro{
+	background: #ff6a00;
+	width: 450px;
+	height: 60px;
+}

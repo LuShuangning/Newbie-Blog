@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AboutMe {
 	@RequestMapping("/about_me")
 	public String test(Model model){
-		return "test";
-		
+		return "about_me";
 	}
 }
