@@ -6,21 +6,71 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>test</title>
+	<link rel="stylesheet" href="static/css/bootstrap-3.3.7/bootstrap.css">
 	<link rel="stylesheet" href="static/css/about_me/about_me.css">
 </head>
 <body>
 	<div class="list-view">
-		<div class="left-img">
-			
-		</div>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="left-img">
+					<img src="static\img\about_me\img1.jpg" alt="" class="img-thumbnail">
+				</div>
 
-		<div class="right-content">
-			<div class="title">
-				这是标题
+				<div class="right-content">
+					<div class="title">
+						这是标题
+					</div>
+
+					<div class="brief-intro">
+						这里是内容
+					</div>
+					
+				</div>
 			</div>
+		</div>
+	</div>
 
-			<div class="brief-intro">
-				这他娘的不清真
+
+	<div class="list-view">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="left-img">
+					<img src="static\img\about_me\img1.jpg" alt="" class="img-thumbnail">
+				</div>
+
+				<div class="right-content">
+					<div class="title">
+						这是标题
+					</div>
+
+					<div class="brief-intro">
+						这里是内容
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="list-view">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="left-img">
+					<img src="static\img\about_me\img1.jpg" alt="" class="img-thumbnail">
+				</div>
+
+				<div class="right-content">
+					<div class="title">
+						这是标题
+					</div>
+
+					<div class="brief-intro">
+						这里是内容
+					</div>
+					
+				</div>
 			</div>
 		</div>
 	</div>
