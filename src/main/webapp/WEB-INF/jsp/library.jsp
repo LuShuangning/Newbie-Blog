@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div ng-app="library" ng-controller="list">
-		<div class="list-view" ng-repeat="list in listView">
+		<div class="list-view" ng-repeat="3">
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<div class="left-img">

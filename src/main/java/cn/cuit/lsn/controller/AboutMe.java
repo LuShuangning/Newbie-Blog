@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class AboutMe {
-	@RequestMapping("/about_me")
+	@RequestMapping("/me")
 	public String test(Model model){
 		return "about_me";
 	}

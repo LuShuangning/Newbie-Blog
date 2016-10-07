@@ -1,23 +1,34 @@
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { 
+	font-family: Microsoft YaHei,'ËÎÌå' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+body{
+	background: #ebebeb;
+}
+
 .main-header{
-	/* è®¾ç½®å¤´éƒ¨çš„é«˜åº¦ */
 	width: 100%;
+}
+
+.body-header{
 	height: 300px;
-	text-align: center;
-	/* line-height: 300px; */
 	background: #ffffff;
 }
 
 .header-center{
-	/* ä½¿å¤´éƒ¨æ°´å¹³å±…ä¸­ */
-	position: relative;
-	margin: 0px,auto;
-	padding: 0px;
-	top: 10%;
-	left: 26%;
-	width: 50%;
+	/* Ê¹Í·²¿Ë®Æ½¾ÓÖÐ */
+	position:absolute;
+	width: 600px;
+	height: 200px;
+	top:50%;
+	left:50%;
+	margin-left: -300px;
+	margin-top: -100px;
+	/* text-align: center; */
+	text-align: center;
 }
 
 .header-text{
-	/* æ–‡å­—é¢œè‰² */
+	/* ÎÄ×ÖÑÕÉ« */
 	color: #000000;
 }

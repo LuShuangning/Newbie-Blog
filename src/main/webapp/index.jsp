@@ -17,15 +17,16 @@
 	<!-- TODO:angularjs进行数据绑定 -->
 	<div ng-app="myApp" ng-controller="myCtrl">		
 		<div class="container main-header">
-			<div class="text-center row header-center">
-				<div class="col-sm-12">
-					<div class="header-text">
+			<div class="row">
+				<div class="col-sm-12 body-header">
+					<div class="header-text header-center">
 						<h1>
 							SyningLu's Home Page<br/>
 							<small>双儿的个人主页</small>	
 						</h1>
+						<h3 header-text>生活以残忍，待之以温柔&nbsp;&nbsp;:）</h3>
 					</div>
-					<h3 header-text>生活以残忍，待之以温柔&nbsp;&nbsp;:）</h3>
+					
 					<div class="audio-center">
 						<audio src="static/music/index/春风十里.mp3" prelood="none"/>
 					</div>
@@ -80,7 +81,7 @@
 						<div class="col-md-3 col-sm-6">
 						
 							<div class="thumbnail">
-								<a href="" title="谁又路过了我的世界"><img src="static/img/index/img04.jpg" alt=""></a>
+								<a href="http://localhost:8080/SyningLu/me.action" title="谁又路过了我的世界"><img src="static/img/index/img04.jpg" alt=""></a>
 								<h3>关于我</h3>
 								<p>个人简介</p>
 							</div>
