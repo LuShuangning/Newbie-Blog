@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties resource='jdbc.properties'/>
+
+<dataSource type="POOLED">
+    <property name="driver" value="${jdbc.driverClassName}" />
+    <property name="url" value="${jdbc.url}" />
+    <property name="username" value="${jdbc.username}" />
+    <property name="password" value="${jdbc.password}" />
+</dataSource>
+
+<typeAlias 
+	type='com.xxx.xxx.pojo.Account' 
+	alias='Account'></typeAlias>
+
+<typeHandler 
+	handler="org.apache.ibatis.type.EnumOrdinalTypeHandler" 
+	javaType="com.xxx.xxx.Status.Status"/> 
