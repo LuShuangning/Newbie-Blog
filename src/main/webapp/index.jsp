@@ -1,30 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html ng-app="index">
 <head>
 	<meta charset="utf-8">
 	<title>SyningLu's homepage</title>
 
-	<script src="static/js/audiojs/audio.min.js"></script>
-	
 	<link rel="stylesheet" type="text/css" href="static/css/bootstrap-3.3.7/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="static/css/index/index.css">
 	<link rel="stylesheet" type="text/css" href="static/css/public/head.css">
+	<link rel='icon' href='static/img/easyicon.ico' type=‘image/x-ico’ />
 	
 </head>
 <body>
 	<!-- TODO:angularjs进行数据绑定 -->
-	<div ng-app="myApp" ng-controller="myCtrl">		
+	<div ng-controller="myCtrl">		
 		<div class="container main-header">
 			<div class="row">
 				<div class="col-sm-12 body-header">
 					<div class="header-text header-center">
 						<h1>
-							SyningLu's Home Page<br/>
+							{{title}}<br/>
 							<small>双儿的个人主页</small>	
 						</h1>
-						<h3 header-text>生活以残忍，待之以温柔&nbsp;&nbsp;:）</h3>
+						<h3 header-text>{{signature}}&nbsp;&nbsp;:）</h3>
 					</div>
 					
 					<div class="audio-center">
@@ -35,14 +34,14 @@
 			</div>					
 		</div>
 
-		<nav class="main-navigation" >
+		<!-- <nav class="main-navigation" >
 			<div class="container">
 			<div class="row">
 			<div class="col-sm-12">		
 			</div>
 			</div>
 			</div>
-		</nav>
+		</nav> -->
 
 		<div class="container">
 			<div class="row">
@@ -112,10 +111,15 @@
 	        </div>
 	</div>
 
+	<script src="static/js/audiojs/audio.min.js"></script>
+	<script src="static/js/angularjs/angular.js"></script>
+	<script src="static/js/index/index.js"></script>
+
 	<script>
 		audiojs.events.ready(function() {
 		    var as = audiojs.createAll();
 	 	});
 	</script>
+
 </body>
 </html>

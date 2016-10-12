@@ -1,8 +1,6 @@
-var app = angularjs.module('library',[]);
-app.controller('list',function($scope){
-	$scope.listView={
-		{site : "Google", url : "http://www.google.com"},
-		{site : "Runoob", url : "http://www.runoob.com"},
-		{site : "Taobao", url : "http://www.taobao.com"}
-	};
+angular.module('library',[]).controller('list',function($scope){
+	$scope.describes=[
+		{title:"主题",intro:"内容"},
+		{title:"第二篇主题",intro:"第二篇内容"}
+	];
 });

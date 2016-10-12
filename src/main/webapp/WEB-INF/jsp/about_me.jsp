@@ -2,15 +2,18 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
+<head ng-app>
 	<meta charset="utf-8">
 	<title>关于我</title>
+	
+	
+
 	<link rel="stylesheet" href="static\css\public\head.css">
 	<link rel="stylesheet" href="static\css\about_me\about_me.css">
 	<link rel="stylesheet" href="static\css\bootstrap-3.3.7\bootstrap.css">
+	<link rel='icon' href='static/img/easyicon.ico' type=‘image/x-ico’ />
 </head>
 <body>
-
 	<div class="container main-header">
 		<div class="row">
 			<div class="col-sm-12 body-header">
@@ -34,5 +37,6 @@
 		</div>
 	</nav>
 		
+	<script src="static\js\angularjs\angular.js"></script>	
 </body>
 </html>
