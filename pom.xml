@@ -5,13 +5,14 @@
   <artifactId>SyningLu-sHomePage</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>SyningLu-sHomePage Maven Webapp</name>
+  <name>SyningLu-sHomePage</name>
   <url>http://maven.apache.org</url>
    <properties>
 		<commons-lang.version>2.6</commons-lang.version>
 		<slf4j.version>1.7.6</slf4j.version>
-		<spring.version>4.1.3.RELEASE</spring.version>
+		<spring.version>4.3.3.RELEASE</spring.version>
         <jackson.version>2.5.4</jackson.version>
+        <junit.version>4.12</junit.version>
 	</properties>
 
 
@@ -28,16 +29,78 @@
 	</dependencyManagement>
 
 	<dependencies>
+		
+		
+		<!-- Spring依赖 -->
+		<!-- 1)Spring核心依赖 -->
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-core</artifactId>
+		    <version>4.3.3.RELEASE</version>
 		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-beans</artifactId>
+		    <version>4.3.3.RELEASE</version>
+		</dependency>
+		
+		<!-- 2)Spring dao层依赖 -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>4.3.3.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-tx</artifactId>
+		    <version>4.3.3.RELEASE</version>
+		</dependency>
+		
+		<!-- 3)Spring web依赖 -->
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-web</artifactId>
+		    <version>4.3.3.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-webmvc</artifactId>
+		    <version>4.3.3.RELEASE</version>
+		</dependency>
+
+		<!-- 4)Spring test依赖 -->
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test</artifactId>
+		    <version>4.3.3.RELEASE</version>
+		</dependency>
+		
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context</artifactId>
+		    <version>4.3.3.RELEASE</version>
+		</dependency>
+		
 
 		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>${commons-lang.version}</version>
 		</dependency>
+		
+		<!-- junit4.x后的版本基于注解 -->
+		<dependency>
+    		<groupId>junit</groupId>
+    		<artifactId>junit</artifactId>
+    		<version>${junit.version}</version>
+		</dependency>
+		
 
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -51,19 +114,31 @@
 			</exclusions>
 		</dependency>
 
-
-
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>${slf4j.version}</version>
 		</dependency>
-
+		
+		<!-- 实现sl4j接口并整合 -->
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
+		    <groupId>ch.qos.logback</groupId>
+		    <artifactId>logback-classic</artifactId>
+		    <version>1.1.7</version>
 		</dependency>
+		
+		<dependency>
+    		<groupId>ch.qos.logback</groupId>
+		    <artifactId>logback-core</artifactId>
+		    <version>1.1.7</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>3.1.0</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>commons-fileupload</groupId>
@@ -95,7 +170,11 @@
 		    <groupId>mysql</groupId>
 		    <artifactId>mysql-connector-java</artifactId>
 		    <version>5.1.38</version>
+		    <scope>runtime</scope>
 		</dependency>
+		
+		<!-- 数据库连接池 -->
+		
 		
 	</dependencies>
   <build>
