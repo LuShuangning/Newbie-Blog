@@ -33,9 +33,24 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>mvc-dispatcher-servlet</servlet-name>
-	    <!-- mvc-dispatcher拦截所有的请求-->
+	    <!-- mvc-dispatcher拦截请求-->
 		<url-pattern>*.action</url-pattern>
 	</servlet-mapping>
+	
+	<!-- 配置过滤器解决乱码 -->
+	<filter>
+		<filter-name>encoding</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf8</param-value>
+		</init-param>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>encoding</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>
 	
 	
 	<welcome-file-list>

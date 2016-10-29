@@ -26,13 +26,22 @@
 	<!-- 静态资源处理， css， js， imgs -->
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 	
+	<!-- 注册mvc拦截器 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/test.action"/>
+			<bean class="cn.cuit.lsn.interceptor.Test1Interceptor"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
 	
-	
-	
-	
-	
-
 	<!-- 配置ViewResolver。 可以用多个ViewResolver。 使用order属性排序。 InternalResourceViewResolver放在最后。 -->
+	
+	<!-- <bean
+		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="prefix" value="/" />
+		<property name="suffix" value=".jsp" />
+	</bean> -->
+	
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/" />

@@ -34,7 +34,7 @@
 						<a href="" class="nav-img-hover">
 						<img src="static\img\me\back_to_index_normal.png" alt="">首页</a>
 						<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-						<a href="" class="nav-hover">博客首页</a>
+						<a href="http://localhost:8080/SyningLu/index.action" class="nav-hover">博客首页</a>
 					</div>
 				</div>
 			</div>
@@ -51,7 +51,7 @@
 							<h3>关于我</h3>
 						</div>
 						<div class="post-meta">
-							<h4>作者：双&nbsp;&nbsp;•&nbsp;2016.10.28</h4>
+							<h4>作者：<a href="http://localhost:8080/SyningLu/index.action">双</a>&nbsp;&nbsp;•&nbsp;2016.10.28</h4>
 						</div>
 					</div>
 					

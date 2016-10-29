@@ -1,13 +1,14 @@
-package cn.cuit.lsn.controller;
+package cn.cuit.lsn.controller.front;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class MeController {
-	@RequestMapping("/me")
+public class LibController {
+	@RequestMapping("/library")
 	public String test(Model model){
-		return "me";
+		return "library";
 	}
+	
 }
