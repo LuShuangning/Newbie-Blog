@@ -36,6 +36,21 @@
 		</div>
 	</div>	
 
+
+	<div class="container main-header">
+		<div class="row">
+			<div class="col-sm-12 body-header">
+				<div class="header-text header-center">
+					<h1>
+						SyningLu's Library<br/>	
+					</h1>
+					<h3 header-text>生活以残忍，待之以温柔&nbsp;&nbsp;:）</h3>
+				</div>
+								
+			</div>
+		</div>					
+	</div>
+
 	<script src="static/js/angularjs/angular.js"></script>
 	<script src="static/js/library/library.js"></script>
 	

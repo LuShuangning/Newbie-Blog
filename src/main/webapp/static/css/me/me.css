@@ -1,0 +1,39 @@
+.main-navigation {
+	text-align: center;
+	background: #ffffff;
+	border-top: 1px solid #ebebeb;
+	margin-bottom: 35px;
+	border-bottom: 2px solid #e1e1e1;
+}
+.nav-body{
+	height: 40px;
+}
+
+.nav-body div{
+	width: 150px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-left: -75px;
+	margin-top: -12px;
+}
+
+.nav-hover{
+	color: #333333;
+}
+
+.nav-hover:hover{
+	
+	text-decoration: none;
+	color: #4876FF;
+}
+
+.post{
+	background: #ffffff;
+}
+.post-title,.post-meta{
+	text-align: center;
+}
+.post-meta h4{
+	color: #A3A3A3;
+}

@@ -34,14 +34,14 @@
 			</div>					
 		</div>
 
-		<!-- <nav class="main-navigation" >
+		<nav class="main-navigation" >
 			<div class="container">
 			<div class="row">
 			<div class="col-sm-12">		
 			</div>
 			</div>
 			</div>
-		</nav> -->
+		</nav>
 
 		<div class="container">
 			<div class="row">
