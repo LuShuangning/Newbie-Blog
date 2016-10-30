@@ -8,7 +8,7 @@
 
 	<link rel="stylesheet" type="text/css" href="static/css/bootstrap-3.3.7/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="static/css/index/index.css">
-	<link rel="stylesheet" type="text/css" href="static/css/public/head.css">
+	<link rel="stylesheet" type="text/css" href="static/css/public/public.css">
 	<link rel='icon' href='static/img/easyicon.ico' type=‘image/x-ico’ />
 	
 </head>
@@ -100,7 +100,7 @@
 	                <div class="col-md-12">
 	                    <div class="text-center">
 	                        <h5>
-	                            &copy;Copyright 2016 | Designer&nbsp;&&nbsp;Author&nbsp;:&nbsp;SyningLu&nbsp;|&nbsp;Running on Aliyun ESC
+	                            &copy;Copyright 2016 <a href="" title="">SyningLu's Home Page</a>| Designer&nbsp;&&nbsp;Author&nbsp;:&nbsp;SyningLu&nbsp;|&nbsp;Running on Aliyun ESC
 	                        </h5>
 	                    </div>
 	                    

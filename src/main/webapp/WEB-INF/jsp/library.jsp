@@ -53,6 +53,5 @@
 
 	<script src="static/js/angularjs/angular.js"></script>
 	<script src="static/js/library/library.js"></script>
-	
 </body>
 </html>
