@@ -14,34 +14,23 @@
 </head>
 <body>
 	<!-- TODO:angularjs进行数据绑定 -->
-	<div ng-controller="myCtrl">		
-		<div class="container main-header">
-			<div class="row">
-				<div class="col-sm-12 body-header">
-					<div class="header-text header-center">
-						<h1>
-							{{title}}<br/>
-							<small>双儿的个人主页</small>	
-						</h1>
-						<h3 header-text>{{signature}}&nbsp;&nbsp;:）</h3>
-					</div>
-					
-					<div class="audio-center">
-						<audio src="static/music/index/春风十里.mp3" prelood="none"/>
-					</div>
-									
-				</div>
-			</div>					
-		</div>
+	<div ng-controller="myCtrl">
+	
+		<jsp:include page="/static/html/public/header.html" flush="true"></jsp:include>
 
 		<nav class="main-navigation" >
 			<div class="container">
 			<div class="row">
-			<div class="col-sm-12">		
+			<div class="col-sm-12">	
+				<div class="audio-center">
+					<audio src="static/music/index/春风十里.mp3" prelood="none"/>
+				</div>		
 			</div>
 			</div>
 			</div>
 		</nav>
+
+		
 
 		<div class="container">
 			<div class="row">
@@ -93,22 +82,8 @@
 			</div>
 			
 		</div>
-
-
-	        <div class="container bottom">
-	            <div class="row  text-bottom">
-	                <div class="col-md-12">
-	                    <div class="text-center">
-	                        <h5>
-	                            &copy;Copyright 2016 <a href="" title="">SyningLu's Home Page</a>| Designer&nbsp;&&nbsp;Author&nbsp;:&nbsp;SyningLu&nbsp;|&nbsp;Running on Aliyun ESC
-	                        </h5>
-	                    </div>
-	                    
-	                </div>
-	                
-	            </div>
-	            
-	        </div>
+		
+		<jsp:include page="/static/html/public/footer.html" flush="true"></jsp:include>
 	</div>
 
 	<script src="static/js/audiojs/audio.min.js"></script>

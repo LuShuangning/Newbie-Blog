@@ -1,29 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8"%> <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01
-Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> <html ng-app="me" ng-
-controller="articleController"> <head>     <meta charset="utf-8">
-<title>关于我</title>
-	
+pageEncoding="UTF-8"%> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html ng-app="me" ng-controller="articleController"> 
+<head>     
+	<meta charset="utf-8">
+	<title>关于我</title>
 	<link rel="stylesheet" type="text/css" href="static/css/bootstrap-3.3.7/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="static/css/me/me.css">
 	<link rel="stylesheet" type="text/css" href="static/css/public/public.css">
 	<link rel='icon' href='static/img/easyicon.ico' type=‘image/x-ico’ />
 </head>
 <body>
-	<div class="container main-header">
-		<div class="row">
-			<div class="col-sm-12 body-header">
-				<div class="header-text header-center">
-					<h1>
-						SyningLu's Brief Introduction<br/>	
-					</h1>
-					<h3 header-text>生活以残忍，待之以温柔&nbsp;&nbsp;:）</h3>
-				</div>
-								
-			</div>
-		</div>					
-	</div>
 
+	<jsp:include page="/static/html/public/header.html" flush="true"></jsp:include>
 	<nav class="main-navigation">
 		<div class="container">
 			<div class="row">
@@ -54,7 +43,7 @@ controller="articleController"> <head>     <meta charset="utf-8">
 				<article class="post format">
 					<div class="post-head">
 						<div class="post-title">
-							<h3>关于我</h3>
+							<h3>{{postTitle}}</h3>
 						</div>
 						<div class="post-meta">
 							<h4>作者：<a href="http://localhost:8080/syninglu/index.action">双</a>&nbsp;&nbsp;•&nbsp;2016.10.29</h4>
@@ -110,31 +99,16 @@ controller="articleController"> <head>     <meta charset="utf-8">
 							想当年一路西行，有惊无险，哪有妖怪奈何得了这只猴子。我只当重新做人，悟净常年不发一言，只有这只猴子爱上蹿下跳，开些不合时宜的玩笑，故意气的师傅盘膝念经来紧他头上的金箍。
 						</h4>
 
-
 					</div>
 					
 				</article>
 			</div>
 		</div>
 	</main>
-
-	<div class="container bottom">
-        <div class="row  text-bottom">
-            <div class="col-md-12">
-                <div class="text-center">
-                    <h5>
-                        &copy;Copyright 2016 <a href="" title="">SyningLu's Home Page</a>| Designer&nbsp;&&nbsp;Author&nbsp;:&nbsp;SyningLu&nbsp;|&nbsp;Running on Aliyun ESC
-                    </h5>
-                </div>
-                
-            </div>
-            
-        </div>
-        
-    </div>
-
+	<jsp:include page="/static/html/public/footer.html" flush="true"></jsp:include>
+	
     <script type="text/javascript" src="static/js/angularjs/angular.js" ></script>
-	<!-- <script  type="text/javascript" src="static/js/me/me.js"></script> -->
+	<script type="text/javascript" src="static/js/me/me.js"></script>
 
 </body>
 </html>
