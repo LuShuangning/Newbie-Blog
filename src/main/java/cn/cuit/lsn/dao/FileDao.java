@@ -10,7 +10,7 @@ public interface FileDao {
 	 * @param fileName
 	 * @return
 	 */
-	File querryByFileName(String fileName);
+	File querryFileByName(String fileName);
 	
 	/**
 	 * 查找相同类型的文件
@@ -25,7 +25,7 @@ public interface FileDao {
 	 * @param limit
 	 * @return
 	 */
-	List<File> querryAll(int offset,int limit);
+	List<File> querryAllFile(int offset,int limit);
 	
 	/**
 	 * 添加文件
