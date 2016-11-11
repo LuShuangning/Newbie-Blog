@@ -8,7 +8,7 @@
  	metadata-complete="true">
   <display-name>SyningLu-sHomePage</display-name>
   <!-- Spring配置文件开始 -->
-  <context-param>
+<!--   <context-param>
  		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/configs/spring/applicationContext*.xml</param-value>
   </context-param>
@@ -17,8 +17,14 @@
 		<listener-class>
 			org.springframework.web.context.ContextLoaderListener
 		</listener-class>
-  </listener>
+  </listener> -->
   <!-- Spring配置文件结束 -->
+  
+  <!-- 引入spring和mybatis的配置文件spring-mybatis.xml -->
+  <context-param>  
+        <param-name>contextConfigLocation</param-name>  
+        <param-value>classpath:spring-mybatis.xml</param-value>  
+  </context-param>  
   
   <!-- spring mvc配置 -->
   	<servlet>
@@ -47,6 +53,12 @@
 			<param-value>utf8</param-value>
 		</init-param>
 	</filter>
+	
+	<listener>
+		<listener-class>
+			org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+  </listener>
 	
 	<filter-mapping>
 		<filter-name>encoding</filter-name>
