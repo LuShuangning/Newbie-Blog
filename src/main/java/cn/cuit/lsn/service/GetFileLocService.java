@@ -2,6 +2,6 @@ package cn.cuit.lsn.service;
 
 import cn.cuit.lsn.entity.File;
 
-public interface ReadFileService {
+public interface GetFileLocService {
 	public File readFile();
 }

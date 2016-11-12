@@ -16,6 +16,6 @@
  
   </settings>
   <mappers>
-    <mapper resource="mapper/FileDao.xml"/>
+    <!-- 以下内容已自动映射，不需要再手动配置 -->
   </mappers>
 </configuration>

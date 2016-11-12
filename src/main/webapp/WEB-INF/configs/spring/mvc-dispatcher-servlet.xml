@@ -27,12 +27,12 @@
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 	
 	<!-- 注册mvc拦截器 -->
-	<mvc:interceptors>
+	<!-- <mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/test.action"/>
 			<bean class="cn.cuit.lsn.interceptor.Test1Interceptor"></bean>
 		</mvc:interceptor>
-	</mvc:interceptors>
+	</mvc:interceptors> -->
 	
 	<!-- 配置ViewResolver。 可以用多个ViewResolver。 使用order属性排序。 InternalResourceViewResolver放在最后。 -->
 	
