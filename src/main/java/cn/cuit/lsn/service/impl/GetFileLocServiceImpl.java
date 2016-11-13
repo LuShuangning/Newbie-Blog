@@ -15,7 +15,7 @@ public class GetFileLocServiceImpl implements GetFileLocService {
 	@Override
 	public File readFile() {
 		
-		return fileDao.querryFileByName("test");
+		return fileDao.querryFileByName("春风十里");
 	}
 	
 	

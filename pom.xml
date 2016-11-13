@@ -13,6 +13,8 @@
 		<spring.version>4.3.3.RELEASE</spring.version>
         <jackson.version>2.5.4</jackson.version>
         <junit.version>4.12</junit.version>
+        <mybatis-spring.version>1.2.2</mybatis-spring.version>
+        <mybatis.version>3.3.0</mybatis.version>
 	</properties>
 
 
@@ -156,13 +158,13 @@
 		<dependency>
     		<groupId>org.mybatis</groupId>
     		<artifactId>mybatis</artifactId>
-    		<version>3.4.1</version>
+    		<version>${mybatis.version}</version>
 		</dependency>
 		<!-- mybatis-spring插件 -->
 		<dependency>
     		<groupId>org.mybatis</groupId>
     		<artifactId>mybatis-spring</artifactId>
-    		<version>1.2.2</version>
+    		<version>${mybatis-spring.version}</version>
 		</dependency>
 		
 		<!-- mysql -->

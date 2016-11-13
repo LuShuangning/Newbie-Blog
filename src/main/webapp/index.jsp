@@ -61,7 +61,7 @@
 							<div class="thumbnail">
 								<a href="" title="从你的全世界路过"><img src="static/img/index/img03.jpeg" alt=""></a>
 								<h3>爱情笔记本</h3>
-								<p>暂不对外开放</p>
+								<p>留给时间去发酵</p>
 							</div>
 							
 						</div>
