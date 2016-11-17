@@ -2,7 +2,7 @@ package cn.cuit.lsn.entity;
 
 import java.util.Date;
 
-public class File {
+public class MyFile {
 	
 	private long fileId;
 	

@@ -5,23 +5,20 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import cn.cuit.lsn.service.impl.GetFileLocServiceImpl;
+import cn.cuit.lsn.service.impl.GetTxtFileContentServiceImpl;
 
 
 @Controller
 public class MeController {
 	@Autowired
-	private GetFileLocServiceImpl getfileLoc;
+	private GetTxtFileContentServiceImpl getTextContent;
 	
 	@RequestMapping("/me")
 	public String test(Model model){
-		getFileLoc();
+		getTextContent.getContent("me");
+		
+		//视图呈现页面
 		return "me";
 	}
 	
-	public String getFileLoc(){
-		
-		System.out.println("要查找的文件路径为：" + getfileLoc.readFile().getFileLoc());
-		return null;
-	}
 }

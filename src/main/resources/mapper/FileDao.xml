@@ -4,20 +4,20 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.cuit.lsn.dao.FileDao">
 	<!-- 目的：为dao接口方法提供sql语句配置 -->
-    <select id="querryFileByName" resultType="File" parameterType="String">
+    <select id="querryFileByName" resultType="MyFile" parameterType="String">
     	<!-- 具体的sql语句 -->
     	select * from file
     	where file_name = #{fileName};
     </select>
     
     <!-- resultType写泛型里面的数据类型 -->
-    <select id="querryFileWithType" resultType="File" parameterType="int">
+    <select id="querryFileWithType" resultType="MyFile" parameterType="int">
     	select * from file
     	where file_type = #{fileType};
     </select>
     
     <!-- 多个参数的parameterType不用给 -->
-    <select id="querryAllFile" resultType="File">
+    <select id="querryAllFile" resultType="MyFile">
     	select * from file
     	oder by create_time desc
     	limit #{offset},#{limit};

@@ -2,7 +2,7 @@ package cn.cuit.lsn.dao;
 
 import java.util.List;
 
-import cn.cuit.lsn.entity.File;
+import cn.cuit.lsn.entity.MyFile;
 
 public interface FileDao {
 	/**
@@ -10,14 +10,14 @@ public interface FileDao {
 	 * @param fileName
 	 * @return
 	 */
-	File querryFileByName(String fileName);
+	MyFile querryFileByName(String fileName);
 	
 	/**
 	 * 查找相同类型的文件
 	 * @param fileType
 	 * @return
 	 */
-	List<File> querryFileWithType(int fileType);
+	List<MyFile> querryFileWithType(int fileType);
 	
 	/**
 	 * 查找所有文件
@@ -25,7 +25,7 @@ public interface FileDao {
 	 * @param limit
 	 * @return
 	 */
-	List<File> querryAllFile(int offset,int limit);
+	List<MyFile> querryAllFile(int offset,int limit);
 	
 	/**
 	 * 添加文件
