@@ -19,9 +19,9 @@ public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 	@Autowired
 	private FileDao fileDao;
 
-	
 	@Override
-	public String getContent(String fileName){
+	public StringBuilder getContent(String fileName){
+		
 		File file = new File(readFile(fileName).getFileLoc());
 		BufferedReader br = null;
 		StringBuilder content = new StringBuilder();
@@ -32,7 +32,6 @@ public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 			while ((stringLine = br.readLine()) != null) {
 				content.append(stringLine);
 			}
-			System.out.println(content);
 		} catch (FileNotFoundException e) {
 			System.out.println("未找到文件：" + e.getMessage());
 			e.printStackTrace();
@@ -48,9 +47,8 @@ public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 				}
 			}
 		}
-		
-		
-		return null;
+		System.out.println("文件内容为：" + content);
+		return content;
 	}
 	
 	

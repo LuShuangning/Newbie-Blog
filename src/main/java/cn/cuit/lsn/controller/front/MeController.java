@@ -16,7 +16,6 @@ public class MeController {
 	@RequestMapping("/me")
 	public String test(Model model){
 		getTextContent.getContent("me");
-		
 		//视图呈现页面
 		return "me";
 	}

@@ -2,5 +2,5 @@ package cn.cuit.lsn.service;
 
 
 public interface GetTxtFileContentService {
-	public String getContent(String fileName);
+	public StringBuilder getContent(String fileName);
 }
