@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8"%> 
+pageEncoding="UTF-8"
+import="java.util.StringTokenizer"
+%> 
+
+<% 
+	StringTokenizer content = (StringTokenizer)request.getAttribute("textContent");
+%>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 <html ng-app="me" ng-controller="articleController"> 
 <head>     
@@ -51,7 +59,14 @@ pageEncoding="UTF-8"%>
 					</div>
 
 					<div class="post-content">
-						<h4>
+						<%
+							while(content.hasMoreTokens()){
+						%>
+						<h4><%=content.nextToken() %></h4>
+						<%
+							}
+						%>
+						<!-- <h4>
 							那天麻将打到半夜，猴子来了条短信：想师傅了。我牌性正酣，拿起手机看了一眼，转身接着凑我的大三元。
 						</h4>
 
@@ -97,7 +112,7 @@ pageEncoding="UTF-8"%>
 
 						<h4>
 							想当年一路西行，有惊无险，哪有妖怪奈何得了这只猴子。我只当重新做人，悟净常年不发一言，只有这只猴子爱上蹿下跳，开些不合时宜的玩笑，故意气的师傅盘膝念经来紧他头上的金箍。
-						</h4>
+						</h4> -->
 
 					</div>
 					
@@ -108,7 +123,7 @@ pageEncoding="UTF-8"%>
 	<jsp:include page="/static/html/public/footer.html" flush="true"></jsp:include>
 	
     <script type="text/javascript" src="static/js/angularjs/angular.js" ></script>
-	<script type="text/javascript" src="static/js/me/me.js"></script>
+    <script type="text/javascript" src="static/js/me/me.js"></script>
 
 </body>
 </html>

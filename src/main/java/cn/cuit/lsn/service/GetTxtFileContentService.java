@@ -1,6 +1,7 @@
 package cn.cuit.lsn.service;
 
+import java.util.StringTokenizer;
 
 public interface GetTxtFileContentService {
-	public StringBuilder getContent(String fileName);
+	public StringTokenizer getContent(String fileName);
 }
