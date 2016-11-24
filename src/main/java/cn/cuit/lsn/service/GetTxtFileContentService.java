@@ -1,7 +1,10 @@
 package cn.cuit.lsn.service;
 
-import java.util.StringTokenizer;
+import cn.cuit.lsn.entity.MyFile;
+import net.sf.json.JSONArray;
 
 public interface GetTxtFileContentService {
-	public StringTokenizer getContent(String fileName);
+	public StringBuffer getContent(String fileName);
+	public MyFile readFile(String fileName);
+	public JSONArray contentPackaged(String fileName);
 }

@@ -11,6 +11,7 @@ public class LibController {
 	@RequestMapping("/library")
 	public String test(Model model){
 		
+		
 		return "library";
 	}
 	

@@ -3,11 +3,6 @@ pageEncoding="UTF-8"
 import="java.util.StringTokenizer"
 %> 
 
-<% 
-	StringTokenizer content = (StringTokenizer)request.getAttribute("textContent");
-%>
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 <html ng-app="me" ng-controller="articleController"> 
 <head>     
@@ -59,13 +54,7 @@ import="java.util.StringTokenizer"
 					</div>
 
 					<div class="post-content">
-						<%
-							while(content.hasMoreTokens()){
-						%>
-						<h4><%=content.nextToken() %></h4>
-						<%
-							}
-						%>
+						
 						<!-- <h4>
 							那天麻将打到半夜，猴子来了条短信：想师傅了。我牌性正酣，拿起手机看了一眼，转身接着凑我的大三元。
 						</h4>

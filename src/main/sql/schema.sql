@@ -6,7 +6,7 @@ create database shuanghome;
 use shuanghome;
 
 --创建文件信息表
-create table file(
+create table my_file(
 	file_id bigint NOT NULL AUTO_INCREMENT COMMENT '文件id',
 	file_name varchar(120) NOT NULL COMMENT '文件名',
 	file_type tinyint NOT NULL COMMENT '文件类型，0为文本，1为图片，2为音乐',
@@ -19,11 +19,11 @@ create table file(
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='文件路径表';
 
 --增加一条测试数据
-insert into file(file_name,file_type,file_loc) values(
+insert into my_file(file_name,file_type,file_loc) values(
 	'me',0,'static/text/me.txt'
 );
 
-insert into file(file_name,file_type,file_loc) values(
+insert into my_file(file_name,file_type,file_loc) values(
 	'春风十里',2,'static/music/index/春风十里.mp3'
 );
 
