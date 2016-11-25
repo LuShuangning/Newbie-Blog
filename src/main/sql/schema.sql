@@ -20,11 +20,15 @@ create table my_file(
 
 --增加一条测试数据
 insert into my_file(file_name,file_type,file_loc) values(
-	'me',0,'static/text/me.txt'
+	'me',0,'src/main/webapp/static/text/me.txt'
 );
 
 insert into my_file(file_name,file_type,file_loc) values(
-	'春风十里',2,'static/music/index/春风十里.mp3'
+	'春风十里',2,'src/main/webapp/static/music/index/春风十里.mp3'
+);
+
+insert into my_file(file_name,file_type,file_loc) values(
+	'初见',2,'src/main/webapp/static/music/index/初见.mp3'
 );
 
 --创建用户信息表

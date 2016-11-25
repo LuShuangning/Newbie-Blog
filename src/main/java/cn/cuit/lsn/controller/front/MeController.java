@@ -25,6 +25,8 @@ public class MeController {
 		
 		JSONArray json = getTFC.contentPackaged("me");
 		try {
+			response.setCharacterEncoding("UTF_8");
+			response.setHeader("Content-type","text/html;charset=UTF-8");
 			response.getWriter().write(json.toString());
 		} catch (IOException e) {
 

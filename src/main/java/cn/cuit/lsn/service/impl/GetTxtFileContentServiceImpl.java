@@ -59,7 +59,7 @@ public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 		String stringLine = null;
 		try {
 			
-			File file = new File("src/main/webapp/" + fileLoc);
+			File file = new File(fileLoc);
 			br = new BufferedReader(new FileReader(file));
 			while ((stringLine = br.readLine()) != null) {
 				content.append(stringLine + " ");

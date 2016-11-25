@@ -1,0 +1,1 @@
+在一次客户端请求的响应动作中，只能调用一种响应输出方法，要么是getWriter()要么是getOutputStream()，且如果使用getOutputStream()方法输出字符串格式的数据时，中文无法正常通过将发生“java.io.CharConversionException:Not an ISO 8859-1 character:”异常，在tomcat5下没有对getOutputStream()方法进行严格控制，中文字符串可正常通过。可见tomcat6的安全机制比tomcat5要严格，对于字符串格式的数据要求使用getWriter()方法输出响应，如果使用了getOutputStream()方法输出响应，则对输出的字符串数据进验证，要求高字节必须为0，显然中文是无法通过的。
