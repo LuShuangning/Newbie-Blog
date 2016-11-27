@@ -1,4 +1,4 @@
-package cn.cuit.lsn.entity;
+package cn.cuit.lsn.pojo;
 
 import java.util.Date;
 

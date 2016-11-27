@@ -6,10 +6,10 @@ pageEncoding="UTF-8"%>
 <head>     
 	<meta charset="utf-8">
 	<title>关于我</title>
-	<link rel="stylesheet" type="text/css" href="static/css/bootstrap-3.3.7/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="static/css/me/me.css">
-	<link rel="stylesheet" type="text/css" href="static/css/public/public.css">
-	<link rel='icon' href='static/img/easyicon.ico' type=‘image/x-ico’ />
+	<link rel="stylesheet" type="text/css" href="http://localhost:8080/syninglu/static/css/bootstrap-3.3.7/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8080/syninglu/static/css/me/me.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost:8080/syninglu/static/css/public/public.css">
+	<link rel='icon' href='http://localhost:8080/syninglu/static/img/easyicon.ico' type=‘image/x-ico’ />
 </head>
 <body>
 
@@ -22,7 +22,7 @@ pageEncoding="UTF-8"%>
 						<ul class="menu">
 							<li>
 								<a href="">
-									<img src="static/img/me/back_to_index_normal.png" alt="">首页
+									<img src="http://localhost:8080/syninglu/static/img/me/back_to_index_normal.png" alt="">首页
 								</a>
 							</li>
 								
@@ -47,13 +47,14 @@ pageEncoding="UTF-8"%>
 							<h3>{{postTitle}}</h3>
 						</div>
 						<div class="post-meta">
-							<h4>作者：<a href="http://localhost:8080/syninglu/index.action">双</a>&nbsp;&nbsp;•&nbsp;2016.10.29</h4>
+							<h4>作者：<a href="http://localhost:8080/syninglu/">双</a>&nbsp;&nbsp;•&nbsp;2016.10.29</h4>
 						</div>
 					</div>
 
 					<div class="post-content">
-						<!-- <h4 ng-repeat="json in JSONS"></h4> -->
-						<a href="" ng-controller="articleController" ng-click="getContent()"></a>
+
+						<h4 ng-repeat="article in articles">{{article.content}}</h4>
+						
 					</div>
 					
 				</article>
@@ -62,8 +63,8 @@ pageEncoding="UTF-8"%>
 	</main>
 	<%@ include file="/static/html/public/footer.html" %>
 	
-    <script type="text/javascript" src="static/js/angularjs/angular.js" ></script>
-    <script type="text/javascript" src="static/js/me/me.js"></script>
+    <script type="text/javascript" src="http://localhost:8080/syninglu/static/js/angularjs/angular.js" ></script>
+    <script type="text/javascript" src="http://localhost:8080/syninglu/static/js/me/me.js"></script>
 
 </body>
 </html>

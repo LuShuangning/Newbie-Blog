@@ -1,40 +1,33 @@
 package cn.cuit.lsn.controller.front;
 
-import java.io.IOException;
-
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import cn.cuit.lsn.service.impl.GetTxtFileContentServiceImpl;
-import net.sf.json.JSONArray;
 
 
 @Controller
+@RequestMapping("/me")
 public class MeController {
 	@Autowired
 	private GetTxtFileContentServiceImpl getTFC;
-	@Autowired
-	private HttpServletResponse response;
 	
-	@RequestMapping("/me")
-	public String test(Model model){
-		
-		JSONArray json = getTFC.contentPackaged("me");
-		try {
-			response.setCharacterEncoding("UTF_8");
-			response.setHeader("Content-type","text/html;charset=UTF-8");
-			response.getWriter().write(json.toString());
-		} catch (IOException e) {
+	@RequestMapping("/home")
+	public String home(){
 
-			e.printStackTrace();
-		}
-		
 		//视图呈现页面
 		return "me";
 	}
+	
+	@RequestMapping(value = "/article",produces = "application/json; charset=utf-8")
+	public @ResponseBody String article(){
+		String json = getTFC.contentPackaged("me");
+		
+		return json;
+	}
+	
+	
 	
 }

@@ -2,7 +2,7 @@ package cn.cuit.lsn.dao;
 
 import java.util.List;
 
-import cn.cuit.lsn.entity.MyFile;
+import cn.cuit.lsn.pojo.MyFile;
 
 public interface FileDao {
 	/**

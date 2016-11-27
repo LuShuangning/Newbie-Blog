@@ -34,9 +34,5 @@
   <classpathentry kind="var" path="M2_REPO/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/mchange/mchange-commons-java/0.2.11/mchange-commons-java-0.2.11.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar"/>
-  <classpathentry kind="var" path="M2_REPO/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar"/>
-  <classpathentry kind="var" path="M2_REPO/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/alibaba/fastjson/1.2.17/fastjson-1.2.17.jar"/>
 </classpath>

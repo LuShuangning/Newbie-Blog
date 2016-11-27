@@ -1,10 +1,8 @@
 package cn.cuit.lsn.service;
-
-import cn.cuit.lsn.entity.MyFile;
-import net.sf.json.JSONArray;
+import cn.cuit.lsn.pojo.MyFile;
 
 public interface GetTxtFileContentService {
 	public StringBuffer getContent(String fileName);
 	public MyFile readFile(String fileName);
-	public JSONArray contentPackaged(String fileName);
+	public String contentPackaged(String fileName);
 }

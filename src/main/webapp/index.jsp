@@ -72,7 +72,7 @@
 						<div class="col-md-3 col-sm-6">
 						
 							<div class="thumbnail">
-								<a href="http://localhost:8080/syninglu/me.action" title="谁又路过了我的世界" target="_blank"><img src="static/img/index/img04.jpg" alt=""></a>
+								<a href="http://localhost:8080/syninglu/me/home.action" title="谁又路过了我的世界" target="_blank"><img src="static/img/index/img04.jpg" alt=""></a>
 								<h3>关于我</h3>
 								<p>个人简介</p>
 							</div>

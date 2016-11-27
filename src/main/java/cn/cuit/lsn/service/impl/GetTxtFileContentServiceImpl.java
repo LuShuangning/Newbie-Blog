@@ -6,25 +6,25 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.StringTokenizer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.alibaba.fastjson.JSON;
+
 import cn.cuit.lsn.dao.FileDao;
-import cn.cuit.lsn.entity.MyFile;
+import cn.cuit.lsn.json.entity.Articles;
+import cn.cuit.lsn.json.entity.Content;
+import cn.cuit.lsn.pojo.MyFile;
 import cn.cuit.lsn.service.GetTxtFileContentService;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 
 
 /**
  * 读取数据库中txt文件存放的路径，通过IO操作获得txt文件内容并用json按行封装
  * @author 路双宁
- * @version 0.2.0
+ * @version 0.4.0
  */
 
 @Service
@@ -42,7 +42,8 @@ public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 	public MyFile readFile(String fileName) {
 		long start = System.nanoTime();
 		MyFile myFile = fileDao.querryFileByName(fileName);
-		System.out.println("查询数据库耗时：" + (System.nanoTime() - start) + "纳秒");
+		System.out.println("查询" + fileName + "耗时：" 
+				+ (double)((System.nanoTime() - start)/1000000) + "毫秒");
 		return myFile;
 	}
 	
@@ -84,41 +85,37 @@ public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 	
 	/**
 	 * @param String fileName 文件名
-	 * @return JSONArray 封装好的json对象
+	 * @return 用阿里的fastjson 封装好的json对象
 	 *
 	 */
 
 	@Override
-	public JSONArray contentPackaged(String fileName) {
-		
+	public String contentPackaged(String fileName) {
+		long start = System.nanoTime();
 		StringTokenizer fx = null;
-		StringBuffer content = new StringBuffer();
+		StringBuffer contentAll = new StringBuffer();
 		MyFile myFile = null;
-		List<String> list = new ArrayList<>();
+		Articles articles = new Articles();
+		Content content = null;
 		
 		//读取文件
 		myFile = readFile(fileName);
 		//IO操作读取文件内容
-		content = getContent(myFile.getFileLoc());
+		contentAll = getContent(myFile.getFileLoc());
 		//默认使用空格来进行分割
-		fx = new StringTokenizer(content.toString());
+		fx = new StringTokenizer(contentAll.toString());
 		
 		while(fx.hasMoreTokens()){
-
-			list.add(fx.nextToken());
-			
+			content = new Content();
+			content.setContent(fx.nextToken());
+			articles.getArticles().add(content);
+			content = null;
 		}
-		JSONArray json = JSONArray.fromObject(list);
-		System.out.println(json.toString());
-		
+		String json = JSON.toJSONString(articles);
+		System.out.println("封装json耗时：" 
+				+ (double)((System.nanoTime() - start)/1000000) + "毫秒");
+
 		return json;
 	}
-	
-	
-	
-	
-	
-	
-
 	
 }
