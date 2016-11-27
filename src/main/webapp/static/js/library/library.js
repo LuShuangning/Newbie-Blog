@@ -1,6 +1,19 @@
-angular.module('library',[]).controller('list',function($scope){
-	$scope.describes=[
-		{title:"主题",intro:"内容"},
-		{title:"第二篇主题",intro:"第二篇内容"}
-	];
+angular.module('library', [])
+.controller('listController', function($scope, $http) {
+
+	$scope.title="SyningLu's Library";
+	$scope.viceTitle="欢迎来到我的图书馆";
+	$scope.signature="断剑重铸之日，双儿归来之时";
+
+	$scope.describes = [
+		{
+			title:'第一篇',
+			intro:'第二篇文章'
+		},
+		{
+			title:'第二篇',
+			intro:'第二篇文章'
+		}
+	]
+
 });

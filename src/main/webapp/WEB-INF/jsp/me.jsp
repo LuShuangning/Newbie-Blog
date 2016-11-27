@@ -13,56 +13,60 @@ pageEncoding="UTF-8"%>
 </head>
 <body>
 
-	<%@ include file="/static/html/public/header.html" %>
-	<nav class="main-navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="nav-header">
-						<ul class="menu">
-							<li>
-								<a href="">
-									<img src="http://localhost:8080/syninglu/static/img/me/back_to_index_normal.png" alt="">首页
-								</a>
-							</li>
-								
-							<li>
-								<a href="http://localhost:8080/syninglu/">博客首页</a>
-							</li>
-						</ul>
+		<%@ include file="/static/html/public/header.html" %>
+		<div>
+			<nav class="main-navigation">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="nav-header">
+								<ul class="menu">
+									<li>
+										<a href="">
+											<img src="http://localhost:8080/syninglu/static/img/me/back_to_index_normal.png" alt="">首页
+										</a>
+									</li>
+										
+									<li>
+										<a href="http://localhost:8080/syninglu/">博客首页</a>
+									</li>
+								</ul>
 
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</nav>
+
+			<main class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<article class="post format">
+							<div class="post-head">
+								<div class="post-title">
+									<h3>{{postTitle}}</h3>
+								</div>
+								<div class="post-meta">
+									<h4>作者：<a href="http://localhost:8080/syninglu/">双</a>&nbsp;&nbsp;•&nbsp;2016.10.29</h4>
+								</div>
+							</div>
+
+							<div class="post-content">
+
+								<h4 ng-repeat="article in articles">{{article.content}}</h4>
+								
+							</div>
+							
+						</article>
 					</div>
 				</div>
-			</div>
-
+				<%@ include file="/static/html/public/footer.html" %>
+			</main>
+			
 		</div>
-	</nav>
+		
 
-	<main class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<article class="post format">
-					<div class="post-head">
-						<div class="post-title">
-							<h3>{{postTitle}}</h3>
-						</div>
-						<div class="post-meta">
-							<h4>作者：<a href="http://localhost:8080/syninglu/">双</a>&nbsp;&nbsp;•&nbsp;2016.10.29</h4>
-						</div>
-					</div>
-
-					<div class="post-content">
-
-						<h4 ng-repeat="article in articles">{{article.content}}</h4>
-						
-					</div>
-					
-				</article>
-			</div>
-		</div>
-	</main>
-	<%@ include file="/static/html/public/footer.html" %>
-	
     <script type="text/javascript" src="http://localhost:8080/syninglu/static/js/angularjs/angular.js" ></script>
     <script type="text/javascript" src="http://localhost:8080/syninglu/static/js/me/me.js"></script>
 
