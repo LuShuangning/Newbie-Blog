@@ -58,11 +58,48 @@ pageEncoding="UTF-8"%>
 								
 							</div>
 							
+							<div class="footer">
+							 	<h4>&nbsp;</h4>
+								<h4>
+									© 2016
+									<a href="http://localhost:8080/syninglu">双儿的小窝</a>
+									All rights reserved
+								</h4>
+							</div>
 						</article>
 					</div>
 				</div>
-				<%@ include file="/static/html/public/footer.html" %>
+				
 			</main>
+
+			<div id="comment">
+				
+
+				<!-- 多说评论框 start -->
+				<div class="ds-thread" data-thread-key="1" data-title="关于我" data-url="http://localhost:8080/syninglu/me/home.action">
+					
+				</div>
+				<!-- 多说评论框 end -->
+				<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+				<script type="text/javascript">
+				var duoshuoQuery = {short_name:"syninglu"};
+					(function() {
+						var ds = document.createElement('script');
+						ds.type = 'text/javascript';ds.async = true;
+						ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+						ds.charset = 'UTF-8';
+						(document.getElementsByTagName('head')[0] 
+						 || document.getElementsByTagName('body')[0]).appendChild(ds);
+					})();
+				</script>
+				<!-- 多说公共JS代码 end -->
+
+
+
+			</div>
+
+
+			<%@ include file="/static/html/public/footer.html" %>
 			
 		</div>
 		
