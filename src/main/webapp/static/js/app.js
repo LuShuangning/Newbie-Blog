@@ -1,5 +1,5 @@
 var backEndApp = angular.module('backEndApp',[ 
-'backEndCtrls' //此处写注册依赖
+'ngRoute', 'backEndCtrls' //此处写注册依赖
 ]);
 
 backEndApp.config(function($routeProvider){

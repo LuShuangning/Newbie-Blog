@@ -21,6 +21,7 @@ pageEncoding="UTF-8"%>
 
 
 	<script type="text/javascript" src="http://localhost:8080/syninglu/static/framework/angularjs/angular.js" ></script>
+	<script type="text/javascript" src="http://localhost:8080/syninglu/static/framework/angularjs/angular-route.js" ></script>
 	<script type="text/javascript" src="http://localhost:8080/syninglu/static/js/controllers.js"></script>
 	<script type="text/javascript" src="http://localhost:8080/syninglu/static/js/app.js"></script>
 	<script type="text/javascript" src="http://localhost:8080/syninglu/static/js/directives.js"></script>
