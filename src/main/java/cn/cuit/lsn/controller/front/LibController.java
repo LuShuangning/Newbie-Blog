@@ -13,7 +13,7 @@ public class LibController {
 	public String test(Model model){
 		
 		
-		return "library";
+		return "/library/library";
 	}
 	
 }

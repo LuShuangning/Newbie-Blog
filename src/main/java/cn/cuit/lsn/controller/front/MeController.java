@@ -18,7 +18,7 @@ public class MeController {
 	public String home(){
 
 		//视图呈现页面
-		return "me";
+		return "/about-me/me";
 	}
 	
 	@RequestMapping(value = "/article",produces = "application/json; charset=utf-8")

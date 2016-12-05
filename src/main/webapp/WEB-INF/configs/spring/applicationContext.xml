@@ -12,11 +12,10 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 	<context:annotation-config />
-
+	
 	<context:component-scan base-package="cn.cuit.lsn">
-		<context:exclude-filter type="annotation"
+		<context:include-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
-	
 	
 </beans>
