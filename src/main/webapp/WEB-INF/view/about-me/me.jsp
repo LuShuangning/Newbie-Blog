@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%> 
 <!DOCTYPE html>
-<html ng-app="me" ng-controller="articleController"> 
-<head>     
+<html ng-app="frontEndApp" ng-controller="meCtrl"> 
+<head>   
 	<meta charset="utf-8">
 	<title>关于我</title>
 	<link rel="stylesheet" type="text/css" href="http://localhost:8080/syninglu/static/framework/bootstrap-3.3.7/bootstrap.css">
@@ -44,10 +44,10 @@ pageEncoding="UTF-8"%>
 						<article class="post format">
 							<div class="post-head">
 								<div class="post-title">
-									<h3>{{postTitle}}</h3>
+									<h3>{{content.postTitle}}</h3>
 								</div>
 								<div class="post-meta">
-									<h4>作者：<a href="http://localhost:8080/syninglu/">双</a>&nbsp;&nbsp;•&nbsp;2016.10.29</h4>
+									<h4>作者：<a href="http://localhost:8080/syninglu/">双</a>&nbsp;&nbsp;•&nbsp;{{content.time}}</h4>
 								</div>
 							</div>
 
@@ -73,7 +73,6 @@ pageEncoding="UTF-8"%>
 
 			<div id="comment">
 				
-
 				<!-- 多说评论框 start -->
 				<div class="ds-thread" data-thread-key="1" data-title="关于我" data-url="http://localhost:8080/syninglu/me/home.action">
 					
@@ -93,18 +92,15 @@ pageEncoding="UTF-8"%>
 				</script>
 				<!-- 多说公共JS代码 end -->
 
-
-
 			</div>
 
-
 			<%@ include file="/static/html/public/footer.html" %>
-			
 		</div>
 		
 
-    <script type="text/javascript" src="http://localhost:8080/syninglu/static/framework/angularjs/angular.js" ></script>
-    <script type="text/javascript" src="http://localhost:8080/syninglu/static/js/me/me.js"></script>
+    <script src="http://localhost:8080/syninglu/static/framework/angularjs/angular.js"></script>
+	<script src="http://localhost:8080/syninglu/static/js/front-end/app2.js"></script>
+	<script src="http://localhost:8080/syninglu/static/js/front-end/controllers2.js"></script>
 
 </body>
 </html>
