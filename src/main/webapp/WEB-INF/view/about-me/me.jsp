@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%> 
 <!DOCTYPE html>
-<html ng-app="frontEndApp" ng-controller="meCtrl"> 
+<html> 
 <head>   
 	<meta charset="utf-8">
 	<title>关于我</title>
@@ -44,18 +44,24 @@ pageEncoding="UTF-8"%>
 						<article class="post format">
 							<div class="post-head">
 								<div class="post-title">
-									<h3>{{content.postTitle}}</h3>
+									<h3>关于我</h3>
 								</div>
 								<div class="post-meta">
-									<h4>作者：<a href="http://localhost:8080/syninglu/">双</a>&nbsp;&nbsp;•&nbsp;{{content.time}}</h4>
+									<h4>作者：<a href="http://localhost:8080/syninglu/">双</a>&nbsp;&nbsp;•&nbsp;2016.10.29</h4>
 								</div>
 							</div>
 
+
+
+							<!-- 文章具体内容 -->
 							<div class="post-content">
 
-								<h4 ng-repeat="article in articles">{{article.content}}</h4>
+								<h4></h4>
 								
 							</div>
+
+
+
 							
 							<div class="footer">
 							 	<h4>&nbsp;</h4>
@@ -98,9 +104,8 @@ pageEncoding="UTF-8"%>
 		</div>
 		
 
-    <script src="http://localhost:8080/syninglu/static/framework/angularjs/angular.js"></script>
-	<script src="http://localhost:8080/syninglu/static/js/front-end/app2.js"></script>
-	<script src="http://localhost:8080/syninglu/static/js/front-end/controllers2.js"></script>
+	<script type="text/javascript" src="http://localhost:8080/syninglu/static/framework/jquery/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="http://localhost:8080/syninglu/static/js/front-end/about-me.js"></script>
 
 </body>
 </html>
