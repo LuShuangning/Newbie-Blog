@@ -15,7 +15,7 @@ public class MeController {
 	private GetTxtFileContentServiceImpl getTFC;
 	
 	@RequestMapping("/home")
-	public String home(){
+	public String requestIndex(){
 
 		//视图呈现页面
 		return "/about-me/me";

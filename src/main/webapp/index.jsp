@@ -38,7 +38,7 @@
 						<div class="col-md-3 col-sm-6">
 
 							<div class="thumbnail">
-								<a href="" title="储物间~~" target="_blank"><img src="http://localhost:8080/syninglu/static/img/index/img01.jpg" alt=""></a>
+								<a href="http://localhost:8080/syninglu/store/index.action" title="储物间~~" target="_blank"><img src="http://localhost:8080/syninglu/static/img/index/img01.jpg" alt=""></a>
 								<h3>储物间</h3>
 								<p>双儿和朋友们放东西的地方</p>
 							</div>
@@ -48,8 +48,8 @@
 						<div class="col-md-3 col-sm-6">
 						
 							<div class="thumbnail">
-								<a href="http://localhost:8080/syninglu/library/index.action" title="广播站里的程序员" target="_blank"><img src="http://localhost:8080/syninglu/static/img/index/img02.jpg" alt=""></a>
-								<h3>图书馆</h3>
+								<a href="http://localhost:8080/syninglu/realStuff/index.action" title="广播站里的程序员" target="_blank"><img src="http://localhost:8080/syninglu/static/img/index/img02.jpg" alt=""></a>
+								<h3>干货数据库</h3>
 								<p>代码、程序员的日常</p>
 							</div>
 							
@@ -59,8 +59,8 @@
 						
 							<div class="thumbnail">
 								<a href="" title="从你的全世界路过" target="_blank"><img src="http://localhost:8080/syninglu/static/img/index/img03.jpeg" alt=""></a>
-								<h3>爱情笔记本</h3>
-								<p>留给时间去发酵</p>
+								<h3>印象、笔记</h3>
+								<p>剩下的，留给时间去发酵</p>
 							</div>
 							
 						</div>

@@ -14,30 +14,8 @@ pageEncoding="UTF-8"%>
 
 		<%@ include file="/static/html/public/header.html" %>
 		<div>
-			<nav class="main-navigation">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="nav-header">
-								<ul class="menu">
-									<li>
-										<a href="">
-											<img src="http://localhost:8080/syninglu/static/img/me/back_to_index_normal.png" alt="">首页
-										</a>
-									</li>
-										
-									<li>
-										<a href="http://localhost:8080/syninglu/">博客首页</a>
-									</li>
-								</ul>
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</nav>
-
+			<%@ include file="/static/html/public/main-navigation.html" %>
+		
 			<main class="container">
 				<div class="row">
 					<div class="col-md-12">

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$(".title").html("SyningLu's Brief Introduction");
 	$(".viceTitle").html("个人简介");
-	$(".signature").html("有事写程序没事打游戏&nbsp;&nbsp;: )");
+	$(".signature").html("还会遇到很多人，经历很多事&nbsp;&nbsp;: )");
 	
     // ajax请求异步加载
 	$.ajax({

@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/library")
-public class LibController {
+@RequestMapping("/realStuff")
+public class RealStuffController {
 	
 	@RequestMapping("/index")
-	public String test(Model model){
+	public String requestIndex(Model model){
 		
 		
-		return "/library/library";
+		return "/real-stuff/real-stuff";
 	}
 	
 }
