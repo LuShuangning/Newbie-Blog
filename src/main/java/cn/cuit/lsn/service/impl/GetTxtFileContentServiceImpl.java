@@ -66,10 +66,10 @@ public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 			}
 						
 		} catch (FileNotFoundException e) {
-			System.out.println("未找到文件：" + e.getMessage());
+			System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<文件没有找到：" + e.getMessage());
 			e.printStackTrace();
 		}catch (IOException e) {
-			System.out.println("文件IO操作异常：" + e.getMessage());
+			System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<文件IO操作异常：" + e.getMessage());
 		}finally{
 			if (br != null) {
 				try {

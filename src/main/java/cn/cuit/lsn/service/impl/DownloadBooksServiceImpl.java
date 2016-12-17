@@ -11,13 +11,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import cn.cuit.lsn.service.DownloadBooksService;
 
+@Service
 public class DownloadBooksServiceImpl implements DownloadBooksService {
-	@Autowired HttpServletRequest request;
-	@Autowired HttpServletResponse response;
 
+	@Autowired
+	private HttpServletRequest request;
+	@Autowired 
+	private HttpServletResponse response;
+	
 	@Override
 	public void downloadBook(String bookName) {
 		
@@ -26,12 +31,13 @@ public class DownloadBooksServiceImpl implements DownloadBooksService {
 		response.addHeader("Content-Disposition",
 				"attachment;fileName=" + bookName);// 设置文件名
 		
+		System.out.println("书名是：" + bookName);
 		if (bookName != null) {
 			String path = request
-						.getServletContext()
-						.getRealPath("WEB-INF/File/");
+			.getServletContext()
+			.getRealPath("WEB-INF/File/");
 			
-			System.out.println("Book的路径为" + path);
+			System.out.println(bookName + "的路径是" + path);
 			
 			try {
 				InputStream inputStream = 

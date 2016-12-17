@@ -93,3 +93,11 @@ a{
 	text-decoration: none;
 	color: #4876FF;
 }
+
+#lsn-list tr th{
+	text-align: center;
+}
+
+#lsn-list tr{
+	height: 36px;
+}

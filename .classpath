@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes" including="**/*.java"/>
   <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
   <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
   <classpathentry kind="output" path="target/classes"/>
@@ -31,6 +32,8 @@
   <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.5.4/jackson-core-2.5.4.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.5.4/jackson-core-2.5.4-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/mybatis/mybatis/3.3.0/mybatis-3.3.0.jar" sourcepath="M2_REPO/org/mybatis/mybatis/3.3.0/mybatis-3.3.0-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/mybatis/mybatis-spring/1.2.2/mybatis-spring-1.2.2.jar" sourcepath="M2_REPO/org/mybatis/mybatis-spring/1.2.2/mybatis-spring-1.2.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/github/pagehelper/pagehelper/4.1.6/pagehelper-4.1.6.jar" sourcepath="M2_REPO/com/github/pagehelper/pagehelper/4.1.6/pagehelper-4.1.6-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/github/jsqlparser/jsqlparser/0.9.5/jsqlparser-0.9.5.jar" sourcepath="M2_REPO/com/github/jsqlparser/jsqlparser/0.9.5/jsqlparser-0.9.5-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar" sourcepath="M2_REPO/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar" sourcepath="M2_REPO/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/mchange/mchange-commons-java/0.2.11/mchange-commons-java-0.2.11.jar" sourcepath="M2_REPO/com/mchange/mchange-commons-java/0.2.11/mchange-commons-java-0.2.11-sources.jar"/>

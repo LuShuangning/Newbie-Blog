@@ -10,7 +10,8 @@ import cn.cuit.lsn.service.impl.DownloadBooksServiceImpl;
 @Controller
 @RequestMapping("/store")
 public class StoreController {
-	@Autowired DownloadBooksServiceImpl download;
+	@Autowired 
+	private DownloadBooksServiceImpl download;
 	
 	@RequestMapping("/index")
 	public String requestIndex(){
@@ -19,7 +20,9 @@ public class StoreController {
 	}
 	
 	@RequestMapping("/books/download")
-	public void download(@RequestParam("bookName") String bookName){
+	public String download(@RequestParam("bookName") String bookName){
+		
 		download.downloadBook(bookName);
+		return null;
 	}
 }
