@@ -60,6 +60,7 @@ public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 			
 			File file = new File(fileLoc);
 			br = new BufferedReader(new FileReader(file));
+			//一次读一行
 			while ((stringLine = br.readLine()) != null) {
 				content.append(stringLine + " ");
 			}

@@ -38,7 +38,7 @@
 						<div class="col-md-3 col-sm-6">
 
 							<div class="thumbnail">
-								<a href="http://localhost:8080/syninglu/store/index.action" title="储物间~~" target="_blank"><img src="http://localhost:8080/syninglu/static/img/index/img01.jpg" alt=""></a>
+								<a href="http://localhost:8080/syninglu/store/index.action#/book" title="储物间~~" target="_blank"><img src="http://localhost:8080/syninglu/static/img/index/img01.jpg" alt=""></a>
 								<h3>储物间</h3>
 								<p>双儿和朋友们放东西的地方</p>
 							</div>
