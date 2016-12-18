@@ -6,7 +6,7 @@ $(document).ready(function(){
     // ajax请求异步加载
 	$.ajax({
         type : 'GET',
-        url : 'http://localhost:8080/syninglu/me/article.action',
+        url : 'http://www.syninglu.space:8080/me/article.do',
         dataType:'json',
         beforeSend: loadFunction,
         success : succFunction,

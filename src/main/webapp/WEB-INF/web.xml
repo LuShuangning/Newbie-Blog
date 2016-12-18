@@ -40,7 +40,7 @@
 	<servlet-mapping>
 		<servlet-name>mvc-dispatcher-servlet</servlet-name>
 	    <!-- mvc-dispatcher拦截请求-->
-		<url-pattern>*.action</url-pattern>
+		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 	
 	<!-- 配置过滤器解决乱码 -->

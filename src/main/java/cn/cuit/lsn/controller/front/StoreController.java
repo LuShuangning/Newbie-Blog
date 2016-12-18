@@ -2,16 +2,16 @@ package cn.cuit.lsn.controller.front;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
-import cn.cuit.lsn.service.impl.DownloadBooksServiceImpl;
+import cn.cuit.lsn.service.impl.DownloadServiceImpl;
 
 @Controller
 @RequestMapping("/store")
 public class StoreController {
 	@Autowired 
-	private DownloadBooksServiceImpl download;
+	private DownloadServiceImpl download;
 	
 	@RequestMapping("/index")
 	public String requestIndex(){
@@ -19,8 +19,9 @@ public class StoreController {
 		return "/store/store";
 	}
 	
-	@RequestMapping("/books/download")
-	public String download(@RequestParam("bookName") String bookName){
+	//REST风格的传参方式
+	@RequestMapping("/books/download/{bookName}")
+	public String download(@PathVariable String bookName){
 		
 		download.downloadBook(bookName);
 		return null;

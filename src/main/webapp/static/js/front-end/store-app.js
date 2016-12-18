@@ -4,10 +4,10 @@ var StoreApp = angular.module('StoreApp',[
 
 StoreApp.config(function($routeProvider){
 	$routeProvider.when('/book', {
-		templateUrl: 'http://localhost:8080/syninglu/static/html/store/book.html',
+		templateUrl: 'http://www.syninglu.space:8080/static/html/store/book.html',
 		controller: 'bookCtrl'
 	}).when('/software', {
-		templateUrl: 'http://localhost:8080/syninglu/static/html/store/software.html',
+		templateUrl: 'http://www.syninglu.space:8080/static/html/store/software.html',
 		controller: 'softwareCtrl'
 	}).otherwise({
 		redirectTo: '/book'

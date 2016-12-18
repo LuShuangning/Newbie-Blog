@@ -4,17 +4,17 @@ import java.util.List;
 
 import cn.cuit.lsn.pojo.MyFile;
 
-public interface FileDao {
+public interface MyFileDao {
 	/**
 	 * 根据文件名查找文件
-	 * @param fileName
+	 * @param fileName 文件名
 	 * @return
 	 */
 	MyFile querryFileByName(String fileName);
 	
 	/**
 	 * 查找相同类型的文件
-	 * @param fileType
+	 * @param fileType 文件类型
 	 * @return
 	 */
 	List<MyFile> querryFileWithType(int fileType);

@@ -5,10 +5,10 @@ pageEncoding="UTF-8"%>
 <head>   
 	<meta charset="utf-8">
 	<title>关于我</title>
-	<link rel="stylesheet" type="text/css" href="http://localhost:8080/syninglu/static/framework/bootstrap-3.3.7/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost:8080/syninglu/static/css/me/me.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost:8080/syninglu/static/css/public/public.css">
-	<link rel='icon' href='http://localhost:8080/syninglu/static/img/easyicon.ico' type=‘image/x-ico’ />
+	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space:8080/static/framework/bootstrap-3.3.7/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space:8080/static/css/me/me.css">
+	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space:8080/static/css/public/public.css">
+	<link rel='icon' href='http://www.syninglu.space:8080/static/img/easyicon.ico' type=‘image/x-ico’ />
 </head>
 <body>
 
@@ -25,7 +25,7 @@ pageEncoding="UTF-8"%>
 									<h3>关于我</h3>
 								</div>
 								<div class="post-meta">
-									<h4>作者：<a href="http://localhost:8080/syninglu/">双</a>&nbsp;&nbsp;•&nbsp;2016.10.29</h4>
+									<h4>作者：<a href="http://www.syninglu.space:8080">双</a>&nbsp;&nbsp;•&nbsp;2016.10.29</h4>
 								</div>
 							</div>
 
@@ -45,7 +45,7 @@ pageEncoding="UTF-8"%>
 							 	<h4>&nbsp;</h4>
 								<h4>
 									© 2016
-									<a href="http://localhost:8080/syninglu">双儿的小窝</a>
+									<a href="http://www.syninglu.space:8080">双儿的小窝</a>
 									All rights reserved
 								</h4>
 							</div>
@@ -58,7 +58,7 @@ pageEncoding="UTF-8"%>
 			<div id="comment">
 				
 				<!-- 多说评论框 start -->
-				<div class="ds-thread" data-thread-key="1" data-title="关于我" data-url="http://localhost:8080/syninglu/me/home.action">
+				<div class="ds-thread" data-thread-key="1" data-title="关于我" data-url="http://http://www.syninglu.space:8080/me/home.do">
 					
 				</div>
 				<!-- 多说评论框 end -->
@@ -82,8 +82,8 @@ pageEncoding="UTF-8"%>
 		</div>
 		
 
-	<script type="text/javascript" src="http://localhost:8080/syninglu/static/framework/jquery/jquery-3.1.1.js"></script>
-	<script type="text/javascript" src="http://localhost:8080/syninglu/static/js/front-end/about-me.js"></script>
+	<script type="text/javascript" src="http://www.syninglu.space:8080/static/framework/jquery/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="http://www.syninglu.space:8080/static/js/front-end/about-me.js"></script>
 
 </body>
 </html>

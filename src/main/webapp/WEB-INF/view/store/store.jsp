@@ -5,9 +5,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>储物间</title>
-	<link rel="stylesheet" type="text/css" href="http://localhost:8080/syninglu/static/framework/bootstrap-3.3.7/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost:8080/syninglu/static/css/public/public.css">
-	<link rel='icon' href='http://localhost:8080/syninglu/static/img/easyicon.ico' type=‘image/x-ico’ />
+	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space:8080/static/framework/bootstrap-3.3.7/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space:8080/static/css/public/public.css">
+	<link rel='icon' href='http://www.syninglu.space:8080/static/img/easyicon.ico' type=‘image/x-ico’ />
 </head>
 <body>
 	<%@ include file="/static/html/public/header.html" %>
@@ -42,13 +42,13 @@
 	</div>
 	
 	
-	<script type="text/javascript" src="http://localhost:8080/syninglu/static/framework/jquery/jquery-3.1.1.js"></script>
-	<script type="text/javascript" src="http://localhost:8080/syninglu/static/js/front-end/store.js"></script>
+	<script type="text/javascript" src="http://www.syninglu.space:8080/static/framework/jquery/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="http://www.syninglu.space:8080/static/js/front-end/store.js"></script>
 
-	<script type="text/javascript" src="http://localhost:8080/syninglu/static/framework/angularjs/angular.js" ></script>
-	<script type="text/javascript" src="http://localhost:8080/syninglu/static/framework/angularjs/angular-route.js" ></script>
-	<script type="text/javascript" src="http://localhost:8080/syninglu/static/js/front-end/store-controllers.js"></script>
-	<script type="text/javascript" src="http://localhost:8080/syninglu/static/js/front-end/store-app.js"></script>
+	<script type="text/javascript" src="http://www.syninglu.space:8080/static/framework/angularjs/angular.js" ></script>
+	<script type="text/javascript" src="http://www.syninglu.space:8080/static/framework/angularjs/angular-route.js" ></script>
+	<script type="text/javascript" src="http://www.syninglu.space:8080/static/js/front-end/store-controllers.js"></script>
+	<script type="text/javascript" src="http://www.syninglu.space:8080/static/js/front-end/store-app.js"></script>
 
 </body>
 </html>

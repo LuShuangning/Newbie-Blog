@@ -24,7 +24,7 @@ create or replace table books(
 	book_name varchar(120) NOT NULL COMMENT '书名',
 	author_name varchar(30) COMMENT '作者',
 	press varchar(100) COMMENT '出版社',
-	category varchar(20) COMMENT '类别',
+	category varchar(20) NOT NULL COMMENT '类别',
 	
 	PRIMARY KEY(book_id),
 	FOREIGN KEY(book_id) REFERENCES my_file(file_id)

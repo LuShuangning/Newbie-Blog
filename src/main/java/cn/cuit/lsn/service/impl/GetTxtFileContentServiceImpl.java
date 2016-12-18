@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 import com.alibaba.fastjson.JSON;
 
-import cn.cuit.lsn.dao.FileDao;
+import cn.cuit.lsn.dao.MyFileDao;
 import cn.cuit.lsn.json.entity.Articles;
 import cn.cuit.lsn.json.entity.Content;
 import cn.cuit.lsn.pojo.MyFile;
@@ -29,7 +29,7 @@ import cn.cuit.lsn.service.GetTxtFileContentService;
 public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 
 	@Autowired
-	private FileDao fileDao;
+	private MyFileDao MyfileDao;
 	
 	/**
 	 * 通过数据库查询该文件的信息
@@ -39,7 +39,7 @@ public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 	@Override
 	public MyFile readFile(String fileName) {
 		long start = System.nanoTime();
-		MyFile myFile = fileDao.querryFileByName(fileName);
+		MyFile myFile = MyfileDao.querryFileByName(fileName);
 		System.out.println("查询" + fileName + "耗时：" 
 				+ (double)((System.nanoTime() - start)/1000000) + "毫秒");
 		return myFile;
@@ -49,6 +49,7 @@ public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 	 * IO操作获取txt文件内容
 	 * @param String fileLoc 文件路径
 	 * @return StringBuffer txt文件的内容
+	 * @throws FileNotFoundException,IOException
 	 */
 	
 	@Override
