@@ -3,10 +3,10 @@ $(document).ready(function(){
 	$(".viceTitle").html("个人简介");
 	$(".signature").html("还会遇到很多人，经历很多事&nbsp;&nbsp;: )");
 	
-    // ajax请求异步加载
+    // JQuery的ajax请求异步加载
 	$.ajax({
         type : 'GET',
-        url : 'http://www.syninglu.space:8080/me/article.do',
+        url : 'article.do',
         dataType:'json',
         beforeSend: loadFunction,
         success : succFunction,

@@ -5,25 +5,26 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import cn.cuit.lsn.service.GetTxtFileContentService;
 import cn.cuit.lsn.service.impl.GetTxtFileContentServiceImpl;
 
 
 @Controller
-@RequestMapping("/me")
+@RequestMapping("/self")
 public class MeController {
 	@Autowired
-	private GetTxtFileContentServiceImpl getTFC;
+	private GetTxtFileContentService getTFCService;
 	
-	@RequestMapping("/home")
+	@RequestMapping("/introduction")
 	public String requestIndex(){
 
 		//视图呈现页面
-		return "/about-me/me";
+		return "/about-me/self";
 	}
 	
 	@RequestMapping(value = "/article",produces = "application/json; charset=utf-8")
 	public @ResponseBody String article(){
-		String json = getTFC.contentPackaged("me");
+		String json = getTFCService.contentPackaged("心形线的故事");
 		
 		return json;
 	}

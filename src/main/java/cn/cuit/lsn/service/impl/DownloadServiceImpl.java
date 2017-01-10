@@ -25,7 +25,7 @@ import cn.cuit.lsn.service.DownloadService;
  *  
  */
 
-@Service
+@Service("downloadService")
 public class DownloadServiceImpl implements DownloadService {
 
 	@Autowired

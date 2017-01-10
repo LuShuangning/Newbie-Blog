@@ -6,7 +6,7 @@ create database shuanghome;
 use shuanghome;
 
 --创建文件信息表
-create or replace table my_file(
+create table my_file(
 	file_id bigint NOT NULL AUTO_INCREMENT COMMENT '文件id',
 	file_name varchar(120) NOT NULL COMMENT '文件名',
 	file_type tinyint NOT NULL COMMENT '文件类型，0为文本，1为图片，2为音乐，3为其他',
@@ -19,7 +19,7 @@ create or replace table my_file(
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='文件路径表';
 
 --创建图书信息表
-create or replace table books(
+create table books(
 	book_id bigint NOT NULL COMMENT '图书id',
 	book_name varchar(120) NOT NULL COMMENT '书名',
 	author_name varchar(30) COMMENT '作者',
@@ -29,6 +29,14 @@ create or replace table books(
 	PRIMARY KEY(book_id),
 	FOREIGN KEY(book_id) REFERENCES my_file(file_id)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='图书信息表';
+
+insert into my_file(file_name,file_type,file_loc) values(
+	'互联网时代',0,'src/main/webapp/WEB-INF/File/互联网时代.pdf'
+);
+
+insert into books(book_id,book_name,author_name,press,category) values(
+	4,'互联网时代','央视','无','其他'
+);
 
 --创建软件表
 create or replace table software(

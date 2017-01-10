@@ -1,0 +1,28 @@
+.lsn-nav{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	background: #F51F1F;
+
+}
+
+.lsn-span-left{
+	width: 15%;
+	height: 600px;
+	background: #5B1D1D;
+	float: left;
+}
+
+
+.lsn-span-right{
+	width:85%;
+	height: 600px;
+	background: #F0E51B;
+	float: right;
+}
+
+.lsn-content{
+	margin-top: 50px;
+	width: 100%;
+	float: left;
+}

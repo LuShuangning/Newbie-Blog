@@ -7,10 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>图书馆</title>
 
-	<link rel="stylesheet" type="text/css" href="http://localhost:8080/syninglu/static/framework/bootstrap-3.3.7/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost:8080/syninglu/static/css/public/public.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost:8080/syninglu/static/css/real-stuff/real-stuff.css">
-	<link rel='icon' href='http://localhost:8080/syninglu/static/img/easyicon.ico' type=‘image/x-ico’ />
+	<link rel="stylesheet" type="text/css" href="/static/framework/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/public/public.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/real-stuff/real-stuff.css">
+	<link rel='icon' href="/static/img/easyicon.ico' type=‘image/x-ico" />
 </head>
 <body>
 	<%@ include file="/static/html/public/header.html" %>
@@ -19,7 +19,7 @@
 			<div class="panel panel-default">
 				<div class="panel-body">
 					<div class="left-img">
-						<img src="http://localhost:8080/syninglu/static/img/library/img1.jpg" alt="" class="img-thumbnail">
+						<img src="/static/img/library/img1.jpg" alt="" class="img-thumbnail">
 					</div>
 
 					<div class="right-content">

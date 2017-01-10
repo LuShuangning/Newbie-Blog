@@ -8,5 +8,10 @@
 		select * from books
 		where book_name = #{bookName};
 	</select>
+	
+	<select id="querryBookWithType" resultType="Books" parameterType="String">
+		select * from books
+		where book_type = #{category}
+	</select>
 
 </mapper>

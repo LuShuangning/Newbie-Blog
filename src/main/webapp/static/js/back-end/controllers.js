@@ -1,6 +1,6 @@
 var backEndCtrls = angular.module('backEndCtrls', [ ]);
 
-backEndCtrls.controller('aboutMeCtrl',['$scope',
+backEndCtrls.controller('selfCtrl',['$scope',
 	function($scope) {
 		$scope.greetingMe = {
 			text: '这里是aboutMe'

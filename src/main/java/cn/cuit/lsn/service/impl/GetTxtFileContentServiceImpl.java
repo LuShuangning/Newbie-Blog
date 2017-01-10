@@ -25,7 +25,7 @@ import cn.cuit.lsn.service.GetTxtFileContentService;
  * @version 0.4.0
  */
 
-@Service
+@Service("getTFCService")
 public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 
 	@Autowired
