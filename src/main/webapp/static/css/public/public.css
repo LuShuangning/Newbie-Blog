@@ -2,7 +2,12 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
 	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
 }
 
+html{
+	min-height: 100%;
+}
+
 body{
+	min-height: 100%;
 	background: #ebebeb;
 }
 

@@ -78,8 +78,9 @@ pageEncoding="UTF-8"%>
 
 			</div>
 
-			<%@ include file="/static/html/public/footer.html" %>
+			
 		</div>
+		<%@ include file="/static/html/public/footer.html" %>
 		
 
 	<script type="text/javascript" src="/static/framework/jquery/jquery-3.1.1.js"></script>

@@ -201,6 +201,13 @@
 		    </version>
 		</dependency>
 		
+		<!-- baidu富文本编辑器包 -->
+		<dependency>
+		    <groupId>cn.songxinqiang</groupId>
+		    <artifactId>com.baidu.ueditor</artifactId>
+		    <version>1.1.2-offical</version>
+		</dependency>
+		
 
 
 	</dependencies>

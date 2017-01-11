@@ -7,76 +7,57 @@ pageEncoding="UTF-8"%>
 <title>路小双后台管理</title>
 
 <link rel="stylesheet" type="text/css" href="/static/framework/bootstrap-3.3.7/css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="/static/css/back-end/back-end.css">
 <link rel="stylesheet" type="text/css" href="/static/css/public/public.css">
+<link rel="stylesheet" type="text/css" href="/static/css/back-end/back-end.css">
+<!-- <link rel="stylesheet" type="text/css" href="/static/framework/simditor-2.3.6/styles/font-awesome.css" /> -->
+<link rel="stylesheet" type="text/css" href="/static/framework/simditor-2.3.6/styles/simditor.css" />
 <link rel='icon' href="/static/img/easyicon.ico' type=‘image/x-ico" />
 </head>
 
 <body>
 
-	<div class="lsn-nav">
-		<ul class="nav nav-pills">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">SVN</a></li>
-			<li><a href="#">iOS</a></li>
-			<li><a href="#">VB.Net</a></li>
-			<li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-			Java <span class="caret"></span>
-			</a>
+	<nav class="navbar navbar-inverse" role="navigation">
+		<div class="navbar-header">
+			<a class="navbar-brand" ui-sref="#">双的后台管理</a>
+		</div>
 
-			<ul class="dropdown-menu">
-				<li><a href="#">Swing</a></li>
-				<li><a href="#">jMeter</a></li>
-				<li><a href="#">EJB</a></li>
-				<li class="divider"></li>
-				<li><a href="#">分离的链接</a></li>
-			</ul>
-
-			</li>
-			<li><a href="#">PHP</a></li>
+		<ul class="nav navbar-nav">
+			<li><a ui-sref="store">储物间</a></li>
+			<li><a ui-sref="self">关于我</a></li>
+			<li><a ui-sref="write">写文章</a></li>
 		</ul>
-	</div>
+	</nav>
 
-	<div class="lsn-content">
-		<div class="lsn-span-left">
-			<div class="lsn-menu">
-				<ul>
-					<li>
-						储物间
-					</li>
+	<div class="container">
 
-					<li>
-						干货数据库
-					</li>
+	    <!-- 界面注入 ============================== -->
+	    <div ui-view></div>
 
-					<li>
-						印象、笔记
-					</li>
-
-					<li>
-						关于我
-					</li>	
-				</ul>
-			</div>
-		</div>
-
-		<div class="lsn-span-right">
-			<div ng-view>
-				
-			</div>
-		</div>
 	</div>
 
 	<%@ include file="/static/html/public/footer.html" %>
 
 
+
+	<!-- START js框架 一定要注意某些js文件的调用顺序，否则会出现不能完全加载的情况======================= -->
+		<!-- start simditor框架 -->
+		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/jquery.min.js"></script>
+		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/module.js"></script>
+		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/hotkeys.js"></script>
+		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/uploader.js"></script>
+		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/simditor.js"></script>
+		<!-- end simditor框架 -->
 	<script type="text/javascript" src="/static/framework/angularjs/angular.js" ></script>
-	<script type="text/javascript" src="/static/framework/angularjs/angular-route.js" ></script>
-	<script type="text/javascript" src="/static/js/back-end/controllers.js"></script>
+	<script type="text/javascript" src="/static/framework/angularjs/angular-ui-router.js" ></script>
+	<!-- END js框架 =============================================================================== -->
+
+
 	<script type="text/javascript" src="/static/js/back-end/app.js"></script>
-	<script type="text/javascript" src="/static/js/back-end/directives.js"></script>
-	<script type="text/javascript" src="/static/js/back-end/filters.js"></script>
-	<script type="text/javascript" src="/static/js/back-end/services.js"></script>
+	<script type="text/javascript" src="/static/js/back-end/controllers.js"></script>
+
+
+	
+
+	
 </body>
 </html>

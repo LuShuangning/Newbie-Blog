@@ -82,9 +82,10 @@
 			</div>
 			
 		</div>
-		<%@ include file="/static/html/public/footer.html" %>
+		
 		
 	</div>
+	<%@ include file="/static/html/public/footer.html" %>
 	
 
 	<script src="/static/framework/audiojs/audio.min.js"></script>
