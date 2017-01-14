@@ -13,8 +13,8 @@ import org.springframework.stereotype.Service;
 import com.alibaba.fastjson.JSON;
 
 import cn.cuit.lsn.dao.MyFileDao;
-import cn.cuit.lsn.json.entity.Articles;
-import cn.cuit.lsn.json.entity.Content;
+import cn.cuit.lsn.dto.Articles;
+import cn.cuit.lsn.dto.Content;
 import cn.cuit.lsn.pojo.MyFile;
 import cn.cuit.lsn.service.GetTxtFileContentService;
 

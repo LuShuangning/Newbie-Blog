@@ -22,7 +22,7 @@ pageEncoding="UTF-8"%>
 						<article class="post format">
 							<div class="post-head">
 								<div class="post-title">
-									<h3>关于我</h3>
+									<!-- <h3 id="lsn-title"></h3> -->
 								</div>
 								<div class="post-meta">
 									<h4>作者：<a href="http://www.syninglu.space:8080">双</a>&nbsp;&nbsp;•&nbsp;2016.10.29</h4>
@@ -34,7 +34,8 @@ pageEncoding="UTF-8"%>
 							<!-- 文章具体内容 -->
 							<div class="post-content">
 
-								<h4></h4>
+								<!-- <h4></h4> -->
+								
 								
 							</div>
 

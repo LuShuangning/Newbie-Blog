@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.cuit.lsn.dao.EssaysDao">
+
+	<insert id="save" parameterType="cn.cuit.lsn.pojo.Essays" 
+		useGeneratedKeys="true" keyProperty="essayId">
+		
+		insert into essays(essay_title,essay_author,essay_content) values(
+			#{essayTitle},#{essayAuthor},#{essayContent}
+		);
+	</insert>
+	
+	<select id="querryByTitle" resultType="cn.cuit.lsn.pojo.Essays" parameterType="String">
+		select * from essays
+		where essay_title = #{essayTitle};
+	</select>
+</mapper>

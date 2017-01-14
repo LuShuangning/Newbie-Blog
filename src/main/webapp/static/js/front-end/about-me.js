@@ -24,10 +24,13 @@ $(document).ready(function(){
 
         var json = eval(data);
         // 循环取数据
-        $.each(json.articles,function(index,item){
-            var content = item.content;
-            $(".post-content").append('<h4>'+ content +'</h4>');
-        });
+        // $.each(json.articles,function(index,item){
+        //     var content = item.content;
+        //     $(".post-content").append('<h4>'+ content +'</h4>');
+        // });
+        $(".post-title").append('<h3>' + json.essayTitle + '</h3>');
+        $(".post-content").append(json.essayContent);
+        // console.log(json);
     };
 
     // 加载失败

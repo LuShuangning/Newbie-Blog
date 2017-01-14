@@ -1,3 +1,25 @@
  .lsn-navbar { 
  	border-radius:0; 
  }
+
+ #lsn-title {
+ 	width: 100%;
+ 	height: 70px;
+ }
+
+ #lsn-title  input {
+ 	/*宽度参考editormd的宽度*/
+ 	width: 80%;
+ 	/*水平居中*/
+ 	text-align: center;
+ 	margin:0 auto;
+ 	font-size: 1.8em;
+ 	height: 50px;
+ 	display:block;
+ 	background: transparent;
+ 	border: 0;
+ 	/*去除点击后的边框*/
+ 	box-shadow: none;
+ 	outline: none;
+ 	border-bottom:1 solid black;
+ }

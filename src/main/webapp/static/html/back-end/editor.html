@@ -1,11 +1,63 @@
-<div>
-	<textarea id="editor" autofocus></textarea>
+<div id="lsn-title">
+	<input id="title" type="text" class="form-control" placeholder="标题">
 </div>
 
+<div id="editormd">
+	<textarea name="content"  style="display:none;"></textarea>                                     
+</div>
+<input id="mdbutton" type="button"  class="btn btn-primary" name="public" value="发表">
+
 <script type="text/javascript">
-	var editor = new Simditor({
-		textarea: $('#editor')
+$(document).ready(function(){
+	//    调用编辑器
+	var editor;
+	$(function() {
+		editor = editormd("editormd", {
+		width   : "80%",
+		height  : 640,
+		syncScrolling : "single",
+		path    : "/static/framework/editormd/lib/",
+		searchReplace : true,
+		saveHTMLToTextarea : true,
+		emoji : true});
 	});
-</script>
+	$("#mdbutton").click(function(){
+		var title;
+		var author;
+		var content;
 
+		// 获取界面内容
+		title = $("#title").val();
+		author = "double";
+		content = editor.getHTML();
+		var essay = {"essayTitle" : title,"essayAuthor" : author,"essayContent" : content};
 
+		// console.log(title + author + content);
+		$.ajax({
+			cache: true,
+
+			url: "save.do",
+
+			// dataType:"json",	//预期服务器返回的数据类型
+
+			type: "POST",	
+
+			// contentType:"application/json", 
+
+			// data: JSON.stringify(),//将json对象转化为字符串,JSON.parse(): 将字符串转换成json对象。
+			data: essay,
+
+	 		async: false,
+
+	 		error: function(XMLResponse) {
+		                alert("Connection error");
+		                XMLResponse.responseText;
+		            },
+
+		            success: function(){
+		                alert("success");
+		            }
+		});
+		
+	});	
+});

@@ -9,8 +9,7 @@ pageEncoding="UTF-8"%>
 <link rel="stylesheet" type="text/css" href="/static/framework/bootstrap-3.3.7/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="/static/css/public/public.css">
 <link rel="stylesheet" type="text/css" href="/static/css/back-end/back-end.css">
-<!-- <link rel="stylesheet" type="text/css" href="/static/framework/simditor-2.3.6/styles/font-awesome.css" /> -->
-<link rel="stylesheet" type="text/css" href="/static/framework/simditor-2.3.6/styles/simditor.css" />
+<link rel="stylesheet" type="text/css" href="/static/framework/editormd/css/editormd.css" />
 <link rel='icon' href="/static/img/easyicon.ico' type=‘image/x-ico" />
 </head>
 
@@ -28,7 +27,7 @@ pageEncoding="UTF-8"%>
 		</ul>
 	</nav>
 
-	<div class="container">
+	<div class="container ">
 
 	    <!-- 界面注入 ============================== -->
 	    <div ui-view></div>
@@ -41,12 +40,14 @@ pageEncoding="UTF-8"%>
 
 	<!-- START js框架 一定要注意某些js文件的调用顺序，否则会出现不能完全加载的情况======================= -->
 		<!-- start simditor框架 -->
-		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/jquery.min.js"></script>
 		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/module.js"></script>
 		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/hotkeys.js"></script>
 		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/uploader.js"></script>
-		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/simditor.js"></script>
+		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/simditor.js"></script> -->
 		<!-- end simditor框架 -->
+		<script type="text/javascript" src="/static/framework/jquery/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="/static/framework/editormd/editormd.js"></script>
 	<script type="text/javascript" src="/static/framework/angularjs/angular.js" ></script>
 	<script type="text/javascript" src="/static/framework/angularjs/angular-ui-router.js" ></script>
 	<!-- END js框架 =============================================================================== -->

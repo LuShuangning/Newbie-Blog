@@ -36,8 +36,9 @@
 			</div>
 
 		</div>
-		<%@ include file="/static/html/public/footer.html" %>
+		
 		
 	</div>	
+	<%@ include file="/static/html/public/footer.html" %>
 </body>
 </html>

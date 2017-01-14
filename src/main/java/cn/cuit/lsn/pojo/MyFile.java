@@ -15,6 +15,7 @@ public class MyFile {
 	private Date fileCreateTime;
 	
 	private Date fileChangedTime;
+
 	
 	public long getFileId() {
 		return fileId;

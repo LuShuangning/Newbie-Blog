@@ -38,9 +38,9 @@
 			</div>
 		</div>
 
-		<%@ include file="/static/html/public/footer.html" %>
+		
 	</div>
-	
+	<%@ include file="/static/html/public/footer.html" %>
 	
 	<script type="text/javascript" src="/static/framework/jquery/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="/static/js/front-end/store.js"></script>
