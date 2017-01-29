@@ -6,7 +6,7 @@ $(document).ready(function(){
     // JQuery的ajax请求异步加载
 	$.ajax({
         type : 'GET',
-        url : 'article.do',
+        url : 'article/57af895d-c03b-4411-91b4-8b67318c2d0a.do',
         dataType:'json',
         beforeSend: loadFunction,
         success : succFunction,
@@ -29,8 +29,10 @@ $(document).ready(function(){
         //     $(".post-content").append('<h4>'+ content +'</h4>');
         // });
         $(".post-title").append('<h3>' + json.essayTitle + '</h3>');
+        $("#post-author").append(json.essayAuthor);
+        $("#post-date").append(json.createTime);
         $(".post-content").append(json.essayContent);
-        // console.log(json);
+        console.log(json);
     };
 
     // 加载失败

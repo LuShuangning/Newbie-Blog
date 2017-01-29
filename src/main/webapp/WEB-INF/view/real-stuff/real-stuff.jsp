@@ -5,40 +5,23 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>图书馆</title>
+	<title>干货数据库</title>
 
 	<link rel="stylesheet" type="text/css" href="/static/framework/bootstrap-3.3.7/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/public/public.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/real-stuff/real-stuff.css">
-	<link rel='icon' href="/static/img/easyicon.ico' type=‘image/x-ico" />
+	<link rel='icon' href="/static/img/easyicon.ico" type="image/x-ico" />
 </head>
 <body>
 	<%@ include file="/static/html/public/header.html" %>
-	<div>
-		<div class="list-view">
-			<div class="panel panel-default">
-				<div class="panel-body">
-					<div class="left-img">
-						<img src="/static/img/library/img1.jpg" alt="" class="img-thumbnail">
-					</div>
+	<div class="lsn-center">
 
-					<div class="right-content">
-						<div class="title">
-							{{describe.title}}
-						</div>
-
-						<div class="brief-intro">
-							{{describe.intro}}
-						</div>
-						
-					</div>
-				</div>
-			</div>
-
-		</div>
-		
-		
 	</div>	
+
+	<button type="button" class="btn btn-primary">添加</button>
 	<%@ include file="/static/html/public/footer.html" %>
+
+	<script src="/static/framework/jquery/jquery-3.1.1.js"></script>
+	<script src="/static/js/front-end/real-stuff.js"></script>
 </body>
 </html>

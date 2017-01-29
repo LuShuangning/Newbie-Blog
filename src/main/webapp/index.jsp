@@ -16,21 +16,34 @@
 	
 </head>
 <body>
-
+	
 	<%@ include file="/static/html/public/header.html" %>
-	<div>
+	<div class="lsn-center">
+	
 		<nav class="main-navigation" >
 			<div class="container">
-			<div class="row">
-			<div class="col-sm-12">	
-				<div class="audio-center">
-					<audio src="/static/music/index/春风十里.mp3" loop="loop"/>
-				</div>		
+				<div class="row">
+					<div class="col-sm-12">	
+						<div class="audio-center">
+							<audio src="/static/music/index/春风十里.mp3" loop="loop"/>
+						</div>		
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="lsn-login">
+							<a href="loginPage.do">登录</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			</div>
-			</div>
+
+			
+
 		</nav>
 
+		
 		<div class="container">
 			<div class="row">
 				<div class="panel panel-default">
@@ -69,7 +82,7 @@
 						<div class="col-md-3 col-sm-6">
 						
 							<div class="thumbnail">
-								<a href="self/introduction.do" title="谁又路过了我的世界" target="_blank"><img src="/static/img/index/img04.jpg" alt=""></a>
+								<a href="essays/introduction.do" title="谁又路过了我的世界" target="_blank"><img src="/static/img/index/img04.jpg" alt=""></a>
 								<h3>关于我</h3>
 								<p>个人简介</p>
 							</div>

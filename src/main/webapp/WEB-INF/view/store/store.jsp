@@ -11,7 +11,7 @@
 </head>
 <body>
 	<%@ include file="/static/html/public/header.html" %>
-	<div>
+	<div class="lsn-center">
 		<%@ include file="/static/html/public/main-navigation.html" %>
 
 		<div class="container-fluid">

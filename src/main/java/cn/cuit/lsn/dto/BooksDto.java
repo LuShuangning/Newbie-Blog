@@ -1,14 +1,13 @@
 /**
  * 
  */
-package cn.cuit.lsn.pojo;
+package cn.cuit.lsn.dto;
 
 /**
  * @author 路双宁
  *
  */
-public class Books {
-	private String bookId;
+public class BooksDto {
 	
 	private String bookName;
 	
@@ -18,13 +17,8 @@ public class Books {
 	
 	private String category;
 	
+	public BooksDto(){};
 	
-	public String getBookId() {
-		return bookId;
-	}
-	public void setBookId(String bookId) {
-		this.bookId = bookId;
-	}
 	public String getBookName() {
 		return bookName;
 	}
@@ -49,5 +43,4 @@ public class Books {
 	public void setCategory(String category) {
 		this.category = category;
 	}
-	
 }

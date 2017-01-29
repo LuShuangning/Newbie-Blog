@@ -2,6 +2,7 @@ package cn.cuit.lsn.controller.front;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -11,11 +12,8 @@ import cn.cuit.lsn.service.impl.GetTxtFileContentServiceImpl;
 
 
 @Controller
-@RequestMapping("/self")
-public class MeController {
-	@Autowired
-	private GetTxtFileContentService getTFCService;
-	
+@RequestMapping("/essays")
+public class EssaysController {
 	@Autowired
 	private EssaysService essaysService;
 	
@@ -23,14 +21,14 @@ public class MeController {
 	public String requestIndex(){
 
 		//视图呈现页面
-		return "/about-me/self";
+		return "/intro/self";
 	}
 	
-	@RequestMapping(value = "/article",produces = "application/json; charset=utf-8")
-	public @ResponseBody String article(){
+	@RequestMapping(value = "/article/{essayId}",produces = "application/json; charset=utf-8")
+	public @ResponseBody String article(@PathVariable String essayId){
 //		String json = getTFCService.contentPackaged("心形线的故事");
 		
-		String json = essaysService.querryByTitle("我的故事");
+		String json = essaysService.querryByUUID(essayId);
 		return json;
 	}
 	

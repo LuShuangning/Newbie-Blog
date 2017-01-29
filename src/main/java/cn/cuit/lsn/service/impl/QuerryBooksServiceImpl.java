@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import com.alibaba.fastjson.JSON;
 
 import cn.cuit.lsn.dao.BooksDao;
+import cn.cuit.lsn.dto.BooksDto;
 import cn.cuit.lsn.pojo.Books;
 import cn.cuit.lsn.service.QuerryBooksService;
 
@@ -30,7 +31,7 @@ public class QuerryBooksServiceImpl implements QuerryBooksService{
 	@Override
 	public String querry(String category) {
 		
-		List<Books> bookList = booksDao.querryBookWithType(category);
+		List<BooksDto> bookList = booksDao.querryBookWithType(category);
 		String json = JSON.toJSONString(bookList);
 		System.out.println(json);
 		

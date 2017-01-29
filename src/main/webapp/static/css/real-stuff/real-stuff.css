@@ -1,48 +1,37 @@
 .list-view {
-	margin: 0 auto; 
+	margin:25px auto;
 	width: 800px; 
-	height: 145px;
 }
 
-.left-img, .right-content{
-	border-radius: 4px;
-	background: #ebebeb;
-	display: inline-block;
-	vertical-align:top;
-	height: 120px;
+.piece-title{
+	min-height: 30px;
+
+	text-align:center;
 }
 
-.left-img > img{
-	padding: 5px;
-	width: 100%;
-	height: 100%;
-}
-
-.left-img{
-	margin: 5px 0px 5px 3px;
-	width: 120px;	
-}
-
-.right-content{
-	margin: 5px 5px 5px 3px;
-	width: 640px;
-}
-
-
-.title,.brief-intro{
-	margin: 7px 10px 5px 10px;
+.piece-info{
+	min-height: 30px;
+	margin-top: 20px;
 	text-align: center;
-	width: 620px;
 }
 
-.title{
-	line-height: 25px;
-	background: #ff6a00;
-	height: 25px;
+.piece-author{
+	display: inline;
+	margin:0 auto;
+	padding: 0;
 }
 
-.brief-intro{
-	line-height: 72px;
-	background: #ff6a00;
-	height: 72px;
+.piece-time{
+	display: inline;
+	margin:0 auto;
+	padding: 0;
+}
+
+.piece-content{
+	min-height: 30px;
+}
+
+.piece-btn{
+	text-align: right;
+	margin-right: 5px;
 }

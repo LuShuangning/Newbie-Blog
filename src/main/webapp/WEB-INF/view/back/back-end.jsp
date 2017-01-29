@@ -10,29 +10,33 @@ pageEncoding="UTF-8"%>
 <link rel="stylesheet" type="text/css" href="/static/css/public/public.css">
 <link rel="stylesheet" type="text/css" href="/static/css/back-end/back-end.css">
 <link rel="stylesheet" type="text/css" href="/static/framework/editormd/css/editormd.css" />
-<link rel='icon' href="/static/img/easyicon.ico' type=‘image/x-ico" />
+<link rel='icon' href="/static/img/easyicon.ico" type="image/x-ico" />
 </head>
 
 <body>
 
-	<nav class="navbar navbar-inverse" role="navigation">
+	<nav class="navbar navbar-inverse lsn-navbar" role="navigation">
 		<div class="navbar-header">
 			<a class="navbar-brand" ui-sref="#">双的后台管理</a>
 		</div>
 
 		<ul class="nav navbar-nav">
+			<li><a ui-sref="tailor">首页订制</a></li>
 			<li><a ui-sref="store">储物间</a></li>
-			<li><a ui-sref="self">关于我</a></li>
 			<li><a ui-sref="write">写文章</a></li>
 		</ul>
 	</nav>
+	
+	<div class="lsn-back-center">
+		<div class="container-fluid">
 
-	<div class="container ">
+		    <!-- 界面注入 ============================== -->
+		    <div ui-view></div>
 
-	    <!-- 界面注入 ============================== -->
-	    <div ui-view></div>
+		</div>
 
 	</div>
+	
 
 	<%@ include file="/static/html/public/footer.html" %>
 
@@ -55,10 +59,7 @@ pageEncoding="UTF-8"%>
 
 	<script type="text/javascript" src="/static/js/back-end/app.js"></script>
 	<script type="text/javascript" src="/static/js/back-end/controllers.js"></script>
-
-
-	
-
-	
+	<script type="text/javascript" src="/static/js/back-end/directives.js"></script>
+	<script type="text/javascript" src="/static/js/back-end/services.js"></script>
 </body>
 </html>

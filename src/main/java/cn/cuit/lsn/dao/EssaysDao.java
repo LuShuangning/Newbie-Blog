@@ -17,4 +17,6 @@ public interface EssaysDao {
 	
 	/* 查询文章 */
 	Essays querryByTitle(String essayTitle);
+	
+	Essays querryByUUID(String essayId);
 }

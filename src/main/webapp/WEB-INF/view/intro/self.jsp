@@ -13,7 +13,7 @@ pageEncoding="UTF-8"%>
 <body>
 
 		<%@ include file="/static/html/public/header.html" %>
-		<div>
+		<div class="lsn-center">
 			<%@ include file="/static/html/public/main-navigation.html" %>
 		
 			<main class="container">
@@ -25,7 +25,7 @@ pageEncoding="UTF-8"%>
 									<!-- <h3 id="lsn-title"></h3> -->
 								</div>
 								<div class="post-meta">
-									<h4>作者：<a href="http://www.syninglu.space:8080">双</a>&nbsp;&nbsp;•&nbsp;2016.10.29</h4>
+									<h4>作者：<span id="post-author"></span>&nbsp;•&nbsp;<span id="post-date"></span></h4>
 								</div>
 							</div>
 

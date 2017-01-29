@@ -7,9 +7,9 @@
  	height: 70px;
  }
 
- #lsn-title  input {
+ #lsn-title input {
  	/*宽度参考editormd的宽度*/
- 	width: 80%;
+ 	width: 90%;
  	/*水平居中*/
  	text-align: center;
  	margin:0 auto;
@@ -22,4 +22,10 @@
  	box-shadow: none;
  	outline: none;
  	border-bottom:1 solid black;
+ }
+
+ #lsn-info{
+ 	width:90%;
+ 	text-align: center;
+ 	margin:0 auto;
  }

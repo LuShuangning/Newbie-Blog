@@ -6,11 +6,11 @@ package cn.cuit.lsn.pojo;
 import java.util.Date;
 
 /**
- * @author double
+ * @author 路双宁
  *
  */
 public class Essays {
-	private Long essayId;
+	private String essayId;
 	
 	private String essayTitle;
 	
@@ -19,12 +19,32 @@ public class Essays {
 	private Date createTime;
 	
 	private String essayContent;
+	
+	private int essayPermission;
+	
+	private String essayType;
 
-	public Long getEssayId() {
+	public String getEssayType() {
+		return essayType;
+	}
+
+	public void setEssayType(String essayType) {
+		this.essayType = essayType;
+	}
+
+	public int getEssayPermission() {
+		return essayPermission;
+	}
+
+	public void setEssayPermission(int essayPermission) {
+		this.essayPermission = essayPermission;
+	}
+
+	public String getEssayId() {
 		return essayId;
 	}
 
-	public void setEssayId(Long essayId) {
+	public void setEssayId(String essayId) {
 		this.essayId = essayId;
 	}
 

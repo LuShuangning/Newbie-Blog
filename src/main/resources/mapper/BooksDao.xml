@@ -4,13 +4,13 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.cuit.lsn.dao.BooksDao">
 
-	<select id="querryBookByName" resultType="Books" parameterType="String">
-		select * from books
+	<select id="querryBookByName" resultType="cn.cuit.lsn.dto.BooksDto" parameterType="String">
+		select book_name,author_name,press,category from books
 		where book_name = #{bookName};
 	</select>
 	
-	<select id="querryBookWithType" resultType="Books" parameterType="String">
-		select * from books
+	<select id="querryBookWithType" resultType="cn.cuit.lsn.dto.BooksDto" parameterType="String">
+		select book_name,author_name,press,category from books
 		where book_type = #{category}
 	</select>
 
