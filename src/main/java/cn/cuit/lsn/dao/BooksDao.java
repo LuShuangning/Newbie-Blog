@@ -6,6 +6,7 @@ package cn.cuit.lsn.dao;
 import java.util.List;
 
 import cn.cuit.lsn.dto.BooksDto;
+import cn.cuit.lsn.pojo.Books;
 
 /**
  * @author 路双宁
@@ -24,4 +25,10 @@ public interface BooksDao {
 	 */
 	
 	List<BooksDto> querryBookWithType(String category);
+	
+	/**
+	 * 保存书籍信息
+	 * @param books 书籍pojo
+	 */
+	int saveBookInfo(Books books);
 }

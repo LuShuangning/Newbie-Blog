@@ -74,3 +74,8 @@ backEndCtrls.controller('systemSubmitCtrl', ['$scope',function($scope){
 	};
 
 }]);
+
+backEndCtrls.controller('webSubmitCtrl', ['$scope',function($scope){
+	
+
+}]);

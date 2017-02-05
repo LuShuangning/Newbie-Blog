@@ -1,18 +1,3 @@
-body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { 
-	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
-}
-
-body{
-	background: #ebebeb;
-}
-.main-navigation {
-	text-align: center;
-	background: #ffffff;
-	border-top: 1px solid #ebebeb;
-	margin-bottom: 35px;
-	border-bottom: 2px solid #e1e1e1;
-}
-
 .audio-center{
 	position: relative;
 	width: 460px;
@@ -33,6 +18,27 @@ body{
 	margin-top: -200px; 
 }
 
+/*透明
+.panel{
+
+	filter:alpha(opacity=50); 
+     	 -moz-opacity:0.5;  
+     	 -khtml-opacity: 0.5;  
+     	 opacity: 0.5;  
+}*/
+
 a:hover{
 	text-decoration: none;
+}
+
+.snow {
+	position: absolute;
+	top: 0;
+	color: #ffffff;
+}
+
+.snowbg {
+	clear: both;
+	margin: 0 auto;
+	position: relative;
 }

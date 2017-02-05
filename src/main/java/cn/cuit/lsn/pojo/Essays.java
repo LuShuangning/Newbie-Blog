@@ -23,6 +23,16 @@ public class Essays {
 	private int essayPermission;
 	
 	private String essayType;
+	
+	private String essayBrief;
+
+	public String getEssayBrief() {
+		return essayBrief;
+	}
+
+	public void setEssayBrief(String essayBrief) {
+		this.essayBrief = essayBrief;
+	}
 
 	public String getEssayType() {
 		return essayType;

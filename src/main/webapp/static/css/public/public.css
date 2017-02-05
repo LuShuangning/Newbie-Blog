@@ -7,19 +7,19 @@ html{
 }
 
 body{
-	min-height: 100%;;
 	background: #ebebeb;
+	/*background-image: url(/static/img/index/backgroundimg.jpg);*/
 }
 
 .main-header{
-	height: 0;
-	padding-bottom: 18%;
+	height: 243px;
 	width: 100%;
 }
 
 .body-header{
 	height: 0;
 	padding-bottom: 18%;
+	/* header背景颜色 */
 	background: #ffffff;
 }
 
@@ -41,14 +41,12 @@ body{
 }
 
 .lsn-center{
-	min-height: 324.5px;
-}
-
-.lsn-back-center{
-	min-height: 498px;
+	margin-top: 20px;
+	margin-bottom: 15px;
 }
 
 .bottom{
+	/* footer背景颜色 */
 	background: #ffffff;
 	width: 100%;
 	height:76px;
@@ -69,9 +67,9 @@ a{
 
 .main-navigation {
 	text-align: center;
+	/* 导航背景颜色 */
 	background: #ffffff;
 	border-top: 1px solid #ebebeb;
-	margin-bottom: 35px;
 	border-bottom: 2px solid #e1e1e1;
 }
 
@@ -117,4 +115,10 @@ a{
 
 #lsn-list tr{
 	height: 36px;
+}
+
+.btn-primary:hover{
+	background-color: #121212;
+	border-color: #121212;
+  	text-decoration: none;
 }

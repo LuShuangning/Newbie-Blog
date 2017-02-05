@@ -5,19 +5,18 @@ package cn.cuit.lsn.service.impl;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.List;
+import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.multipart.MultipartHttpServletRequest;
-import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
+import cn.cuit.lsn.dao.BooksDao;
+import cn.cuit.lsn.dto.BooksDto;
+import cn.cuit.lsn.pojo.Books;
 import cn.cuit.lsn.service.UploadService;
 
 /**
@@ -27,11 +26,14 @@ import cn.cuit.lsn.service.UploadService;
 
 @Service("uploadService")
 public class UploadServiceImpl implements UploadService {
+	
+	private static final Logger logger = Logger.getLogger(UploadServiceImpl.class);
 
 	@Autowired
 	private HttpServletRequest request;
-	@Autowired 
-	private HttpServletResponse response;
+	@Autowired
+	private BooksDao booksDao;
+	
 	
 	@Override
 	public void uploadBook(MultipartFile file) {
@@ -40,7 +42,7 @@ public class UploadServiceImpl implements UploadService {
 			String path = request.getSession().getServletContext().getRealPath("/WEB-INF/File/");
 			String fileName = file.getOriginalFilename();
 			
-			System.out.println("上传的路径为：" + path);
+			logger.info("===================上传的路径为：" + path);
 			
 			File targetFile = new File(path, fileName);
 			if(!targetFile.exists()){  
@@ -53,9 +55,6 @@ public class UploadServiceImpl implements UploadService {
 				e.printStackTrace();
 			}
 		}
-		
-		
-		
 		
 		
 		
@@ -95,11 +94,28 @@ public class UploadServiceImpl implements UploadService {
 
 	}
 
-	
 	@Override
 	public void uploadSoftware(String softwareName) {
 		// TODO Auto-generated method stub
 
+	}
+
+	/* (non-Javadoc)
+	 * @see cn.cuit.lsn.service.UploadService#saveBookInfo(cn.cuit.lsn.dto.BooksDto)
+	 */
+	@Override
+	public void saveBookInfo(BooksDto booksDto) {
+		Books books = new Books();
+		books.setBookId(UUID.randomUUID().toString());
+		books.setBookName(booksDto.getBookName());
+		books.setAuthorName(booksDto.getAuthorName());
+		books.setPress(booksDto.getPress());
+		//FIXME 
+		//受前端表单中ng-option的影响，取值总是为"string:安卓",因此存储时将"string:"去掉
+		//期待其他的解决方法
+		String category = booksDto.getCategory();
+		books.setCategory(category.substring(7,category.length()));
+		booksDao.saveBookInfo(books);
 	}
 
 }

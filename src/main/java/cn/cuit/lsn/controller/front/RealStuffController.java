@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/realStuff")
+@RequestMapping("/real-stuff")
 public class RealStuffController {
 	
-	@RequestMapping("/index")
+	@RequestMapping("/show")
 	public String requestIndex(Model model){
 		
 		
-		return "/real-stuff/real-stuff";
+		return "/real-stuff/show-article";
 	}
 	
 }

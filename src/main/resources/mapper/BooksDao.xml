@@ -13,5 +13,11 @@
 		select book_name,author_name,press,category from books
 		where book_type = #{category}
 	</select>
+	
+	<insert id="saveBookInfo" parameterType="cn.cuit.lsn.pojo.Books">
+		insert into books(book_id,book_name,author_name,press,category) values(
+			#{bookId},#{bookName},#{authorName},#{press},#{category}
+		);
+	</insert>
 
 </mapper>

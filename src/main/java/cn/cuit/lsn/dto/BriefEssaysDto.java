@@ -13,54 +13,43 @@ import com.alibaba.fastjson.annotation.JSONField;
  * 每个DTO要有一个默认的无参构造方法
  *
  */
-public class EssaysDto {
+public class BriefEssaysDto {
 	private String essayId;
 	
 	private String essayTitle;
 	
 	private String essayAuthor;
-
-    private String essayContent;
-    
-    private int essayPermission;
-    
-    @JSONField(format = "yyyy-MM-dd")
+	
+	@JSONField(format = "yyyy-MM-dd")
     private Date createTime;
     
-    private String essayType;
+    private String essayBrief;
+
+    public BriefEssaysDto(){}
     
-    public EssaysDto(){}
-	
 	public String getEssayId() {
 		return essayId;
 	}
+
 
 	public void setEssayId(String essayId) {
 		this.essayId = essayId;
 	}
 
+	public String getEssayBrief() {
+		return essayBrief;
+	}
+
+	public void setEssayBrief(String essayBrief) {
+		this.essayBrief = essayBrief;
+	}
+    
 	public Date getCreateTime() {
 		return createTime;
 	}
 
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
-	}
-
-	public int getEssayPermission() {
-		return essayPermission;
-	}
-
-	public void setEssayPermission(int essayPermission) {
-		this.essayPermission = essayPermission;
-	}
-
-	public String getEssayType() {
-		return essayType;
-	}
-
-	public void setEssayType(String essayType) {
-		this.essayType = essayType;
 	}
 
 	public String getEssayTitle() {
@@ -77,13 +66,5 @@ public class EssaysDto {
 
 	public void setEssayAuthor(String essayAuthor) {
 		this.essayAuthor = essayAuthor;
-	}
-
-	public String getEssayContent() {
-		return essayContent;
-	}
-
-	public void setEssayContent(String essayContent) {
-		this.essayContent = essayContent;
 	}
 }

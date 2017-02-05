@@ -2,11 +2,17 @@ $(document).ready(function(){
 	$(".title").html("SyningLu's Brief Introduction");
 	$(".viceTitle").html("个人简介");
 	$(".signature").html("还会遇到很多人，经历很多事&nbsp;&nbsp;: )");
+
+    var header = $(".main-header").height();
+    var nav = $(".main-navigation").height();
+    var footer = $(".bottom").height();
+    var lsn_height = $(document).height() - header - nav - footer - 38;
+    $(".lsn-center").css("min-height",lsn_height);
 	
     // JQuery的ajax请求异步加载
-	$.ajax({
+    $.ajax({
         type : 'GET',
-        url : 'article/57af895d-c03b-4411-91b4-8b67318c2d0a.do',
+        url : 'self/关于我.do',
         dataType:'json',
         beforeSend: loadFunction,
         success : succFunction,
@@ -23,16 +29,13 @@ $(document).ready(function(){
         $(".post-content h4:first-child").remove();
 
         var json = eval(data);
-        // 循环取数据
-        // $.each(json.articles,function(index,item){
-        //     var content = item.content;
-        //     $(".post-content").append('<h4>'+ content +'</h4>');
-        // });
         $(".post-title").append('<h3>' + json.essayTitle + '</h3>');
         $("#post-author").append(json.essayAuthor);
         $("#post-date").append(json.createTime);
         $(".post-content").append(json.essayContent);
-        console.log(json);
+        $(".ds-thread").attr("data-thread-key",json.essayId);
+        $(".ds-thread").attr("data-title",json.essayTitle);
+        $(".ds-thread").attr("data-url",window.location.href);
     };
 
     // 加载失败

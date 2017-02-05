@@ -7,6 +7,10 @@
  	height: 70px;
  }
 
+ textarea {
+	resize: none;
+}
+
  #lsn-title input {
  	/*宽度参考editormd的宽度*/
  	width: 90%;
@@ -29,3 +33,12 @@
  	text-align: center;
  	margin:0 auto;
  }
+
+#lsn-confirm{
+	width: 100%;
+}
+
+#lsn-confirm input{
+ 	margin:0 90%;
+ 	display:block;
+}

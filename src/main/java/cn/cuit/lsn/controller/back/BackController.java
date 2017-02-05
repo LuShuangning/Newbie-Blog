@@ -24,13 +24,13 @@ public class BackController {
 	
 	private static final Logger logger = Logger.getLogger(BackController.class);
 	
-	
 	@RequestMapping("/contro")
 	public String backEnd(){
 		
 		return "/back/back-end";
 	}
 	
+	//写文章保存
 	@RequestMapping(value = "save", method = {RequestMethod.POST })
 	@ResponseBody
 	public void  save(EssaysDto essaysDto){
@@ -39,7 +39,9 @@ public class BackController {
 //		System.out.println(essays.getEssayTitle() + "==============================");
 	}
 	
+	//书籍文件上传和保存书籍信息
 	@RequestMapping("/books/upload")
+	@ResponseBody
 	public void upload(
 			@RequestParam("file") MultipartFile file,
 			BooksDto booksDto){
@@ -49,9 +51,8 @@ public class BackController {
 				+ ",书籍分类为" + booksDto.getCategory()
 				+ ",作者为" + booksDto.getAuthorName()
 				+ ",出版社为" + booksDto.getPress());
-		uploadService.uploadBook(file); 
-		
-		System.out.println("上传成功");
+		uploadService.uploadBook(file);
+		uploadService.saveBookInfo(booksDto);
 	}
 	
 	@RequestMapping("/software/save")
