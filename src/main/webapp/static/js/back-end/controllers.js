@@ -12,16 +12,38 @@ backEndCtrls.controller('libraryCtrl', ['$scope',function($scope){
 	};
 }]);
 
-backEndCtrls.controller('tailorCtrl', ['$scope',function($scope){
-	$scope.text = "这里是tailorCtrl";
-}]);
+backEndCtrls.controller('tailorCtrl', function($scope,$http){
+	// $scope.formData = {};
+
+	// $scope.processForm = function(){
+	// 	 $http({
+	// 	        method  : 'POST',
+	// 	        url     : 'tailor/test',
+	// 	        data    : $.param($scope.formData),  // pass in data as strings
+	// 	        headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
+	// 	})
+
+	// 	.success(function(data) {
+	// 		console.log("成功");
+	// 	})
+
+	// 	.error(function(){
+	// 		console.log("失败");
+	// 	});
+	// };
+
+
+});
+
+
+
 
 backEndCtrls.controller('booksSubmitCtrl', ['$scope',function($scope){
 	$scope.bookType = 
 	[
 		{name:'安卓'},
-		{name:'JAVA EE'},
-		{name:'Linux'},
+		{name:'JAVA'},
+		{name:'操作系统'},
 		{name:'算法'},
 		{name:'其他'}
 	];
@@ -79,3 +101,7 @@ backEndCtrls.controller('webSubmitCtrl', ['$scope',function($scope){
 	
 
 }]);
+
+backEndCtrls.controller('photoController',function($scope,FileUploader){
+	$scope.uploader = new FileUploader();
+});

@@ -17,8 +17,7 @@ body{
 }
 
 .body-header{
-	height: 0;
-	padding-bottom: 18%;
+	height: 243px;
 	/* header背景颜色 */
 	background: #ffffff;
 }
@@ -41,7 +40,7 @@ body{
 }
 
 .lsn-center{
-	margin-top: 20px;
+	margin-top: 25px;
 	margin-bottom: 15px;
 }
 
@@ -49,15 +48,16 @@ body{
 	/* footer背景颜色 */
 	background: #ffffff;
 	width: 100%;
-	height:76px;
+	height:66px;
 	position: relative;
 	bottom: 0px;
 	clear: both;
+	margin:0;
 }
 
 .text-bottom{
 	position: relative;
-	top: 40%;
+	top: 35%;
 }
 
 
@@ -65,11 +65,12 @@ a{
 	text-decoration: none;
 }
 
+
 .main-navigation {
 	text-align: center;
 	/* 导航背景颜色 */
 	background: #ffffff;
-	border-top: 1px solid #ebebeb;
+	border-top: 2px solid #ebebeb;
 	border-bottom: 2px solid #e1e1e1;
 }
 
@@ -91,6 +92,8 @@ a{
 	margin-top: -15px;
 }
 
+
+
 .menu li{
 	float: left;
 	width: 100px;
@@ -109,9 +112,29 @@ a{
 	color: #4876FF;
 }
 
-#lsn-list tr th{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#lsn-list tr th{
 	text-align: center;
-}
+}*/
 
 #lsn-list tr{
 	height: 36px;
@@ -121,4 +144,28 @@ a{
 	background-color: #121212;
 	border-color: #121212;
   	text-decoration: none;
+}
+
+.contact-me{
+	width: 18%;
+	display: inline-block;
+	vertical-align:top;
+	margin-top:20px;
+}
+
+#module-index img{
+	margin-bottom: 10px;
+}
+
+.item{
+	display: inline-block;
+
+}
+
+.item{
+	text-align: center;
+}
+
+.item h6{
+	text-align: center;
 }

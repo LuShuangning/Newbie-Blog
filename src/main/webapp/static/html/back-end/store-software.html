@@ -1,4 +1,4 @@
-<form ng-controller="softwareSubmitCtrl" action="software/save.do" class="form-horizontal" name="software" method="post">
+<form ng-controller="softwareSubmitCtrl" action="software/save" class="form-horizontal" name="software" method="post">
 
 	<div class="form-group">
 		<label for="softwareType" class="col-sm-2 control-label">软件类型</label>
@@ -16,19 +16,19 @@
 
 		<label for="softwareName" class="col-sm-2 control-label">软件名</label>
 		<div class="col-sm-4">
-			<input type="text" class="form-control" id="softwareName" name="softwareName" required>
+			<input type="text" class="form-control" id="softwareName" name="softwareName" required autocomplete="off">
 		</div>
 	</div>
 
 	<div class="form-group">
 		<label for="softwareVersion" class="col-sm-2 control-label">版本</label>
 		<div class="col-sm-4">
-			<input type="text" class="form-control" id="softwareVersion" name="softwareVersion" required>
+			<input type="text" class="form-control" id="softwareVersion" name="softwareVersion" required autocomplete="off">
 		</div>
 
 		<label for="downloadLink" class="col-sm-2 control-label">下载链接</label>
 		<div class="col-sm-4">
-			<input type="text" class="form-control" id="downloadLink" name="downloadLink" required>
+			<input type="text" class="form-control" id="downloadLink" name="downloadLink" required autocomplete="off">
 		</div>
 	</div>
 

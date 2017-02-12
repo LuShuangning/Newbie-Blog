@@ -23,6 +23,7 @@
 	<select id="querryAllEssays" resultType="cn.cuit.lsn.dto.BriefEssaysDto">
 		select essay_id,essay_title,essay_author,create_time,essay_brief
 		from essays 
-		where essay_type = #{0} and essay_permission between 0 and #{1};
+		where essay_type = #{0} and essay_permission between 0 and #{1}
+		order by create_time;
 	</select>
 </mapper>

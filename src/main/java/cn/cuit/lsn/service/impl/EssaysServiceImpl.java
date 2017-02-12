@@ -4,6 +4,7 @@
 package cn.cuit.lsn.service.impl;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -44,7 +45,7 @@ public class EssaysServiceImpl implements EssaysService {
 			map.put("id", essaysDto.getEssayId());
 			map.put("title", essaysDto.getEssayTitle());
 			map.put("createTime", 
-					new SimpleDateFormat("yyyy-MM-dd").format(essaysDto.getCreateTime()));
+					new SimpleDateFormat("yy-MM-dd").format(essaysDto.getCreateTime()));
 			
 			map.put("type", essaysDto.getEssayType());
 			map.put("permission", String.valueOf(essaysDto.getEssayPermission()));
@@ -80,15 +81,17 @@ public class EssaysServiceImpl implements EssaysService {
 		return json;
 	}
 
-	/* (non-Javadoc)
-	 * @see cn.cuit.lsn.service.EssaysService#querryAll()
+	/** 根据权限查询所有相同类型的文章
+	 * @param String essayType 文章类型
+	 * @param int essayPermission 阅读权限
+	 * @return json
 	 */
 	@Override
 	public String querryAll(String essayType,int essayPermission) {
-//		logger.info("======================传进来的category为" + category);
+		logger.info("======================传进来的essayType为" + essayType);
 		List<BriefEssaysDto> list = essaysDao.querryAllEssays(essayType,essayPermission);
 		String json = JSON.toJSONString(list);
-		logger.info("=================所有的文章：" + json);
+//		logger.info("=================所有的文章：" + json);
 		return json;
 	}
 }

@@ -24,7 +24,13 @@ public interface BooksDao {
 	 * @param category 所属类别
 	 */
 	
-	List<BooksDto> querryBookWithType(String category);
+	List<BooksDto> querryBooksWithType(String category);
+	
+	
+	/**
+	 * 查找所有书
+	 */
+	List<BooksDto> querryAllBooks();
 	
 	/**
 	 * 保存书籍信息

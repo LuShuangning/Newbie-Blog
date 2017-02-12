@@ -1,14 +1,19 @@
-<table class="table table-hover table-bordered">
-	<tr>
-		<th>软件名称</th>
-		<th>版本</th>
-		<th>使用备注</th>
-		<th>下载地址</th>
-	</tr>
-	<tr>
-		<td>Android</td>
-		<td>2.0.1</td>
-		<td>安卓开发</td>
-		<td>www.google.com</td>
-	</tr>
-</table>
+<div ng-controller="storeSoftwareCtrl" class="table-responsive">
+	<table class="table table-hover table-bordered" id="lsn-software">
+		<tr>
+			<th class="col-md-2">软件名称</th>
+			<th class="col-md-1">版本</th>
+			<th class="col-md-1">类别</th>
+			<th class="col-md-4">备注</th>
+			<th class="col-md-3">下载地址</th>
+		</tr>
+		<tr ng-repeat="soft in software">
+			<td>{{ soft.softwareName }}</td>
+			<td>{{ soft.softwareVersion }}</td>
+			<td>{{ soft.category }}</td>
+			<td>{{ soft.softwareIntro }}</td>
+			<td><a href="{{soft.downloadLink}}" target="_blank">{{soft.downloadLink}}</a></td>
+		</tr>
+	</table>
+
+</div>

@@ -1,7 +1,15 @@
 $(document).ready(function(){
-	$(".title").html("SyningLu's Brief Introduction");
-	$(".viceTitle").html("个人简介");
-	$(".signature").html("还会遇到很多人，经历很多事&nbsp;&nbsp;: )");
+    $(".title").html("SyningLu's Personal profile");
+    $(".viceTitle").html("个人简介");
+    $(".signature").html("还会遇到很多人，经历很多事&nbsp;&nbsp;: )");
+    $("#module-index").attr("href","http://www.syninglu.space/essays/introduction");
+    $("#blog-index").mouseenter(function(){
+        $("#blog-index img").attr("src","http://www.syninglu.space/static/img/nav/主页-pressed.svg");
+    });
+    $("#blog-index").mouseleave(function(){
+        $("#blog-index img").attr("src","http://www.syninglu.space/static/img/nav/主页.svg");
+    });
+
 
     var header = $(".main-header").height();
     var nav = $(".main-navigation").height();
@@ -12,7 +20,7 @@ $(document).ready(function(){
     // JQuery的ajax请求异步加载
     $.ajax({
         type : 'GET',
-        url : 'self/关于我.do',
+        url : 'self/关于我',
         dataType:'json',
         beforeSend: loadFunction,
         success : succFunction,

@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
+import cn.cuit.lsn.dto.BgCSSIntroDto;
 import cn.cuit.lsn.dto.BooksDto;
 import cn.cuit.lsn.dto.EssaysDto;
 import cn.cuit.lsn.dto.SoftwareDto;
 import cn.cuit.lsn.service.EssaysService;
 import cn.cuit.lsn.service.UploadService;
-
 
 @Controller
 @RequestMapping("/back")
@@ -27,7 +27,7 @@ public class BackController {
 	@RequestMapping("/contro")
 	public String backEnd(){
 		
-		return "/back/back-end";
+		return "back/back-end";
 	}
 	
 	//写文章保存
@@ -57,11 +57,22 @@ public class BackController {
 	
 	@RequestMapping("/software/save")
 	public void softwareSave(SoftwareDto softwareDto) {
-		logger.info(
-				"表单里的SoftwareName为" + softwareDto.getSoftwareName()
-				+ ",软件分类为" + softwareDto.getCategory()
-				+ ",版本为" + softwareDto.getSoftwareVersion()
-				+ ",下载链接为" + softwareDto.getDownloadLink()
-				+ ",软件简介为" + softwareDto.getSoftwareIntro());
+//		logger.info(
+//				"表单里的SoftwareName为" + softwareDto.getSoftwareName()
+//				+ ",软件分类为" + softwareDto.getCategory()
+//				+ ",版本为" + softwareDto.getSoftwareVersion()
+//				+ ",下载链接为" + softwareDto.getDownloadLink()
+//				+ ",软件简介为" + softwareDto.getSoftwareIntro());
+		uploadService.saveSoftwareInfo(softwareDto);
+		
+	}
+	
+	@RequestMapping(value = "/tailor/bgcss", method = {RequestMethod.POST })
+	@ResponseBody
+	public void bgCss(
+			@RequestParam("file") MultipartFile cssFile,
+			BgCSSIntroDto bgIntro){
+		uploadService.uploadCSS(cssFile);
+		System.out.println("背景说明:" + bgIntro.getBgIntro());
 	}
 }

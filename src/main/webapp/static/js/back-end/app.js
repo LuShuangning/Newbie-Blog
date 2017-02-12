@@ -1,5 +1,5 @@
 var backEndApp = angular.module('backEndApp',[ 
-'ui.router' ,'backEndCtrls', 'backEndDirectives' , 'backEndServices' //此处写注册依赖
+'ui.router' ,'backEndCtrls', 'backEndDirectives' , 'backEndServices','angularFileUpload' //此处写注册依赖
 ]);
 
 backEndApp.config(function($stateProvider,$urlRouterProvider){
@@ -53,6 +53,11 @@ backEndApp.config(function($stateProvider,$urlRouterProvider){
 	.state('write',{
 		url: '/editor',
 		templateUrl: '/static/html/back-end/editor.html'
+	})
+
+	.state('photo',{
+		url: '/photo',
+		templateUrl: '/static/html/back-end/photo.html'
 	})
 
 });

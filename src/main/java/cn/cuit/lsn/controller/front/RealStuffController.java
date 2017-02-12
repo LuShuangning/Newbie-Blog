@@ -1,8 +1,11 @@
 package cn.cuit.lsn.controller.front;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import cn.cuit.lsn.service.EssaysService;
 
 
 @Controller
@@ -13,7 +16,7 @@ public class RealStuffController {
 	public String requestIndex(Model model){
 		
 		
-		return "/real-stuff/show-article";
+		return "real-stuff/show-article";
 	}
 	
 }

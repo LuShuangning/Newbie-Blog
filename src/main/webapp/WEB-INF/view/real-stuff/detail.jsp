@@ -32,14 +32,14 @@
 							${map.content}
 						</div>
 						
-						<div class="footer">
+						<footer>
 						 	<h4>&nbsp;</h4>
-							<h4>
-								© 2016
-								<a href="http://www.syninglu.space">双儿的小窝</a>
+							<h4 class="lsn-rights">
+								©&nbsp;2017
+								<a href="http://www.syninglu.space">双</a>
 								All rights reserved
 							</h4>
-						</div>
+						</footer>
 					</article>
 				</div>
 			</div>

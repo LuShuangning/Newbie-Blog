@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,11 +15,19 @@
 	<link rel="icon" href="http://www.syninglu.space/static/img/easyicon.ico" type="image/x-ico" />
 </head>
 <body>
+	<c:set var="listMap" value="${listMap}" scope="application"/>
+
 	<%@ include file="/static/html/public/header.html" %>
 	<%@ include file="/static/html/public/main-navigation.html" %>
 	<div class="lsn-center">
 		
+		<div class="list">
+			<script>
+				var listMap = ${listMap};
+			</script>
+		</div>
 
+		<%@ include file="/static/html/public/contact.html" %>
 	</div>	
 	<%@ include file="/static/html/public/footer.html" %>
 

@@ -1,8 +1,32 @@
 $(document).ready(function(){
 	$(".title").html("SyningLu's Home Page");
 	$(".viceTitle").html("双儿的个人主页");
-	$(".signature").html("生活以残忍，待之以温柔&nbsp;&nbsp;: )");
+	$(".signature").html("生活残忍，待之以温柔&nbsp;&nbsp;: )");
 
+
+	// $.ajax({
+	// 	type : 'GET',
+	// 	url : 'index',
+	// 	dataType:'json',
+	// 	beforeSend: loadFunction,
+	// 	success : succFunction,
+	// 	error: erryFunction
+	// });
+
+	// // 加载过程中
+	// function loadFunction(){
+	    
+	// };
+
+	// // 加载成功
+	// function succFunction(data){
+	   
+	// };
+
+	// // 加载失败
+	// function erryFunction(jqXHR){
+	    
+	// };
 
 	/*
 	*JQuery雪花下落函数，非原创
@@ -24,7 +48,7 @@ $(document).ready(function(){
 				opacity:o,
 				"font-size":fon,
 			}).animate({
-			  	top:"500px",
+			  	top:"700px",
 				left:l+"px",
 				opacity:0.1,
 			},k,"linear",function(){$(this).remove()})

@@ -1,6 +1,12 @@
+.list{
+	width: 80%;
+	margin:5px 5px 10px 10px;
+	display: inline-block;
+	vertical-align:top;
+}
+
 .list-view {
-	margin:25px auto;
-	width: 800px; 
+	margin:15px 5px 15px 15px;
 }
 
 .piece-title{
@@ -31,7 +37,17 @@
 	min-height: 30px;
 }
 
+#essay-brief{
+	font-size: 18px;
+	text-indent:2em;
+}
+
 .piece-btn{
 	text-align: right;
 	margin-right: 5px;
+}
+
+.item a:hover{
+	text-decoration: none;
+	color: #4876FF;
 }

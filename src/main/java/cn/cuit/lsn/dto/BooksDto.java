@@ -17,7 +17,16 @@ public class BooksDto {
 	
 	private String category;
 	
+	private String format;
+	
 	public BooksDto(){};
+	
+	public String getFormat() {
+		return format;
+	}
+	public void setFormat(String format) {
+		this.format = format;
+	}
 	
 	public String getBookName() {
 		return bookName;

@@ -24,6 +24,7 @@ pageEncoding="UTF-8"%>
 			<li><a ui-sref="tailor">首页订制</a></li>
 			<li><a ui-sref="store">储物间</a></li>
 			<li><a ui-sref="write">写文章</a></li>
+			<li><a ui-sref="photo">传照片</a></li>
 		</ul>
 	</nav>
 	
@@ -54,13 +55,14 @@ pageEncoding="UTF-8"%>
 		<script type="text/javascript" src="http://www.syninglu.space/static/framework/editormd/editormd.js"></script>
 	<script type="text/javascript" src="http://www.syninglu.space/static/framework/angularjs/angular.js" ></script>
 	<script type="text/javascript" src="http://www.syninglu.space/static/framework/angularjs/angular-ui-router.js" ></script>
+	<script type="text/javascript" src="http://www.syninglu.space/static/framework/angularjs/angular-file-upload.js" ></script>
+	<script type="text/javascript" src="http://www.syninglu.space/static/framework/bootstrap-3.3.7/js/bootstrap.js" ></script>
 	<!-- END js框架 =============================================================================== -->
 
 
 	<script type="text/javascript" src="http://www.syninglu.space/static/js/back-end/app.js"></script>
 	<script type="text/javascript" src="http://www.syninglu.space/static/js/back-end/controllers.js"></script>
 	<script type="text/javascript" src="http://www.syninglu.space/static/js/back-end/directives.js"></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/js/back-end/services.js"></script>
 	<script type="text/javascript" src="http://www.syninglu.space/static/js/back-end/services.js"></script>
 	<script type="text/javascript" src="http://www.syninglu.space/static/js/back-end/jquery-back.js"></script>
 </body>

@@ -22,14 +22,21 @@ public class EssaysController {
 	public String introduction(){
 
 		//视图呈现页面
-		return "/intro/self";
+		return "intro/self";
 	}
 	
 	@RequestMapping(value = "/brief/{essayType}",produces = "application/json; charset=utf-8")
-	public @ResponseBody String brief(@PathVariable String essayType){
+	public ModelAndView brief(
+			@PathVariable String essayType,ModelAndView modelAndView){
 		String json = essaysService.querryAll(essayType,0);
 		
-		return json;
+		if (json == null || json.length() < 1) {
+			modelAndView.setViewName("redirect:error/404");
+			return modelAndView;
+		}
+		modelAndView.setViewName("real-stuff/show-article");
+		modelAndView.addObject("listMap",json);
+		return modelAndView;
 	}
 	
 	@RequestMapping(value = "/self/{title}",produces = "application/json; charset=utf-8")
@@ -39,15 +46,15 @@ public class EssaysController {
 		return json;
 	}
 	
-	@RequestMapping(value = "/article/{essayId}",produces = "application/json; charset=utf-8")
+	@RequestMapping(value = "/detail/{essayId}",produces = "application/json; charset=utf-8")
 	public ModelAndView article(@PathVariable String essayId,ModelAndView modelAndView){
 
 		Map<String, String> map = essaysService.querryByUUID(essayId);
 		if (map == null || map.size() < 1) {
-			modelAndView.setViewName("/error/404");
+			modelAndView.setViewName("redirect:error/404");
 			return modelAndView;
 		}
-		modelAndView.setViewName("/real-stuff/detail");
+		modelAndView.setViewName("real-stuff/detail");
 		modelAndView.addObject("map",map);
 		
 		return modelAndView;

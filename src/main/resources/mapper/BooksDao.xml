@@ -5,18 +5,22 @@
 <mapper namespace="cn.cuit.lsn.dao.BooksDao">
 
 	<select id="querryBookByName" resultType="cn.cuit.lsn.dto.BooksDto" parameterType="String">
-		select book_name,author_name,press,category from books
+		select book_name,author_name,press,category,format from books
 		where book_name = #{bookName};
 	</select>
 	
-	<select id="querryBookWithType" resultType="cn.cuit.lsn.dto.BooksDto" parameterType="String">
-		select book_name,author_name,press,category from books
-		where book_type = #{category}
+	<select id="querryBooksWithType" resultType="cn.cuit.lsn.dto.BooksDto" parameterType="String">
+		select book_name,author_name,press,category,format from books
+		where category = #{category}
+	</select>
+	
+	<select id="querryAllBooks" resultType="cn.cuit.lsn.dto.BooksDto">
+		select book_name,author_name,press,category,format from books
 	</select>
 	
 	<insert id="saveBookInfo" parameterType="cn.cuit.lsn.pojo.Books">
-		insert into books(book_id,book_name,author_name,press,category) values(
-			#{bookId},#{bookName},#{authorName},#{press},#{category}
+		insert into books(book_id,book_name,author_name,press,category,format) values(
+			#{bookId},#{bookName},#{authorName},#{press},#{category},#{format}
 		);
 	</insert>
 

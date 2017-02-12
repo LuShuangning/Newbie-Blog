@@ -20,7 +20,7 @@ public class BriefEssaysDto {
 	
 	private String essayAuthor;
 	
-	@JSONField(format = "yyyy-MM-dd")
+	@JSONField(format = "yy-MM-dd")
     private Date createTime;
     
     private String essayBrief;

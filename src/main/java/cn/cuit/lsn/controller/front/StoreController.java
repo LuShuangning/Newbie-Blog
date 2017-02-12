@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import cn.cuit.lsn.service.DownloadService;
-import cn.cuit.lsn.service.QuerryBooksService;
+import cn.cuit.lsn.service.QuerryStoreService;
 
 @Controller
 @RequestMapping("/store")
@@ -17,31 +17,49 @@ public class StoreController {
 	@Autowired 
 	private DownloadService downloadService;
 	@Autowired 
-	private QuerryBooksService querryBooksService;
+	private QuerryStoreService querryStoreService;
 	
 	@SuppressWarnings("unused")
 	private static final Logger logger = Logger.getLogger(StoreController.class);
 	
-	@RequestMapping("/index")
+	@RequestMapping("/show")
 	public String requestIndex(){
 		
-		return "/store/store";
+		return "store/store";
 	}
 	
-	@RequestMapping("/books/list")
+	/*
+	 * 此RequestMapping解决服务端往前台发送数据出现中文乱码的问题，produces是重点
+	 */
+	@RequestMapping(value = "/books/list",produces = "application/json;charset=utf-8")
 	public @ResponseBody String bookList(@RequestParam String category){
 		System.out.println("查询的类型为：" + category);
-		String json = querryBooksService.querry(category);
+		String json = querryStoreService.querryBooks(category);
 		
 		return json;
 	}
 	
 	//REST风格的传参方式
-	@RequestMapping("/books/{bookName}")
-	public String download(@PathVariable String bookName){
-		
-		downloadService.downloadBook(bookName);
+	@RequestMapping("/books/{bookName}/{format}")
+	public String download(@PathVariable String bookName,
+			@PathVariable String format){
+		//拼接书籍的文件名
+		bookName = bookName + "." + format;
+		int status = downloadService.downloadBook(bookName);
+		switch (status) {
+			case -1:
+				return "redirect:error/404";
+			case 0:
+				return "redirect:error/500";
+		}
 		return null;
+	}
+	
+	@RequestMapping(value = "/software/list",produces = "application/json;charset=utf-8")
+	public @ResponseBody String softwareList(@RequestParam String category){
+		String json = querryStoreService.querrySoftware(category);
+		
+		return json;
 	}
 	
 }

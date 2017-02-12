@@ -20,8 +20,8 @@ import cn.cuit.lsn.service.DownloadService;
 /**
  * 
  * @author 路双宁
- * @date
- * @version 0.1.0
+ * @date 2017.02.06
+ * @version 0.2.0
  *  
  */
 
@@ -33,6 +33,10 @@ public class DownloadServiceImpl implements DownloadService {
 	@Autowired 
 	private HttpServletResponse response;
 	
+	public static final int NOT_FOUND = -1;
+	public static final int ERROR = 0;
+	public static final int OK = 1;
+	
 	/**
 	 * 下载书籍方法
 	 * @param String fileLoc 文件路径
@@ -40,7 +44,7 @@ public class DownloadServiceImpl implements DownloadService {
 	 */
 	
 	@Override
-	public void downloadBook(String bookName) {
+	public int downloadBook(String bookName) {
 		
 		//返回的头信息
 		response.setContentType("application/force-download");
@@ -51,8 +55,10 @@ public class DownloadServiceImpl implements DownloadService {
 					"attachment;fileName=" 
 			+ new String(bookName.getBytes(),"iso-8859-1"));
 		} catch (UnsupportedEncodingException e) {
+			
 			System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<不支持的编码方式：" + e.getMessage());
 			e.printStackTrace();
+			return ERROR;
 		}// 设置文件名
 		
 		System.out.println("书名是：" + bookName);
@@ -82,11 +88,14 @@ public class DownloadServiceImpl implements DownloadService {
 			} catch (FileNotFoundException e) {
 				System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<文件没有找到：" + e.getMessage());
 				e.printStackTrace();
+				return NOT_FOUND;
 			} catch (IOException e) {
 				System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<文件IO操作异常" + e.getMessage());
 				e.printStackTrace();
+				return ERROR;
 			}
 		}
+		return OK;
 	}
 
 	@Override

@@ -18,7 +18,14 @@ public class Books {
 	
 	private String category;
 	
-	
+	private String format;
+
+	public String getFormat() {
+		return format;
+	}
+	public void setFormat(String format) {
+		this.format = format;
+	}
 	public String getBookId() {
 		return bookId;
 	}

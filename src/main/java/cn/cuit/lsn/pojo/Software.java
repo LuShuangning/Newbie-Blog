@@ -8,7 +8,7 @@ package cn.cuit.lsn.pojo;
  *
  */
 public class Software {
-	private String softwareId;
+	private String id;
 	
 	private String softwareName;
 	
@@ -20,12 +20,12 @@ public class Software {
 	
 	private String softwareVersion;
 	
-	public String getSoftwareId() {
-		return softwareId;
+	public String getId() {
+		return id;
 	}
 
-	public void setSoftwareId(String softwareId) {
-		this.softwareId = softwareId;
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public String getSoftwareName() {

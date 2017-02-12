@@ -9,6 +9,8 @@
         http://www.springframework.org/schema/context/spring-context.xsd
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+        
+        
 
 	<!-- 启用Spring基于annotation的DI, 使用户可以在Spring MVC中使用Spring的强大功能。 激活 @Required 
 		@Autowired,JSR 250's @PostConstruct, @PreDestroy and @Resource 等标注 -->
@@ -24,7 +26,9 @@
 	<mvc:annotation-driven />
 
 	<!-- 静态资源处理， css， js， imgs -->
-	<mvc:resources mapping="/resources/**" location="/resources/" />
+	<!-- 下面两行代码的配置至关重要 -->
+	<mvc:default-servlet-handler/>
+	<mvc:resources mapping="/static/**" location="/static/" />
 	
 	<!-- 注册拦截器 -->
 	<mvc:interceptors>

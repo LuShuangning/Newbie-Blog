@@ -4,9 +4,9 @@ pageEncoding="UTF-8"%>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Insert title here</title>
+<title>服务器出错啦</title>
 </head>
 <body>
-
+服务器出错啦，管理员加紧抢修中。。。
 </body>
 </html>

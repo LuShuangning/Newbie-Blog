@@ -3,8 +3,6 @@
  */
 package cn.cuit.lsn.service.impl;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,9 +13,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import cn.cuit.lsn.dao.BooksDao;
+import cn.cuit.lsn.dao.SoftwareDao;
 import cn.cuit.lsn.dto.BooksDto;
+import cn.cuit.lsn.dto.SoftwareDto;
 import cn.cuit.lsn.pojo.Books;
+import cn.cuit.lsn.pojo.Software;
 import cn.cuit.lsn.service.UploadService;
+import cn.cuit.lsn.util.Upload;
 
 /**
  * @author 路双宁
@@ -34,6 +36,9 @@ public class UploadServiceImpl implements UploadService {
 	@Autowired
 	private BooksDao booksDao;
 	
+	@Autowired
+	private SoftwareDao softwarDao;
+	
 	
 	@Override
 	public void uploadBook(MultipartFile file) {
@@ -43,19 +48,8 @@ public class UploadServiceImpl implements UploadService {
 			String fileName = file.getOriginalFilename();
 			
 			logger.info("===================上传的路径为：" + path);
-			
-			File targetFile = new File(path, fileName);
-			if(!targetFile.exists()){  
-	            targetFile.mkdirs();  
-	        }
-			try {
-				file.transferTo(targetFile);
-			} catch (IllegalStateException | IOException e) {
-				System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<文件上传异常" + e.getMessage());
-				e.printStackTrace();
-			}
+			Upload.upload(file, path, fileName);
 		}
-		
 		
 		
 		/*多文件上传未实现
@@ -95,12 +89,18 @@ public class UploadServiceImpl implements UploadService {
 	}
 
 	@Override
-	public void uploadSoftware(String softwareName) {
-		// TODO Auto-generated method stub
-
+	public void uploadCSS(MultipartFile cssFile) {
+		if (!cssFile.isEmpty()) {
+			//上传路径
+			String path = request.getSession().getServletContext().getRealPath("/static/css/public/");
+			String fileName = cssFile.getOriginalFilename();
+			
+			logger.info("===================上传的路径为：" + path);
+			Upload.upload(cssFile, path, fileName);
+		}
 	}
 
-	/* (non-Javadoc)
+	/* 保存书籍信息
 	 * @see cn.cuit.lsn.service.UploadService#saveBookInfo(cn.cuit.lsn.dto.BooksDto)
 	 */
 	@Override
@@ -110,12 +110,30 @@ public class UploadServiceImpl implements UploadService {
 		books.setBookName(booksDto.getBookName());
 		books.setAuthorName(booksDto.getAuthorName());
 		books.setPress(booksDto.getPress());
+		books.setFormat(booksDto.getFormat());
 		//FIXME 
 		//受前端表单中ng-option的影响，取值总是为"string:安卓",因此存储时将"string:"去掉
 		//期待其他的解决方法
 		String category = booksDto.getCategory();
 		books.setCategory(category.substring(7,category.length()));
 		booksDao.saveBookInfo(books);
+	}
+
+	/* 保存软件信息
+	 * @see cn.cuit.lsn.service.UploadService#saveSoftwareInfo(cn.cuit.lsn.dto.SoftwareDto)
+	 */
+	@Override
+	public void saveSoftwareInfo(SoftwareDto softwareDto) {
+		Software soft = new Software();
+		soft.setId(UUID.randomUUID().toString());
+		soft.setSoftwareName(softwareDto.getSoftwareName());
+		soft.setSoftwareVersion(softwareDto.getSoftwareVersion());
+		String category = softwareDto.getCategory();
+		soft.setCategory(category.substring(7,category.length()));
+		soft.setSoftwareIntro(softwareDto.getSoftwareIntro());
+		soft.setDownloadLink(softwareDto.getDownloadLink());
+		softwarDao.saveInfo(soft);
+		
 	}
 
 }
