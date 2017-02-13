@@ -8,8 +8,13 @@ html{
 
 body{
 	background: #ebebeb;
-	/*background-image: url(/static/img/index/backgroundimg.jpg);*/
+	/*background-image: url(/static/img/index/backgroundimg.jpg);
+	background-repeat:no-repeat;
+	background-position: 50% 50%;
+	background-attachment:fixed;*/
 }
+
+
 
 .main-header{
 	height: 243px;
@@ -111,26 +116,6 @@ a{
 	text-decoration: none;
 	color: #4876FF;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*#lsn-list tr th{
 	text-align: center;

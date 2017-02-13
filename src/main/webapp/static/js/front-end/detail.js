@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$(".title").html("SyningLu's Real Stuff");
-	$(".viceTitle").html("双儿的干货集中营");
+	$(".viceTitle").html("双儿的干货铺");
 	$(".signature").html("文章详情页&nbsp;&nbsp;: )");
 	$("#module-index").attr("href","http://www.syninglu.space/essays/brief/干货数据库");
 	$("#blog-index").mouseenter(function(){

@@ -34,9 +34,10 @@ public class PermissionInterceptor implements HandlerInterceptor{
 		
 		//对用户的登录信息进行验证
 		String userName = (String)session.getAttribute("userName");
+		String password = (String)session.getAttribute("password");
 		String url = arg0.getRequestURL().toString();
 		
-		if (userName == null) {
+		if (userName == null || !password.equals("135569")) {
 			//如果用户没有登录，终止请求并发送到登录页面。
 			logger.info("==================当前尚未登录，即将跳转到登录界面");
 			session.setAttribute("url",url);

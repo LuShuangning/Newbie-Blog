@@ -27,6 +27,7 @@ public class PermissionController {
 	@RequestMapping("/login")
 	public String login(String userName,String password){
 		session.setAttribute("userName", userName);
+		session.setAttribute("password", password);
 //		String url = (String)session.getAttribute("url");
 //		logger.info("现在路径为:" + url);
 //		if (url == null) {

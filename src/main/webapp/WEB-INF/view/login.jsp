@@ -9,7 +9,7 @@
 	<link rel="icon" href="http://www.syninglu.space/static/img/easyicon.ico" type="image/x-ico" />
 </head>
 <body>
-	<form role="form" action="http://www.syninglu.space/login.do" method="post">
+	<form role="form" action="http://www.syninglu.space/login" method="post">
 		<div class="form-group">
 			<label for="loginUser">用户名</label>
 			<input type="text" name="userName" class="form-control" id="loginUser" placeholder="Enter count">

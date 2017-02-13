@@ -25,6 +25,13 @@ public class EssaysController {
 		return "intro/self";
 	}
 	
+	@RequestMapping("/sponsor")
+	public String sponsor(){
+
+		//视图呈现页面
+		return "sponsor";
+	}
+	
 	@RequestMapping(value = "/brief/{essayType}",produces = "application/json; charset=utf-8")
 	public ModelAndView brief(
 			@PathVariable String essayType,ModelAndView modelAndView){

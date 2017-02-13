@@ -39,7 +39,11 @@ pageEncoding="UTF-8"%>
 								<h4 class="lsn-rights">
 									© 2017
 									<a href="http://www.syninglu.space">双</a>
-									All rights reserved
+									All rights reserved<br><br><br>
+								</h4>
+
+								<h4 class="lsn-rights">
+									建网站不易，点击<a href="http://www.syninglu.space/essays/sponsor">这里</a>赞助双儿
 								</h4>
 							</footer>
 						</article>
