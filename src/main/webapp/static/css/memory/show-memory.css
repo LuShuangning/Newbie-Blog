@@ -32,6 +32,17 @@
 	width: 280px;
 }
 
+.pic a{
+	text-decoration: none;
+	color: #000;
+}
+
+.pic .memory{
+	text-indent:2em;
+	line-height: 1.7;
+	padding: 10px;
+}
+
 .detail-box a:hover img{
 	-webkit-transform:scale(1.2,1.2);
 	-moz-transform:scale(1.2,1.2);

@@ -44,7 +44,8 @@ public class UploadServiceImpl implements UploadService {
 	public void uploadBook(MultipartFile file) {
 		if (!file.isEmpty()) {
 			//上传路径
-			String path = request.getSession().getServletContext().getRealPath("/WEB-INF/File/");
+//			String path = request.getSession().getServletContext().getRealPath("/WEB-INF/File/");
+			String path = "http://www.shuangfile.site/download/";
 			String fileName = file.getOriginalFilename();
 			
 			logger.info("===================上传的路径为：" + path);

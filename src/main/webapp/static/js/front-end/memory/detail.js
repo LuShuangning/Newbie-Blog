@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 	$.each(album,function(index,item){
 		repeat();
-		$(".main .detail-box:last-child #cover_page").attr("src","http://www.syninglu.space/static/img/album/" + item.belongTo + "/" + item.name);
+		$(".main .detail-box:last-child #cover_page").attr("src","http://www.shuangfile.site/images/album/" + item.belongTo + "/" + item.name);
 	});
 
 });

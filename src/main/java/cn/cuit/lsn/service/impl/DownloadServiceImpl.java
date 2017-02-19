@@ -21,7 +21,7 @@ import cn.cuit.lsn.service.DownloadService;
  * 
  * @author 路双宁
  * @date 2017.02.06
- * @version 0.2.0
+ * @version 0.3.0
  *  
  */
 
@@ -61,13 +61,12 @@ public class DownloadServiceImpl implements DownloadService {
 			return ERROR;
 		}// 设置文件名
 		
-		System.out.println("书名是：" + bookName);
 		if (bookName != null) {
-			String path = request
-			.getServletContext()
-			.getRealPath("WEB-INF/File/");
+//			String path = request
+//			.getServletContext()
+//			.getRealPath("WEB-INF/File/");
 			
-			System.out.println(bookName + "的路径是" + path);
+			String path = "http://www.shuangfile.site/download/";
 			
 			try {
 				InputStream inputStream = 
