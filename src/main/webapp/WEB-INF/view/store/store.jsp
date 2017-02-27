@@ -5,10 +5,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>储物间</title>
-	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space/static/framework/bootstrap-3.3.7/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space/static/css/public/public.css">
-	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space/static/css/store/store.css">
-	<link rel="icon" href="http://www.syninglu.space/static/img/easyicon.ico" type="image/x-ico" />
+	<link rel="stylesheet" type="text/css" href="http://www.shuangfile.site/framework/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/public.css">
+	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/store/store.css">
+	<link rel="icon" href="http://www.sunnylu.me/static/img/easyicon.ico" type="image/x-ico" />
 </head>
 <body>
 	<%@ include file="/static/html/public/header.html" %>
@@ -39,17 +39,17 @@
 	</div>
 	<%@ include file="/static/html/public/footer.html" %>
 	
-	<script type="text/javascript" src="http://www.syninglu.space/static/framework/jquery/jquery-3.1.1.js"></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/js/front-end/store/store.js"></script>
+	<script type="text/javascript" src="http://www.shuangfile.site/framework/jquery/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/store/store.js"></script>
 
-	<script type="text/javascript" src="http://www.syninglu.space/static/framework/angularjs/angular.js" ></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/framework/angularjs/angular-ui-router.js" ></script>
+	<script type="text/javascript" src="http://www.shuangfile.site/framework/angularjs/angular.js" ></script>
+	<script type="text/javascript" src="http://www.shuangfile.site/framework/angularjs/angular-ui-router.js" ></script>
 
-	<script type="text/javascript" src="http://www.syninglu.space/static/js/front-end/store/store-app.js"></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/js/front-end/store/store-controllers.js"></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/js/front-end/store/store-directives.js"></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/js/front-end/store/store-filters.js"></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/js/front-end/store/store-services.js"></script>
+	<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/store/store-app.js"></script>
+	<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/store/store-controllers.js"></script>
+	<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/store/store-directives.js"></script>
+	<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/store/store-filters.js"></script>
+	<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/store/store-services.js"></script>
 	
 
 </body>

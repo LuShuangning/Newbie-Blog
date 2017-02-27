@@ -4,10 +4,10 @@ $(document).ready(function(){
     $(".signature").html("还会遇到很多人，经历很多事&nbsp;&nbsp;: )");
     $("#module-index").attr("href","http://www.syninglu.space/essays/introduction");
     $("#blog-index").mouseenter(function(){
-        $("#blog-index img").attr("src","http://www.syninglu.space/static/img/nav/主页-pressed.svg");
+        $("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页-pressed.svg");
     });
     $("#blog-index").mouseleave(function(){
-        $("#blog-index img").attr("src","http://www.syninglu.space/static/img/nav/主页.svg");
+        $("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页.svg");
     });
 
 

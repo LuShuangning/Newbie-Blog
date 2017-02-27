@@ -3,12 +3,12 @@ $(document).ready(function(){
 	$(".title").html("SyningLu's Memory");
 	$(".viceTitle").html("印象、笔记");
 	$(".signature").html("剩下的，留给时间去发酵&nbsp;&nbsp;: )");
-	$("#module-index").attr("href","http://www.syninglu.space//memory/show");
+	$("#module-index").attr("href","http://www.sunnylu.me/memory/show");
 	$("#blog-index").mouseenter(function(){
-		$("#blog-index img").attr("src","http://www.syninglu.space/static/img/nav/主页-pressed.svg");
+		$("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页-pressed.svg");
 	});
 	$("#blog-index").mouseleave(function(){
-		$("#blog-index img").attr("src","http://www.syninglu.space/static/img/nav/主页.svg");
+		$("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页.svg");
 	});
 
 	// function repeat(){

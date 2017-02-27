@@ -6,11 +6,11 @@ pageEncoding="UTF-8"%>
 	<meta charset="utf-8">
 	<title>路小双后台管理</title>
 
-	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space/static/framework/bootstrap-3.3.7/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space/static/css/public/public.css">
-	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space/static/css/back-end/back-end.css">
-	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space/static/framework/editormd/css/editormd.css" />
-	<link rel="icon" href="http://www.syninglu.space/static/img/easyicon.ico" type="image/x-ico" />
+	<link rel="stylesheet" type="text/css" href="http://www.shuangfile.site/framework/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/public.css">
+	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/back-end/back-end.css">
+	<link rel="stylesheet" type="text/css" href="http://www.shuangfile.site/framework/editormd/css/editormd.css" />
+	<link rel="icon" href="http://www.sunnylu.me/static/img/easyicon.ico" type="image/x-ico" />
 </head>
 
 <body>
@@ -51,19 +51,19 @@ pageEncoding="UTF-8"%>
 		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/uploader.js"></script>
 		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/simditor.js"></script> -->
 		<!-- end simditor框架 -->
-		<script type="text/javascript" src="http://www.syninglu.space/static/framework/jquery/jquery-3.1.1.js"></script>
-		<script type="text/javascript" src="http://www.syninglu.space/static/framework/editormd/editormd.js"></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/framework/angularjs/angular.js" ></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/framework/angularjs/angular-ui-router.js" ></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/framework/angularjs/angular-file-upload.js" ></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/framework/bootstrap-3.3.7/js/bootstrap.js" ></script>
+		<script type="text/javascript" src="http://www.shuangfile.site/framework/jquery/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="http://www.shuangfile.site/framework/editormd/editormd.js"></script>
+	<script type="text/javascript" src="http://www.shuangfile.site/framework/angularjs/angular.js" ></script>
+	<script type="text/javascript" src="http://www.shuangfile.site/framework/angularjs/angular-ui-router.js" ></script>
+	<script type="text/javascript" src="http://www.shuangfile.site/framework/angularjs/angular-file-upload.js" ></script>
+	<script type="text/javascript" src="http://www.shuangfile.site/framework/bootstrap-3.3.7/js/bootstrap.js" ></script>
 	<!-- END js框架 =============================================================================== -->
 
 
-	<script type="text/javascript" src="http://www.syninglu.space/static/js/back-end/app.js"></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/js/back-end/controllers.js"></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/js/back-end/directives.js"></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/js/back-end/services.js"></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/js/back-end/jquery-back.js"></script>
+	<script type="text/javascript" src="http://www.sunnylu.me/static/js/back-end/app.js"></script>
+	<script type="text/javascript" src="http://www.sunnylu.me/static/js/back-end/controllers.js"></script>
+	<script type="text/javascript" src="http://www.sunnylu.me/static/js/back-end/directives.js"></script>
+	<script type="text/javascript" src="http://www.sunnylu.me/static/js/back-end/services.js"></script>
+	<script type="text/javascript" src="http://www.sunnylu.me/static/js/back-end/jquery-back.js"></script>
 </body>
 </html>

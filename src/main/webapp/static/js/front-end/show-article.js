@@ -3,14 +3,14 @@ $(document).ready(function(){
 	$(".viceTitle").html("双儿的干货铺");
 	$(".signature").html("生活残忍，待之以温柔&nbsp;&nbsp;: )");
 
-	$("#module-index").attr("href","http://www.syninglu.space/essays/brief/干货数据库");
+	$("#module-index").attr("href","http://www.sunnylu.me/essays/brief/干货数据库");
 
 	$("#blog-index").mouseenter(function(){
-		$("#blog-index img").attr("src","http://www.syninglu.space/static/img/nav/主页-pressed.svg");
+		$("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页-pressed.svg");
 	});
 	
 	$("#blog-index").mouseleave(function(){
-		$("#blog-index img").attr("src","http://www.syninglu.space/static/img/nav/主页.svg");
+		$("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页.svg");
 	});
 
 	var header = $(".main-header").height();

@@ -9,11 +9,11 @@ $(document).ready(function(){
 	var lsn_height = $(document).height() - header - nav - footer - 39;
 	$(".lsn-center").css("min-height",lsn_height);
 
-	$("#module-index").attr("href","http://www.syninglu.space/store/show#/book");
+	$("#module-index").attr("href","http://www.sunnylu.me/store/show#/book");
 	$("#blog-index").mouseenter(function(){
-	    $("#blog-index img").attr("src","http://www.syninglu.space/static/img/nav/主页-pressed.svg");
+	    $("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页-pressed.svg");
 	});
 	$("#blog-index").mouseleave(function(){
-	    $("#blog-index img").attr("src","http://www.syninglu.space/static/img/nav/主页.svg");
+	    $("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页.svg");
 	});
 });

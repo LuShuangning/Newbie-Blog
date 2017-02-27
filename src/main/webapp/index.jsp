@@ -7,10 +7,10 @@
 	<meta charset="utf-8">
 	<title>双的博客</title>
 
-	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space/static/framework/bootstrap-3.3.7/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space/static/css/index/index.css">
-	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space/static/css/public/public.css">
-	<link rel="icon" href="http://www.syninglu.space/static/img/easyicon.ico" type="image/x-ico" />
+	<link rel="stylesheet" type="text/css" href="http://www.shuangfile.site/framework/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/index/index.css">
+	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/public.css">
+	<link rel="icon" href="http://www.sunnylu.me/static/img/easyicon.ico" type="image/x-ico" />
 	
 </head>
 <body>
@@ -93,9 +93,9 @@
 	</div>
 	<%@ include file="/static/html/public/footer.html" %>
 	
-	<script src="http://www.syninglu.space/static/framework/audiojs/audio.min.js"></script>
-	<script src="http://www.syninglu.space/static/framework/jquery/jquery-3.1.1.js"></script>
-	<script src="http://www.syninglu.space/static/js/front-end/index.js"></script>
+	<script src="http://www.shuangfile.site/framework/audiojs/audio.min.js"></script>
+	<script src="http://www.shuangfile.site/framework/jquery/jquery-3.1.1.js"></script>
+	<script src="http://www.sunnylu.me/static/js/front-end/index.js"></script>
 
 	<script>
 		audiojs.events.ready(function() {

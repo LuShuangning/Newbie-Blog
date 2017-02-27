@@ -5,10 +5,10 @@ pageEncoding="UTF-8"%>
 <head>   
 	<meta charset="utf-8">
 	<title>关于我</title>
-	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space/static/framework/bootstrap-3.3.7/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space/static/css/public/article.css">
-	<link rel="stylesheet" type="text/css" href="http://www.syninglu.space/static/css/public/public.css">
-	<link rel="icon" href="http://www.syninglu.space/static/img/easyicon.ico" type="image/x-ico" />
+	<link rel="stylesheet" type="text/css" href="http://www.shuangfile.site/framework/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/article.css">
+	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/public.css">
+	<link rel="icon" href="http://www.sunnylu.me/static/img/easyicon.ico" type="image/x-ico" />
 </head>
 <body>
 
@@ -43,7 +43,7 @@ pageEncoding="UTF-8"%>
 								</h4>
 
 								<h4 class="lsn-rights">
-									建网站不易，点击<a href="http://www.syninglu.space/essays/sponsor">这里</a>赞助双儿
+									建网站不易，点击<a href="http://www.sunnylu.me/essays/sponsor">这里</a>赞助双儿
 								</h4>
 							</footer>
 						</article>
@@ -58,8 +58,8 @@ pageEncoding="UTF-8"%>
 		<%@ include file="/static/html/public/footer.html" %>
 		
 
-	<script type="text/javascript" src="http://www.syninglu.space/static/framework/jquery/jquery-3.1.1.js"></script>
-	<script type="text/javascript" src="http://www.syninglu.space/static/js/front-end/self.js"></script>
+	<script type="text/javascript" src="http://www.shuangfile.site/framework/jquery/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/self.js"></script>
 
 </body>
 </html>
