@@ -42,16 +42,14 @@ public class BackController {
 	//书籍文件上传和保存书籍信息
 	@RequestMapping("/books/upload")
 	@ResponseBody
-	public void upload(
-			@RequestParam("file") MultipartFile file,
-			BooksDto booksDto){
+	public void upload(BooksDto booksDto){
 		
 		logger.info(
 				"表单里的bookName为" + booksDto.getBookName()
 				+ ",书籍分类为" + booksDto.getCategory()
 				+ ",作者为" + booksDto.getAuthorName()
 				+ ",出版社为" + booksDto.getPress());
-		uploadService.uploadBook(file);
+//		uploadService.uploadBook(file);
 		uploadService.saveBookInfo(booksDto);
 	}
 	

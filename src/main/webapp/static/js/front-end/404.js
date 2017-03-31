@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".title").html("SyningLu's error page");
+	$(".title").html("SunnyLu's error page");
 	$(".viceTitle").html("错误页面");
 	$(".signature").html("从哪里跌倒再从哪里爬起来&nbsp;&nbsp;: )");
 

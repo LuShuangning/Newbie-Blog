@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".title").html("SyningLu's Real Stuff");
+	$(".title").html("SunnyLu's Real Stuff");
 	$(".viceTitle").html("双儿的干货铺");
 	$(".signature").html("文章详情页&nbsp;&nbsp;: )");
 	$("#module-index").attr("href","http://www.sunnylu.me/essays/brief/干货数据库");

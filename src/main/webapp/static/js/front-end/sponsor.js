@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".title").html("SyningLu's Sponsor Page");
+    $(".title").html("SunnyLu's Sponsor Page");
     $(".viceTitle").html("赞助页面");
     $(".signature").html("滴水恩，涌泉报&nbsp;&nbsp;: )");
     $("#module-index").attr("href","http://www.sunnylu.me/essays/sponsor");

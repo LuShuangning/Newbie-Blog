@@ -60,7 +60,7 @@
 			</div>
 		</div>
 		<%@ include file="/static/html/public/footer.html" %>
-		<script type="text/javascript" src="http://www.shuangfile.me/framework/jquery/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="http://www.shuangfile.site/framework/jquery/jquery-3.1.1.js"></script>
 		<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/sponsor.js"></script>
 </body>
 </html>

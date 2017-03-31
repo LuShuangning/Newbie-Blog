@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".title").html("SyningLu's Homepage");
+	$(".title").html("SunnyLu's Homepage");
 	$(".viceTitle").html("双儿的个人主页");
 	$(".signature").html("生活残忍，待之以温柔&nbsp;&nbsp;: )");
 

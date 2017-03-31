@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".title").html("SyningLu's Real Stuff");
+	$(".title").html("SunnyLu's Real Stuff");
 	$(".viceTitle").html("双儿的干货铺");
 	$(".signature").html("生活残忍，待之以温柔&nbsp;&nbsp;: )");
 

@@ -45,6 +45,7 @@ backEndCtrls.controller('booksSubmitCtrl', ['$scope',function($scope){
 		{name:'JAVA'},
 		{name:'操作系统'},
 		{name:'算法'},
+		{name:'运维'},
 		{name:'其他'}
 	];
 	$scope.selectedType = $scope.bookType[0].name;

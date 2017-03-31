@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".title").html("SyningLu's Personal profile");
+    $(".title").html("SunnyLu's Personal profile");
     $(".viceTitle").html("个人简介");
     $(".signature").html("还会遇到很多人，经历很多事&nbsp;&nbsp;: )");
     $("#module-index").attr("href","http://www.syninglu.space/essays/introduction");

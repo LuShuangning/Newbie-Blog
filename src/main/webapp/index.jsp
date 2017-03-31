@@ -15,7 +15,7 @@
 </head>
 <body>
 	
-	 <div class="snowbg">
+	<div class="snowbg">
 	</div>	
 	<%@ include file="/static/html/public/header.html" %>
 	<nav class="main-navigation" >
@@ -23,7 +23,7 @@
 			<div class="row">
 				<div class="col-sm-12">	
 					<div class="audio-center">
-						<audio src="http://www.shuangfile.site/music/春风十里.mp3" loop="loop" />
+						<audio src="http://www.shuangfile.site/music/夜空中最亮的星.mp3" loop="loop" />
 					</div>		
 				</div>
 			</div>
@@ -42,7 +42,7 @@
 			<div class="row">
 				<div class="panel panel-default">
 					<div class="panel-body">
-						<div class="col-md-3 col-sm-6">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 
 							<div class="thumbnail">
 								<a href="store/show" title="储物间~~" target="_blank"><img src="http://www.shuangfile.site/images/index/img01.png" alt=""></a>
@@ -52,7 +52,7 @@
 							
 						</div>
 
-						<div class="col-md-3 col-sm-6">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						
 							<div class="thumbnail">
 								<a href="essays/brief/干货数据库" title="疯狂程序员" target="_blank"><img src="http://www.shuangfile.site/images/index/img02.jpg" alt=""></a>
@@ -62,7 +62,7 @@
 							
 						</div>
 
-						<div class="col-md-3 col-sm-6">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						
 							<div class="thumbnail">
 								<a href="memory/show" title="路过全世界" target="_blank"><img src="http://www.shuangfile.site/images/index/img03.jpg" alt=""></a>
@@ -72,7 +72,7 @@
 							
 						</div>
 
-						<div class="col-md-3 col-sm-6">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						
 							<div class="thumbnail">
 								<a href="essays/introduction" title="谁又路过了我的世界" target="_blank"><img src="http://www.shuangfile.site/images/index/img04.jpg" alt=""></a>
