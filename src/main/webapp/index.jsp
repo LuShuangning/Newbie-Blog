@@ -7,7 +7,8 @@
 	<meta charset="utf-8">
 	<title>双的博客</title>
 
-	<link rel="stylesheet" type="text/css" href="http://www.shuangfile.site/framework/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/public/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/index/index.css">
 	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/public.css">
 	<link rel="icon" href="http://www.sunnylu.me/static/img/easyicon.ico" type="image/x-ico" />

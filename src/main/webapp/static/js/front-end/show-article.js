@@ -5,14 +5,6 @@ $(document).ready(function(){
 
 	$("#module-index").attr("href","http://www.sunnylu.me/essays/brief/干货数据库");
 
-	$("#blog-index").mouseenter(function(){
-		$("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页-pressed.svg");
-	});
-	
-	$("#blog-index").mouseleave(function(){
-		$("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页.svg");
-	});
-
 	var header = $(".main-header").height();
 	var nav = $(".main-navigation").height();
 	var footer = $(".bottom").height();

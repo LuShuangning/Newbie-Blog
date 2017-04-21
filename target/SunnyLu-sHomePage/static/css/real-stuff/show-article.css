@@ -1,0 +1,60 @@
+.list{
+	width: 80%;
+	margin:5px 5px 10px 10px;
+	display: inline-block;
+	vertical-align:top;
+}
+
+.list-view {
+	margin:15px 5px 15px 15px;
+}
+
+.piece{
+	padding:10px 30px 10px 30px;
+}
+
+.piece-title{
+	min-height: 30px;
+
+	text-align:center;
+}
+
+.piece-info{
+	min-height: 30px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.piece-author{
+	display: inline;
+	margin:0 auto;
+	padding: 0;
+}
+
+.piece-time{
+	display: inline;
+	margin:0 auto;
+	padding: 0;
+}
+
+.piece-content{
+	min-height: 30px;
+}
+
+#essay-brief{
+	font-size: 18px;
+	text-indent:2em;
+	line-height: 2.0;
+}
+
+
+
+.piece-btn{
+	text-align: right;
+	margin-right: 5px;
+}
+
+.item a:hover{
+	text-decoration: none;
+	color: #4876FF;
+}

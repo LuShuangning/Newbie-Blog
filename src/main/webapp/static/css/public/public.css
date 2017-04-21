@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../static/css/public/Font-Awesome-3.2.1/font/fontawesome-webfont.eot');
+}
+
 body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { 
-	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei',微软雅黑,Arial, sans-serif;
 }
 
 html{
@@ -156,4 +161,27 @@ a{
 
 .item h6{
 	text-align: center;
+}
+
+/*
+评论模块样式
+*/
+/*分割线*/
+.divide-line{
+    padding: 0 20px 0;
+    margin: 20px 0;
+    line-height: 1px;
+    letter-spacing:8px;
+    border-left: 420px solid #757575;
+    border-right: 420px solid #757575;
+    text-align: center;
+}
+
+.remark-area textarea{
+	resize: none;
+}
+
+.remark-btn{
+	text-align: right;
+	margin-top: 30px;
 }

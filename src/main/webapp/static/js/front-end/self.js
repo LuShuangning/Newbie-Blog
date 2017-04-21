@@ -2,13 +2,13 @@ $(document).ready(function(){
     $(".title").html("SunnyLu's Personal profile");
     $(".viceTitle").html("个人简介");
     $(".signature").html("还会遇到很多人，经历很多事&nbsp;&nbsp;: )");
-    $("#module-index").attr("href","http://www.syninglu.space/essays/introduction");
-    $("#blog-index").mouseenter(function(){
-        $("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页-pressed.svg");
-    });
-    $("#blog-index").mouseleave(function(){
-        $("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页.svg");
-    });
+    $("#module-index").attr("href","http://www.sunnylu.me/essays/introduction");
+    // $("#blog-index").mouseenter(function(){
+    //     $("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页-pressed.svg");
+    // });
+    // $("#blog-index").mouseleave(function(){
+    //     $("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页.svg");
+    // });
 
 
     var header = $(".main-header").height();

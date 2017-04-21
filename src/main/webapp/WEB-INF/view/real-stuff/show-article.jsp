@@ -9,7 +9,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>干货数据库</title>
 
-	<link rel="stylesheet" type="text/css" href="http://www.shuangfile.site/framework/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/public/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/public.css">
 	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/real-stuff/show-article.css">
 	<link rel="icon" href="http://www.sunnylu.me/static/img/easyicon.ico" type="image/x-ico" />
