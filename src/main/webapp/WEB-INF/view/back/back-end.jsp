@@ -6,8 +6,8 @@ pageEncoding="UTF-8"%>
 	<meta charset="utf-8">
 	<title>路小双后台管理</title>
 
-	<link rel="stylesheet" type="text/css" href="../static/css/public/bootstrap-3.3.7/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="../static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/public.css">
 	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/back-end/back-end.css">
 	<link rel="stylesheet" type="text/css" href="http://www.shuangfile.site/framework/editormd/css/editormd.css" />

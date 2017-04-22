@@ -2,10 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dc29089-eb17-4781-9741-3e2ba9574df4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/static/html/public/remark.html" afterPath="$PROJECT_DIR$/src/main/webapp/static/html/public/remark.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/configs/spring/applicationContextMyBatis.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/configs/spring/applicationContextMyBatis.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/back-end.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/back/back-end.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/error/404.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/error/404.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/intro/self.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/intro/self.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/memory/detail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/memory/detail.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/memory/show-memory.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/memory/show-memory.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/real-stuff/detail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/real-stuff/detail.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/real-stuff/show-article.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/real-stuff/show-article.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/sponsor.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/sponsor.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/store/store.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/store/store.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage.war" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/back/back-end.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/back/back-end.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/error/400.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/error/400.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/error/403.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/error/403.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/error/404.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/error/404.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/error/500.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/error/500.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/intro/self.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/intro/self.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/login.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/memory/detail.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/memory/detail.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/memory/show-memory.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/memory/show-memory.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/real-stuff/detail.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/real-stuff/detail.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/real-stuff/show-article.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/real-stuff/show-article.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/sponsor.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/sponsor.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/store/store.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/view/store/store.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/index.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/css/back-end/back-end.css" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/css/back-end/back-end.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/css/index/index.css" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/css/index/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/css/memory/show-memory.css" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/css/memory/show-memory.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/css/public/404.css" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/css/public/404.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/css/public/article.css" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/css/public/article.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/css/public/public.css" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/css/public/public.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/css/real-stuff/show-article.css" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/css/real-stuff/show-article.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/editor.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/editor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/photo.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/photo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/store-books.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/store-books.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/store-list.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/store-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/store-software.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/store-software.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/store-system.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/store-system.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/store-website.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/store-website.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/store.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/store.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/tailor.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/back-end/tailor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/public/contact.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/public/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/public/footer.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/public/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/public/header.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/public/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/public/main-navigation.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/public/main-navigation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/public/remark.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/public/remark.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/store/book.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/store/book.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/store/os.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/store/os.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/store/software.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/store/software.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/store/website.html" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/html/store/website.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/back-end/app.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/back-end/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/back-end/controllers.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/back-end/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/back-end/directives.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/back-end/directives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/back-end/jquery-back.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/back-end/jquery-back.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/back-end/services.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/back-end/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/404.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/404.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/detail.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/detail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/index.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/login.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/memory/detail.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/memory/detail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/memory/show-memory.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/memory/show-memory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/self.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/self.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/show-article.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/show-article.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/sponsor.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/sponsor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/store/store-app.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/store/store-app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/store/store-controllers.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/store/store-controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/store/store-directives.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/store/store-directives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/store/store-services.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/store/store-services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/store/store.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/store/store.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/模板.js" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/js/front-end/模板.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/模板.jsp" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/模板.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/mapper/AlbumDao.xml" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/mapper/AlbumDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/mapper/BooksDao.xml" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/mapper/BooksDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/mapper/EssaysDao.xml" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/mapper/EssaysDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/mapper/MyFileDao.xml" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/mapper/MyFileDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/mapper/SoftwareDao.xml" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/mapper/SoftwareDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/mapper模板.xml" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/mapper模板.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/classes/mybatis-config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/configs/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/configs/spring/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/configs/spring/applicationContextMyBatis.xml" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/configs/spring/applicationContextMyBatis.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/configs/spring/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/configs/spring/mvc-dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/text/心形线的故事.txt" afterPath="$PROJECT_DIR$/target/SunnyLu-sHomePage/static/text/心形线的故事.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/AlbumDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/AlbumDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/BooksDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/BooksDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/EssaysDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/EssaysDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/MyFileDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/MyFileDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/SoftwareDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/SoftwareDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper模板.xml" afterPath="$PROJECT_DIR$/target/classes/mapper模板.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -99,9 +193,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -222,7 +315,177 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SunnyLu-sHomePage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SunnyLu-sHomePage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="real-stuff" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SunnyLu-sHomePage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SunnyLu-sHomePage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="memory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SunnyLu-sHomePage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SunnyLu-sHomePage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="intro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SunnyLu-sHomePage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SunnyLu-sHomePage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="error" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SunnyLu-sHomePage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SunnyLu-sHomePage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="back" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,6 +599,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -921,11 +1185,12 @@
       <workItem from="1492764250239" duration="179000" />
       <workItem from="1492764490023" duration="10499000" />
       <workItem from="1492831866683" duration="1206000" />
+      <workItem from="1492834850283" duration="501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16556000" />
+    <option name="totallyTimeSpent" value="17057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -950,10 +1215,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41379312" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26427525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26427525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1119,7 +1384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,7 +1391,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75">
           <caret line="79" column="40" lean-forward="true" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,7 +1398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
