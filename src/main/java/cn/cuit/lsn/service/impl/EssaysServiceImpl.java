@@ -82,8 +82,8 @@ public class EssaysServiceImpl implements EssaysService {
 	}
 
 	/** 根据权限查询所有相同类型的文章
-	 * @param String essayType 文章类型
-	 * @param int essayPermission 阅读权限
+	 * @param essayType 文章类型
+	 * @param essayPermission 阅读权限
 	 * @return json
 	 */
 	@Override

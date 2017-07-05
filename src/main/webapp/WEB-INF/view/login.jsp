@@ -1,16 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+<%
+	String web_domain = request.getScheme()+"://"+request.getServerName();
+	String file_domain = "http://115.159.40.239";
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>用户登录</title>
-	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/bootstrap-3.3.7/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
-	<link rel="icon" href="http://www.syninglu.space/static/img/easyicon.ico" type="image/x-ico" />
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<link rel="icon" href="<%=web_domain %>/static/img/easyicon.ico" type="image/x-ico" />
 </head>
 <body>
-	<form role="form" action="http://www.sunnylu.me/login" method="post">
+	<form role="form" action="<%=web_domain %>/login" method="post">
 		<div class="form-group">
 			<label for="loginUser">用户名</label>
 			<input type="text" name="userName" class="form-control" id="loginUser" placeholder="Enter count">
@@ -23,6 +29,6 @@
 		<button type="submit" class="btn btn-default" id="loginBtn">登录</button>
 	</form>
 
-	<script src="http://www.sunnylu.me/static/js/front-end/login.js"></script>
+	<script src="<%=web_domain %>/static/js/front-end/login.js"></script>
 </body>
 </html>

@@ -33,7 +33,7 @@ public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 	
 	/**
 	 * 通过数据库查询该文件的信息
-	 * @param String fileName 文件名
+	 * @param  fileName 文件名
 	 * @return MyFile 该文件对应的entity
 	 */
 	@Override
@@ -47,7 +47,7 @@ public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 	
 	/**
 	 * IO操作获取txt文件内容
-	 * @param String fileLoc 文件路径
+	 * @param fileLoc 文件路径
 	 * @return StringBuffer txt文件的内容
 	 * @throws FileNotFoundException,IOException
 	 */
@@ -84,7 +84,7 @@ public class GetTxtFileContentServiceImpl implements GetTxtFileContentService{
 	}
 	
 	/**
-	 * @param String fileName 文件名
+	 * @param fileName 文件名
 	 * @return 用阿里的fastjson 封装好的json对象
 	 *
 	 */

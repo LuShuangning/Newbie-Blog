@@ -1,15 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+<%
+	String web_domain = request.getScheme()+"://"+request.getServerName();
+	String file_domain = "http://115.159.40.239";
+%>
+
 <!DOCTYPE html>
 <html ng-app="storeApp">
 <head>
 	<meta charset="utf-8">
 	<title>储物间</title>
-	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/bootstrap-3.3.7/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/public.css">
-	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/store/store.css">
-	<link rel="icon" href="http://www.sunnylu.me/static/img/easyicon.ico" type="image/x-ico" />
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/public.css">
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/store/store.css">
+	<link rel="icon" href="<%=web_domain %>/static/img/easyicon.ico" type="image/x-ico" />
 </head>
 <body>
 	<%@ include file="/static/html/public/header.html" %>
@@ -40,17 +46,17 @@
 	</div>
 	<%@ include file="/static/html/public/footer.html" %>
 	
-	<script type="text/javascript" src="http://www.shuangfile.site/framework/jquery/jquery-3.1.1.js"></script>
-	<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/store/store.js"></script>
+	<script type="text/javascript" src="<%=file_domain %>/framework/jquery/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="<%=web_domain %>/static/js/front-end/store/store.js"></script>
 
-	<script type="text/javascript" src="http://www.shuangfile.site/framework/angularjs/angular.js" ></script>
-	<script type="text/javascript" src="http://www.shuangfile.site/framework/angularjs/angular-ui-router.js" ></script>
+	<script type="text/javascript" src="<%=file_domain %>/framework/angularjs/angular.js" ></script>
+	<script type="text/javascript" src="<%=file_domain %>/framework/angularjs/angular-ui-router.js" ></script>
 
-	<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/store/store-app.js"></script>
-	<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/store/store-controllers.js"></script>
-	<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/store/store-directives.js"></script>
-	<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/store/store-filters.js"></script>
-	<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/store/store-services.js"></script>
+	<script type="text/javascript" src="<%=web_domain %>/static/js/front-end/store/store-app.js"></script>
+	<script type="text/javascript" src="<%=web_domain %>/static/js/front-end/store/store-controllers.js"></script>
+	<script type="text/javascript" src="<%=web_domain %>/static/js/front-end/store/store-directives.js"></script>
+	<script type="text/javascript" src="<%=web_domain %>/static/js/front-end/store/store-filters.js"></script>
+	<script type="text/javascript" src="<%=web_domain %>/static/js/front-end/store/store-services.js"></script>
 	
 
 </body>

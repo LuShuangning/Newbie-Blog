@@ -37,12 +37,7 @@ public class DownloadServiceImpl implements DownloadService {
 	public static final int ERROR = 0;
 	public static final int OK = 1;
 	
-	/**
-	 * 下载书籍方法
-	 * @param String fileLoc 文件路径
-	 * @throws UnsupportedEncodingException,FileNotFoundException,IOException
-	 */
-	
+
 	@Override
 	public int downloadBook(String bookName) {
 		

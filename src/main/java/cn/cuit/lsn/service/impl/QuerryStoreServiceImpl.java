@@ -14,7 +14,6 @@ import cn.cuit.lsn.dao.BooksDao;
 import cn.cuit.lsn.dao.SoftwareDao;
 import cn.cuit.lsn.dto.BooksDto;
 import cn.cuit.lsn.dto.SoftwareDto;
-import cn.cuit.lsn.pojo.Books;
 import cn.cuit.lsn.service.QuerryStoreService;
 
 /**

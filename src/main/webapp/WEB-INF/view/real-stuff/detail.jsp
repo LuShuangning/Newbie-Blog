@@ -1,15 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+<%
+	String web_domain = request.getScheme()+"://"+request.getServerName();
+	String file_domain = "http://115.159.40.239";
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>文章详情页</title>
-	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/bootstrap-3.3.7/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/public.css">
-	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/article.css">
-	<link rel="icon" href="http://www.sunnylu.me/static/img/easyicon.ico" type="image/x-ico" />
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/public.css">
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/article.css">
+	<link rel="icon" href="<%=web_domain %>/static/img/easyicon.ico" type="image/x-ico" />
 </head>
 <body>
 	<%@ include file="/static/html/public/header.html" %>
@@ -37,12 +43,12 @@
 						 	<h4>&nbsp;</h4>
 							<h4 class="lsn-rights">
 								©&nbsp;2017
-								<a href="http://www.syninglu.space">双</a>
+								<a href="<%=web_domain %>">双</a>
 								All rights reserved<br><br><br>
 							</h4>
 							
 							<h4 class="lsn-rights">
-								建网站不易，点击<a href="http://www.sunnylu.me/essays/sponsor">这里</a>赞助双儿
+								建网站不易，点击<a href="<%=web_domain %>/essays/sponsor">这里</a>赞助双儿
 							</h4>
 						</footer>
 					</article>
@@ -55,8 +61,8 @@
 	</div>
 	<%@ include file="/static/html/public/footer.html" %>
 
-	<script type="text/javascript" src="http://www.shuangfile.site/framework/jquery/jquery-3.1.1.js"></script>
-	<script type="text/javascript" src="http://www.sunnylu.me/static/js/front-end/detail.js"></script>
+	<script type="text/javascript" src="<%=file_domain %>/framework/jquery/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="<%=web_domain %>/static/js/front-end/detail.js"></script>
 	<script>
 		$(".ds-thread").attr("data-thread-key","${map.id}");
 		$(".ds-thread").attr("data-title","${map.title}");

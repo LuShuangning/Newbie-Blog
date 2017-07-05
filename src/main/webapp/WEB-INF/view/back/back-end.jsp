@@ -1,17 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8"%> 
+pageEncoding="UTF-8"%>
+
+<%
+	String web_domain = request.getScheme()+"://"+request.getServerName();
+	String file_domain = "http://115.159.40.239";
+%>
+
 <!DOCTYPE html>
 <html ng-app="backEndApp">
 <head>
 	<meta charset="utf-8">
 	<title>路小双后台管理</title>
 
-	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/bootstrap-3.3.7/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/public/public.css">
-	<link rel="stylesheet" type="text/css" href="http://www.sunnylu.me/static/css/back-end/back-end.css">
-	<link rel="stylesheet" type="text/css" href="http://www.shuangfile.site/framework/editormd/css/editormd.css" />
-	<link rel="icon" href="http://www.sunnylu.me/static/img/easyicon.ico" type="image/x-ico" />
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/bootstrap-3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/public.css">
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/back-end/back-end.css">
+	<link rel="stylesheet" type="text/css" href="<%=file_domain %>/framework/editormd/css/editormd.css" />
+	<link rel="icon" href="<%=web_domain %>/static/img/easyicon.ico" type="image/x-ico" />
 </head>
 
 <body>
@@ -52,19 +58,19 @@ pageEncoding="UTF-8"%>
 		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/uploader.js"></script>
 		<script type="text/javascript" src="/static/framework/simditor-2.3.6/scripts/simditor.js"></script> -->
 		<!-- end simditor框架 -->
-		<script type="text/javascript" src="http://www.shuangfile.site/framework/jquery/jquery-3.1.1.js"></script>
-		<script type="text/javascript" src="http://www.shuangfile.site/framework/editormd/editormd.js"></script>
-	<script type="text/javascript" src="http://www.shuangfile.site/framework/angularjs/angular.js" ></script>
-	<script type="text/javascript" src="http://www.shuangfile.site/framework/angularjs/angular-ui-router.js" ></script>
-	<script type="text/javascript" src="http://www.shuangfile.site/framework/angularjs/angular-file-upload.js" ></script>
-	<script type="text/javascript" src="http://www.shuangfile.site/framework/bootstrap-3.3.7/js/bootstrap.js" ></script>
+		<script type="text/javascript" src="<%=file_domain %>/framework/jquery/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="<%=file_domain %>/framework/editormd/editormd.js"></script>
+	<script type="text/javascript" src="<%=file_domain %>/framework/angularjs/angular.js" ></script>
+	<script type="text/javascript" src="<%=file_domain %>/framework/angularjs/angular-ui-router.js" ></script>
+	<script type="text/javascript" src="<%=file_domain %>/framework/angularjs/angular-file-upload.js" ></script>
+	<script type="text/javascript" src="<%=file_domain %>/framework/bootstrap-3.3.7/js/bootstrap.js" ></script>
 	<!-- END js框架 =============================================================================== -->
 
 
-	<script type="text/javascript" src="http://www.sunnylu.me/static/js/back-end/app.js"></script>
-	<script type="text/javascript" src="http://www.sunnylu.me/static/js/back-end/controllers.js"></script>
-	<script type="text/javascript" src="http://www.sunnylu.me/static/js/back-end/directives.js"></script>
-	<script type="text/javascript" src="http://www.sunnylu.me/static/js/back-end/services.js"></script>
-	<script type="text/javascript" src="http://www.sunnylu.me/static/js/back-end/jquery-back.js"></script>
+	<script type="text/javascript" src="<%=web_domain %>/static/js/back-end/app.js"></script>
+	<script type="text/javascript" src="<%=web_domain %>/static/js/back-end/controllers.js"></script>
+	<script type="text/javascript" src="<%=web_domain %>/static/js/back-end/directives.js"></script>
+	<script type="text/javascript" src="<%=web_domain %>/static/js/back-end/services.js"></script>
+	<script type="text/javascript" src="<%=web_domain %>static/js/back-end/jquery-back.js"></script>
 </body>
 </html>

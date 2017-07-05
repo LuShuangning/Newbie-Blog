@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+<%
+    String web_domain = request.getScheme()+"://"+request.getServerName();
+    String file_domain = "http://115.159.40.239";
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
