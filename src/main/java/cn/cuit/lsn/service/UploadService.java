@@ -3,6 +3,8 @@
  */
 package cn.cuit.lsn.service;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import org.springframework.web.multipart.MultipartFile;
 
 import cn.cuit.lsn.dto.BooksDto;

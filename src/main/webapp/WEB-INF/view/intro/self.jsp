@@ -45,12 +45,12 @@ pageEncoding="UTF-8"%>
 							 	<h4>&nbsp;</h4>
 								<h4 class="lsn-rights">
 									© 2017
-									<a href="<%=web_domain %>">双</a>
+									<a href="<%=web_domain %>">NEWBIE</a>
 									All rights reserved<br><br><br>
 								</h4>
 
 								<h4 class="lsn-rights">
-									建网站不易，点击<a href="<%=web_domain %>/essays/sponsor">这里</a>赞助双儿
+									建网站不易，点击<a href="<%=web_domain %>/essays/sponsor">这里</a>赞助NEWBIE
 								</h4>
 							</footer>
 						</article>

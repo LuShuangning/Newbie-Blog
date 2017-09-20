@@ -34,9 +34,14 @@
 			</script>
 		</div>
 
-		<%@ include file="/static/html/public/contact.html" %>
+		<div class="side-column">
+			<%@ include file="/static/html/public/classify.html" %>
+			<%@ include file="/static/html/public/contact.html" %>
+		</div>
+
 	</div>	
 	<%@ include file="/static/html/public/footer.html" %>
+
 
 	<script src="<%=file_domain %>/framework/jquery/jquery-3.1.1.js"></script>
 	<script src="<%=web_domain %>/static/js/front-end/show-article.js"></script>

@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$(".title").html("SunnyLu's Homepage");
-	$(".viceTitle").html("双儿的个人主页");
+	$(".title").html("Newbie's Homepage");
+	$(".viceTitle").html("NEWBIE的个人主页");
 	$(".signature").html("生活残忍，待之以温柔&nbsp;&nbsp;: )");
 
 

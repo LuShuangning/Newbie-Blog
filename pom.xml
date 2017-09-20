@@ -246,6 +246,7 @@
 			</configuration>
 		</plugin>
 	</plugins>
+
     <finalName>SunnyLu-sHomePage</finalName>
   </build>
 </project>

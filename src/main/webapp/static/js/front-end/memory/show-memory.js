@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	// localHandler({"result":"我是远程js带来的数据"});
-	$(".title").html("SyningLu's Memory");
+	$(".title").html("Newbie's Memory");
 	$(".viceTitle").html("印象、笔记");
 	$(".signature").html("剩下的，留给时间去发酵&nbsp;&nbsp;: )");
 	$("#module-index").attr("href","http://www.sunnylu.me/memory/show");

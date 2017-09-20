@@ -1,8 +1,8 @@
 $(document).ready(function(){
-    $(".title").html("SunnyLu's Sponsor Page");
+    $(".title").html("Newbie's Sponsor Page");
     $(".viceTitle").html("赞助页面");
     $(".signature").html("滴水恩，涌泉报&nbsp;&nbsp;: )");
-    $("#module-index").attr("href","http://www.sunnylu.me/essays/sponsor");
+    $("#module-index").attr("href","http://www.jacksonlu.me/essays/sponsor");
 
 
     var header = $(".main-header").height();

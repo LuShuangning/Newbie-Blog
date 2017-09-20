@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$(".title").html("SyningLu's Memory ");
-	$(".viceTitle").html("双儿的印象、笔记");
+	$(".title").html("Newbie's Memory ");
+	$(".viceTitle").html("NEWBIE的印象、笔记");
 	$(".signature").html("印象详情页&nbsp;&nbsp;: )");
 	$("#module-index").attr("href","http://www.sunnylu.me/memory/show");
 

@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$(".title").html("SunnyLu's Real Stuff");
-	$(".viceTitle").html("双儿的干货铺");
+	$(".title").html("Newbie's Real Stuff");
+	$(".viceTitle").html("NEWBIE的干货铺");
 	$(".signature").html("生活残忍，待之以温柔&nbsp;&nbsp;: )");
 
 	$("#module-index").attr("href","http://www.sunnylu.me/essays/brief/干货数据库");

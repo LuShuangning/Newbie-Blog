@@ -16,11 +16,14 @@ import cn.cuit.lsn.dto.SoftwareDto;
 import cn.cuit.lsn.service.EssaysService;
 import cn.cuit.lsn.service.UploadService;
 
+
 @Controller
 @RequestMapping("/back")
 public class BackController {
-	@Autowired EssaysService essayService;
-	@Autowired UploadService uploadService;
+	@Autowired
+	EssaysService essaysService;
+	@Autowired
+	UploadService uploadService;
 	
 	private static final Logger logger = Logger.getLogger(BackController.class);
 	
@@ -34,7 +37,7 @@ public class BackController {
 	@RequestMapping(value = "save", method = {RequestMethod.POST })
 	@ResponseBody
 	public void  save(EssaysDto essaysDto){
-		essayService.save(essaysDto);
+		essaysService.save(essaysDto);
 //		Essays essays = essayService.querryByTitle("测试");
 //		System.out.println(essays.getEssayTitle() + "==============================");
 	}

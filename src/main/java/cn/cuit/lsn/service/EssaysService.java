@@ -3,16 +3,17 @@
  */
 package cn.cuit.lsn.service;
 
-import java.util.List;
+
 import java.util.Map;
 
 import cn.cuit.lsn.dto.EssaysDto;
-import cn.cuit.lsn.pojo.Essays;
+
 
 /**
  * @author 路双宁
  *
  */
+
 public interface EssaysService {
 	public void save(EssaysDto essaydto);
 	

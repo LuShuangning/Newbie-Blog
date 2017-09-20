@@ -1,5 +1,5 @@
 .list{
-	width: 80%;
+	width: 70%;
 	margin:5px 5px 10px 10px;
 	display: inline-block;
 	vertical-align:top;
@@ -47,8 +47,6 @@
 	line-height: 2.0;
 }
 
-
-
 .piece-btn{
 	text-align: right;
 	margin-right: 5px;
@@ -57,4 +55,42 @@
 .item a:hover{
 	text-decoration: none;
 	color: #4876FF;
+}
+
+li a:hover{
+	text-decoration: none;
+	color: #4876FF;
+}
+
+.side-column{
+	width: 25%;
+	display: inline-block;
+	vertical-align:top;
+
+}
+
+.contact-me{
+	width: 100%;
+	display: inline-block;
+	vertical-align:top;
+}
+
+.item{
+	display: inline-block;
+
+}
+
+.item{
+	text-align: center;
+}
+
+.item h6{
+	text-align: center;
+}
+
+
+.article-classify{
+	width: 100%;
+	display: block;
+	margin-top:20px;
 }

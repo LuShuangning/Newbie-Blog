@@ -139,29 +139,13 @@ a{
   	text-decoration: none;
 }
 
-.contact-me{
-	width: 18%;
-	display: inline-block;
-	vertical-align:top;
-	margin-top:20px;
-}
+
 
 #module-index img{
 	margin-bottom: 10px;
 }
 
-.item{
-	display: inline-block;
 
-}
-
-.item{
-	text-align: center;
-}
-
-.item h6{
-	text-align: center;
-}
 
 /*
 评论模块样式
