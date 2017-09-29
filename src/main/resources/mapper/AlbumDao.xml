@@ -5,11 +5,11 @@
 <mapper namespace="cn.cuit.lsn.dao.AlbumDao">
 	<select id="querryAlbum" resultType="cn.cuit.lsn.dto.AlbumDto">
 		select belong_to,name from album
-		where front_cover = 1;
+		where front_cover = 1
 	</select>
 	
 	<select id="querryDetail" resultType="cn.cuit.lsn.dto.AlbumDto">
 		select belong_to,name from album
-		where belong_to = #{belongTo};
+		where belong_to = #{belongTo}
 	</select>
 </mapper>

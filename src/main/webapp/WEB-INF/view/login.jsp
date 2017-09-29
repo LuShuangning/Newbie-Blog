@@ -12,7 +12,7 @@
 	<meta charset="utf-8">
 	<title>用户登录</title>
 	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/bootstrap-3.3.7/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="icon" href="<%=web_domain %>/static/img/easyicon.ico" type="image/x-ico" />
 </head>
 <body>

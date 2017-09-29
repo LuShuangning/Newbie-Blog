@@ -3,7 +3,7 @@
 
 <%
     String web_domain = request.getScheme()+"://"+request.getServerName();
-    String file_domain = "http://115.159.40.239";
+    String file_domain = "http://shuangfile.site";
 %>
 
 <!DOCTYPE html>

@@ -6,7 +6,7 @@
 	<insert id="saveInfo" parameterType="cn.cuit.lsn.pojo.Software">
 		insert into softwareInfo(id,software_name,software_version,category,software_intro,download_link) values(
 			#{id},#{softwareName},#{softwareVersion},#{category},#{softwareIntro},#{downloadLink}
-		);
+		)
 	</insert>
 	
 	<select id="querryAll" resultType="cn.cuit.lsn.dto.SoftwareDto">

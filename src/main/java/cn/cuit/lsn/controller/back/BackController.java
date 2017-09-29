@@ -11,9 +11,9 @@ import org.springframework.web.multipart.MultipartFile;
 
 import cn.cuit.lsn.dto.BgCSSIntroDto;
 import cn.cuit.lsn.dto.BooksDto;
-import cn.cuit.lsn.dto.EssaysDto;
+import cn.cuit.lsn.dto.ArticleDto;
 import cn.cuit.lsn.dto.SoftwareDto;
-import cn.cuit.lsn.service.EssaysService;
+import cn.cuit.lsn.service.ArticleService;
 import cn.cuit.lsn.service.UploadService;
 
 
@@ -21,7 +21,7 @@ import cn.cuit.lsn.service.UploadService;
 @RequestMapping("/back")
 public class BackController {
 	@Autowired
-	EssaysService essaysService;
+    ArticleService articleService;
 	@Autowired
 	UploadService uploadService;
 	
@@ -36,9 +36,9 @@ public class BackController {
 	//写文章保存
 	@RequestMapping(value = "save", method = {RequestMethod.POST })
 	@ResponseBody
-	public void  save(EssaysDto essaysDto){
-		essaysService.save(essaysDto);
-//		Essays essays = essayService.querryByTitle("测试");
+	public void  save(ArticleDto articleDto){
+		articleService.save(articleDto);
+//		Article essays = essayService.querryByTitle("测试");
 //		System.out.println(essays.getEssayTitle() + "==============================");
 	}
 	

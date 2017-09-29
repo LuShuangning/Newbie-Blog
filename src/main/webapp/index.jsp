@@ -3,7 +3,7 @@
 
 <%
 	String web_domain = request.getScheme()+"://" + request.getServerName();
-	String file_domain = "http://115.159.40.239";
+	String file_domain = "http://shuangfile.site";
 %>
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
 	<title>NEWBIE的博客</title>
 
 	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/bootstrap-3.3.7/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/index/index.css">
 	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/public.css">
 	<link rel="icon" href="<%=web_domain %>/static/img/easyicon.ico" type="image/x-ico" />
@@ -61,7 +61,7 @@
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						
 							<div class="thumbnail">
-								<a href="essays/brief/干货数据库" title="疯狂程序员"><img src="<%=file_domain %>/images/index/img02.jpg" alt=""></a>
+								<a href="articles/brief/" title="疯狂程序员"><img src="<%=file_domain %>/images/index/img02.jpg" alt=""></a>
 								<h3>干货数据库</h3>
 								<p>代码、程序员的日常</p>
 							</div>
@@ -81,7 +81,7 @@
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						
 							<div class="thumbnail">
-								<a href="essays/introduction" title="谁又路过了我的世界"><img src="<%=file_domain %>/images/index/img04.jpg" alt=""></a>
+								<a href="articles/introduction" title="谁又路过了我的世界"><img src="<%=file_domain %>/images/index/img04.jpg" alt=""></a>
 								<h3>关于我</h3>
 								<p>个人简介</p>
 							</div>

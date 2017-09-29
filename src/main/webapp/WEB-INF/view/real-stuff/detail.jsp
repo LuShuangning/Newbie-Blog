@@ -3,7 +3,7 @@
 
 <%
 	String web_domain = request.getScheme()+"://"+request.getServerName();
-	String file_domain = "http://115.159.40.239";
+	String file_domain = "http://shuangfile.site";
 %>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
 	<meta charset="utf-8">
 	<title>文章详情页</title>
 	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/bootstrap-3.3.7/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/public.css">
 	<link rel="stylesheet" type="text/css" href="<%=web_domain %>/static/css/public/article.css">
 	<link rel="icon" href="<%=web_domain %>/static/img/easyicon.ico" type="image/x-ico" />
@@ -48,7 +48,7 @@
 							</h4>
 							
 							<h4 class="lsn-rights">
-								建网站不易，点击<a href="<%=web_domain %>/essays/sponsor">这里</a>赞助双儿
+								建网站不易，点击<a href="<%=web_domain %>/articles/sponsor">这里</a>赞助双儿
 							</h4>
 						</footer>
 					</article>
@@ -56,7 +56,6 @@
 			</div>
 			
 		</main>
-		<%@ include file="/static/html/public/remark.html" %>
 		
 	</div>
 	<%@ include file="/static/html/public/footer.html" %>

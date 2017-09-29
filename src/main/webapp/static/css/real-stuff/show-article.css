@@ -1,5 +1,11 @@
+
+.content{
+	margin: 0 auto;
+	width: 83%;
+}
+
 .list{
-	width: 70%;
+	width: 75%;
 	margin:5px 5px 10px 10px;
 	display: inline-block;
 	vertical-align:top;
@@ -41,7 +47,7 @@
 	min-height: 30px;
 }
 
-#essay-brief{
+#article-brief{
 	font-size: 18px;
 	text-indent:2em;
 	line-height: 2.0;
@@ -63,9 +69,11 @@ li a:hover{
 }
 
 .side-column{
-	width: 25%;
+	width: 20%;
+	margin: 5px 5px 10px 10px;
 	display: inline-block;
-	vertical-align:top;
+	position: relative;
+	left: 40px;
 
 }
 
@@ -93,4 +101,8 @@ li a:hover{
 	width: 100%;
 	display: block;
 	margin-top:20px;
+}
+
+.items li{
+	list-style: none;
 }

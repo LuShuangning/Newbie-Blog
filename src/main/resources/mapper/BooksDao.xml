@@ -6,7 +6,7 @@
 
 	<select id="querryBookByName" resultType="cn.cuit.lsn.dto.BooksDto" parameterType="String">
 		select book_name,author_name,press,category,format from books
-		where book_name = #{bookName};
+		where book_name = #{bookName}
 	</select>
 	
 	<select id="querryBooksWithType" resultType="cn.cuit.lsn.dto.BooksDto" parameterType="String">
@@ -21,7 +21,7 @@
 	<insert id="saveBookInfo" parameterType="cn.cuit.lsn.pojo.Books">
 		insert into books(book_id,book_name,author_name,press,category,format) values(
 			#{bookId},#{bookName},#{authorName},#{press},#{category},#{format}
-		);
+		)
 	</insert>
 
 </mapper>
