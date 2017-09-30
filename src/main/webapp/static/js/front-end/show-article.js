@@ -8,8 +8,8 @@ $(document).ready(function(){
 	var header = $(".main-header").height();
 	var nav = $(".main-navigation").height();
 	var footer = $(".bottom").height();
-	var lsn_height = $(document).height() - header - nav - footer - 38;
-	$(".lsn-center").css("min-height",lsn_height);
+	// var lsn_height = $(document).height() - header - nav - footer - 38;
+	// $(".lsn-center").css("min-height",lsn_height);
 
 	function repeat(){
 		var list_view=$('<div class="list-view"><div class="panel panel-default"><div class="panel-body"><div class="piece"></div></div></div></div>');

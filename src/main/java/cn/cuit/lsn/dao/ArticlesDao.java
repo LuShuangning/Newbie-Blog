@@ -22,7 +22,7 @@ public interface ArticlesDao {
 	ArticleDto queryByTitle(String articleTitle);
 	
 	/* 按ID查询一篇文章 */
-	ArticleDto queryByUUID(String articleId);
+	ArticleDto queryByID(Integer articleId);
 	
 	/* 按权限查询所有文章简介 */
 	List<ArticleBriefDto> queryAllArticles(String articleType);

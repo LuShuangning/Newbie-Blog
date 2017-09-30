@@ -22,8 +22,7 @@ public interface ArticleService {
 	
 	String queryByTitle(String articleTitle);
 	
-	Map<String, String> queryByUUID(String articleId);
-	
-	//FIXME 待修改为MyBatis分页查询
+	Map<String, String> queryByID(Integer articleId);
+
 	List<ArticleBriefDto> queryAll(String category, Integer pageNum, Integer pageSize);
 }

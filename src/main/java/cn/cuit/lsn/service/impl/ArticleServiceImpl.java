@@ -37,10 +37,10 @@ public class ArticleServiceImpl implements ArticleService {
 	private static final Logger logger = Logger.getLogger(ArticleServiceImpl.class);
 	
 	@Override
-	public Map<String, String> queryByUUID(String articleId) {
+	public Map<String, String> queryByID(Integer articleId) {
 		logger.info("======================传进来的ID为" + articleId);
 		Map<String, String> map = new HashMap<>();
-		ArticleDto articleDto = articlesDao.queryByUUID(articleId);
+		ArticleDto articleDto = articlesDao.queryByID(articleId);
 		if (articleDto != null) {
 			map.put("author", articleDto.getArticleAuthor());
 			map.put("content", articleDto.getArticleContent());
@@ -62,7 +62,7 @@ public class ArticleServiceImpl implements ArticleService {
 	public void save(ArticleDto articledto) {
 		Article article = new Article();
 		/* 将dto转化成pojo */
-		article.setArticleId(UUID.randomUUID().toString());
+//		article.setArticleId(UUID.randomUUID().toString());
 		article.setArticleTitle(articledto.getArticleTitle());
 		article.setArticleAuthor(articledto.getArticleAuthor());
 		article.setArticlePermission(articledto.getArticlePermission());
@@ -93,7 +93,6 @@ public class ArticleServiceImpl implements ArticleService {
 //		logger.info("======================传进来的articleType为" + articleType);
 //		System.out.println("======================传进来的articleType为" + articleType);
 
-		//FIXME Here throws an exception of java.lang.InvocationTargetException
 		PageHelper.startPage(pageNum, pageSize);
 		List<ArticleBriefDto> list = articlesDao.queryAllArticles(articleType);
 //		PageInfo<ArticleBriefDto> page = new PageInfo<>(list);

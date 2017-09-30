@@ -67,9 +67,9 @@ public class ArticleController {
 	}
 	
 	@RequestMapping(value = "/detail/{articleId}",produces = "application/json; charset=utf-8")
-	public ModelAndView article(@PathVariable String articleId,ModelAndView modelAndView){
+	public ModelAndView article(@PathVariable Integer articleId,ModelAndView modelAndView){
 
-		Map<String, String> map = articleService.queryByUUID(articleId);
+		Map<String, String> map = articleService.queryByID(articleId);
 		if (map == null || map.size() < 1) {
 			modelAndView.setViewName("redirect:error/404");
 			return modelAndView;

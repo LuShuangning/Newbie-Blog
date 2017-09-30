@@ -10,7 +10,7 @@ import java.util.Date;
  *
  */
 public class Article {
-	private String articleId;
+	private Integer articleId;
 	
 	private String articleTitle;
 	
@@ -30,7 +30,7 @@ public class Article {
 		return articleBrief;
 	}
 
-	public void setArticleBrief(String essayBrief) {
+	public void setArticleBrief(String articleBrief) {
 		this.articleBrief = articleBrief;
 	}
 
@@ -38,7 +38,7 @@ public class Article {
 		return articleType;
 	}
 
-	public void setArticleType(String essayType) {
+	public void setArticleType(String articleType) {
 		this.articleType = articleType;
 	}
 
@@ -46,15 +46,15 @@ public class Article {
 		return articlePermission;
 	}
 
-	public void setArticlePermission(int essayPermission) {
+	public void setArticlePermission(int articlePermission) {
 		this.articlePermission = articlePermission;
 	}
 
-	public String getArticleId() {
+	public Integer getArticleId() {
 		return articleId;
 	}
 
-	public void setArticleId(String essayId) {
+	public void setArticleId(Integer articleId) {
 		this.articleId = articleId;
 	}
 
@@ -62,7 +62,7 @@ public class Article {
 		return articleTitle;
 	}
 
-	public void setArticleTitle(String essayTitle) {
+	public void setArticleTitle(String articleTitle) {
 		this.articleTitle = articleTitle;
 	}
 
@@ -70,7 +70,7 @@ public class Article {
 		return articleAuthor;
 	}
 
-	public void setArticleAuthor(String essayAuthor) {
+	public void setArticleAuthor(String articleAuthor) {
 		this.articleAuthor = articleAuthor;
 	}
 
@@ -86,10 +86,8 @@ public class Article {
 		return articleContent;
 	}
 
-	public void setArticleContent(String essayContent) {
+	public void setArticleContent(String articleContent) {
 		this.articleContent = articleContent;
 	}
-	
-	
-	
+
 }

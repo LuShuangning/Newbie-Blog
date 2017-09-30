@@ -23,14 +23,14 @@
             <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
             <element id="library" level="project" name="Maven: junit:junit:4.12" />
             <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
-            <element id="library" level="project" name="Maven: org.springframework.data:spring-data-redis:1.8.7.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework.data:spring-data-keyvalue:1.2.7.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.13.7.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework.data:spring-data-redis:1.7.2.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework.data:spring-data-keyvalue:1.1.2.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.12.2.RELEASE" />
             <element id="library" level="project" name="Maven: org.springframework:spring-oxm:4.3.3.RELEASE" />
             <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.3.3.RELEASE" />
-            <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" />
-            <element id="library" level="project" name="Maven: redis.clients:jedis:2.8.1" />
-            <element id="library" level="project" name="Maven: org.apache.commons:commons-pool2:2.4.2" />
+            <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.21" />
+            <element id="library" level="project" name="Maven: redis.clients:jedis:2.5.0" />
+            <element id="library" level="project" name="Maven: org.apache.commons:commons-pool2:2.0" />
             <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.6" />
             <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
             <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.6" />
@@ -368,15 +368,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.apache.commons:commons-pool2:2.4.2">
+    <library name="Maven: org.apache.commons:commons-pool2:2.0">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.0/commons-pool2-2.0.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.0/commons-pool2-2.0-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.0/commons-pool2-2.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.hamcrest:hamcrest-core:1.3">
@@ -412,15 +412,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.4/mybatis-3.4.4-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.slf4j:jcl-over-slf4j:1.7.25">
+    <library name="Maven: org.slf4j:jcl-over-slf4j:1.7.21">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.slf4j:slf4j-api:1.7.6">
@@ -445,37 +445,37 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.springframework.data:spring-data-commons:1.13.7.RELEASE">
+    <library name="Maven: org.springframework.data:spring-data-commons:1.12.2.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.7.RELEASE/spring-data-commons-1.13.7.RELEASE.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.12.2.RELEASE/spring-data-commons-1.12.2.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.7.RELEASE/spring-data-commons-1.13.7.RELEASE-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.12.2.RELEASE/spring-data-commons-1.12.2.RELEASE-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.7.RELEASE/spring-data-commons-1.13.7.RELEASE-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.12.2.RELEASE/spring-data-commons-1.12.2.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.springframework.data:spring-data-keyvalue:1.2.7.RELEASE">
+    <library name="Maven: org.springframework.data:spring-data-keyvalue:1.1.2.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-keyvalue/1.2.7.RELEASE/spring-data-keyvalue-1.2.7.RELEASE.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-keyvalue/1.1.2.RELEASE/spring-data-keyvalue-1.1.2.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-keyvalue/1.2.7.RELEASE/spring-data-keyvalue-1.2.7.RELEASE-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-keyvalue/1.1.2.RELEASE/spring-data-keyvalue-1.1.2.RELEASE-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-keyvalue/1.2.7.RELEASE/spring-data-keyvalue-1.2.7.RELEASE-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-keyvalue/1.1.2.RELEASE/spring-data-keyvalue-1.1.2.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.springframework.data:spring-data-redis:1.8.7.RELEASE">
+    <library name="Maven: org.springframework.data:spring-data-redis:1.7.2.RELEASE">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.7.RELEASE/spring-data-redis-1.8.7.RELEASE.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.7.2.RELEASE/spring-data-redis-1.7.2.RELEASE.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.7.RELEASE/spring-data-redis-1.8.7.RELEASE-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.7.2.RELEASE/spring-data-redis-1.7.2.RELEASE-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.7.RELEASE/spring-data-redis-1.8.7.RELEASE-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.7.2.RELEASE/spring-data-redis-1.7.2.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework:spring-aop:4.3.3.RELEASE">
@@ -610,15 +610,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.3.RELEASE/spring-webmvc-4.3.3.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: redis.clients:jedis:2.8.1">
+    <library name="Maven: redis.clients:jedis:2.5.0">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.8.1/jedis-2.8.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.5.0/jedis-2.5.0.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.8.1/jedis-2.8.1-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.5.0/jedis-2.5.0-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.8.1/jedis-2.8.1-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.5.0/jedis-2.5.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: taglibs:standard:1.1.2">

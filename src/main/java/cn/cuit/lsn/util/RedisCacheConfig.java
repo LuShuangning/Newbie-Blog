@@ -14,7 +14,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import java.lang.reflect.Method;
 
 @Configuration
-@EnableCaching
+//@EnableCaching
 public class RedisCacheConfig extends CachingConfigurerSupport {
 
     private volatile JedisConnectionFactory mJedisConnectionFactory;
@@ -34,19 +34,19 @@ public class RedisCacheConfig extends CachingConfigurerSupport {
     }
 
     @Bean
-    public JedisConnectionFactory redisConnectionFactory() {
+    public JedisConnectionFactory jedisConnectionFactory() {
 
         return mJedisConnectionFactory;
     }
 
     @Bean
-    public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory cf) {
+    public RedisTemplate<String, String> redisTemplate() {
 
         return mRedisTemplate;
     }
 
     @Bean
-    public CacheManager cacheManager(RedisTemplate redisTemplate) {
+    public CacheManager cacheManager() {
 
         return mRedisCacheManager;
     }

@@ -15,7 +15,7 @@
 		where article_title = #{articleTitle}
 	</select>
 	
-	<select id="queryByUUID" resultType="cn.cuit.lsn.dto.ArticleDto" parameterType="String">
+	<select id="queryByID" resultType="cn.cuit.lsn.dto.ArticleDto" parameterType="Integer">
 		select article_id,article_title,article_author,create_time,article_content from articles
 		where article_id = #{articleId}
 	</select>
