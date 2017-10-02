@@ -1,5 +1,6 @@
 package cn.cuit.lsn.controller.front;
 
+import cn.cuit.lsn.service.QueryStoreService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import cn.cuit.lsn.service.DownloadService;
-import cn.cuit.lsn.service.QuerryStoreService;
 
 @Controller
 @RequestMapping("/store")
@@ -17,7 +17,7 @@ public class StoreController {
 	@Autowired 
 	private DownloadService downloadService;
 	@Autowired 
-	private QuerryStoreService querryStoreService;
+	private QueryStoreService queryStoreService;
 	
 	@SuppressWarnings("unused")
 	private static final Logger logger = Logger.getLogger(StoreController.class);
@@ -34,7 +34,7 @@ public class StoreController {
 	@RequestMapping(value = "/books/list",produces = "application/json;charset=utf-8")
 	public @ResponseBody String bookList(@RequestParam String category){
 		System.out.println("查询的类型为：" + category);
-		String json = querryStoreService.querryBooks(category);
+		String json = queryStoreService.queryBooks(category);
 		
 		return json;
 	}
@@ -57,7 +57,7 @@ public class StoreController {
 	
 	@RequestMapping(value = "/software/list",produces = "application/json;charset=utf-8")
 	public @ResponseBody String softwareList(@RequestParam String category){
-		String json = querryStoreService.querrySoftware(category);
+		String json = queryStoreService.querySoftware(category);
 		
 		return json;
 	}

@@ -9,6 +9,7 @@
   <display-name>JacksonLu-sHomePage</display-name>
   <!-- Spring配置文件开始 -->
   <context-param>
+        <!-- 此处配置的contextConfigLocation配置到了ServletContext中，ServletContext是Context级的 -->
  		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/configs/spring/applicationContext*.xml</param-value>
   </context-param>
@@ -32,6 +33,7 @@
 		<!-- DispatcherServlet对应的上下文配置， 默认为/WEB-INF/$servlet-name$-servlet.xml
 		 -->
 		<init-param>
+            <!-- 此处配置的contextConfigLocation配置到了ServletConfig中，ServletConfig是Servlet级的 -->
 			<param-name>contextConfigLocation</param-name>
 			<param-value>/WEB-INF/configs/spring/mvc-dispatcher-servlet.xml</param-value>
 		</init-param>

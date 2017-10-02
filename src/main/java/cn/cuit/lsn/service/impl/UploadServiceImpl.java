@@ -107,7 +107,7 @@ public class UploadServiceImpl implements UploadService {
 	@Override
 	public void saveBookInfo(BooksDto booksDto) {
 		Books books = new Books();
-		books.setBookId(UUID.randomUUID().toString());
+//		books.setBookId(UUID.randomUUID().toString());
 		books.setBookName(booksDto.getBookName());
 		books.setAuthorName(booksDto.getAuthorName());
 		books.setPress(booksDto.getPress());

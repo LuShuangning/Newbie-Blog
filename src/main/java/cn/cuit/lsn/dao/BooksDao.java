@@ -17,20 +17,20 @@ public interface BooksDao {
 	 * 根据书名查找
 	 * @param bookName 书名
 	 */
-	BooksDto querryBookByName(String bookName);
+	BooksDto queryBookByName(String bookName);
 	
 	/**
 	 * 查找相同种类的书
 	 * @param category 所属类别
 	 */
 	
-	List<BooksDto> querryBooksWithType(String category);
+	List<BooksDto> queryBooksWithType(String category);
 	
 	
 	/**
 	 * 查找所有书
 	 */
-	List<BooksDto> querryAllBooks();
+	List<BooksDto> queryAllBooks();
 	
 	/**
 	 * 保存书籍信息

@@ -8,7 +8,7 @@ package cn.cuit.lsn.pojo;
  *
  */
 public class Books {
-	private String bookId;
+//	private Integer bookId;
 	
 	private String bookName;
 	
@@ -26,12 +26,12 @@ public class Books {
 	public void setFormat(String format) {
 		this.format = format;
 	}
-	public String getBookId() {
-		return bookId;
-	}
-	public void setBookId(String bookId) {
-		this.bookId = bookId;
-	}
+//	public Integer getBookId() {
+//		return bookId;
+//	}
+//	public void setBookId(Integer bookId) {
+//		this.bookId = bookId;
+//	}
 	public String getBookName() {
 		return bookName;
 	}
