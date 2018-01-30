@@ -26,9 +26,10 @@ body{
 	height: 243px;
 	/* header背景颜色 */
 	background: #ffffff;
-	/*background-image: url(/static/img/navbar.jpg);
-	background-size: cover; 
-	background-repeat: no-repeat; 
+/*	background-image: url(/static/img/desktop.gif);
+	background-size:220px;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-attachment: fixed;*/
 }
 

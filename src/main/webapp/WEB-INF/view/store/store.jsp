@@ -35,7 +35,7 @@
 				</div>
 
 				<div class="col-xs-8 col-sm-9 col-md-10 col-lg-10">
-					<table id="table">
+					<table id="contentTable">
 				   
 					</table>
 				</div>
