@@ -72,8 +72,10 @@ public class ArticleServiceImpl implements ArticleService {
 		article.setArticleType(articledto.getArticleType());
 		String content = articledto.getArticleContent();
 		article.setArticleContent(content);
-		String brief = RemoveHtmlLabel.removeHtmlLabel(content);
+//		String brief = RemoveHtmlLabel.removeHtmlLabel(content);
+        String brief = "测试数据";
 		article.setArticleBrief(brief);
+
 		articlesDao.save(article);
 	}
 

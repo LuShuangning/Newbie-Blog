@@ -17,7 +17,7 @@ import cn.cuit.lsn.service.ArticleService;
 
 
 @Controller
-@RequestMapping("/articles")
+@RequestMapping("/article")
 public class ArticleController {
 	@Autowired
 	private ArticleService articleService;

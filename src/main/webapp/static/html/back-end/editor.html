@@ -30,6 +30,7 @@
 
 	<div id="lsn-confirm">
 		<input id="mdbutton" type="button"  class="btn btn-primary btn-lg" name="public" value="发表">
+		<div style="clear:both;"></div>
 	</div>
 	
 </form>
@@ -44,11 +45,16 @@ $(document).ready(function(){
 	var editor;
 	$(function() {
 		editor = editormd("editormd", {
-		width   : "90%",
-		height  : 640,
+		width   : "100%",
+		height	: "600px",
 		syncScrolling : "single",
 		path    : "http://115.159.40.239/framework/editormd/lib/",
 		searchReplace : true,
+        tex  : true,
+        taskList : true,
+        flowChart : true,
+        sequenceDiagram : true,
+        
 		saveHTMLToTextarea : true,
 		emoji : true});
 	});
@@ -65,7 +71,7 @@ $(document).ready(function(){
 		permission = $("#permission").val();
 		type = $("#essayType").find("option:selected").text();
 		content = editor.getHTML();
-		var essay = {"essayTitle" : title,"essayAuthor" : author,"essayContent" : content,"essayPermission" : permission,"essayType" : type};
+		var essay = {"articleTitle" : title,"articleAuthor" : author,"articleContent" : content,"articlePermission" : permission,"articleType" : type};
 
 		console.log(permission);
 		console.log(title + author + content);

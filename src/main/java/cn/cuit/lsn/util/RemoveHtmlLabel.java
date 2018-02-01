@@ -17,8 +17,7 @@ public class RemoveHtmlLabel {
 	private static final Logger logger = Logger.getLogger(RemoveHtmlLabel.class);
 	
 	/**
-	 * 
-	 * @param 包含HTML标签的文章内容
+	 *
 	 * @return 转换之后的纯文本
 	 */
 	public static String removeHtmlLabel(String content){

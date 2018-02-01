@@ -48,7 +48,7 @@
 							</h4>
 							
 							<h4 class="lsn-rights">
-								建网站不易，点击<a href="<%=web_domain %>/articles/sponsor">这里</a>赞助双儿
+								建网站不易，点击<a href="<%=web_domain %>/article/sponsor">这里</a>赞助双儿
 							</h4>
 						</footer>
 					</article>

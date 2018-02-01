@@ -27,7 +27,6 @@
 	<%@ include file="/static/html/public/header.html" %>
 	<%@ include file="/static/html/public/main-navigation.html" %>
 	<div class="lsn-center">
-		
 		<div class="content">
 
 			<div class="list">

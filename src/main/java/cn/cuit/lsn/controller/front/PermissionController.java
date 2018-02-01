@@ -37,7 +37,7 @@ public class PermissionController {
 //			return "redirect:" + url;
 //		}
 		
-		return "redirect:back/contro";
+		return "redirect:back/control";
 	}
 	
 	@RequestMapping("/loginPage")

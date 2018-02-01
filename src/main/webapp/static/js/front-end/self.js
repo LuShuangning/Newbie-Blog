@@ -10,12 +10,6 @@ $(document).ready(function(){
     //     $("#blog-index img").attr("src","http://www.sunnylu.me/static/img/nav/主页.svg");
     // });
 
-
-    var header = $(".main-header").height();
-    var nav = $(".main-navigation").height();
-    var footer = $(".bottom").height();
-    var lsn_height = $(document).height() - header - nav - footer - 38;
-    $(".lsn-center").css("min-height",lsn_height);
 	
     // JQuery的ajax请求异步加载
     $.ajax({

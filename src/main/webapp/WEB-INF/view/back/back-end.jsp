@@ -22,6 +22,7 @@ pageEncoding="UTF-8"%>
 
 <body>
 
+<div class="back-main">
 	<nav class="navbar navbar-inverse lsn-navbar" role="navigation">
 		<div class="navbar-header">
 			<a class="navbar-brand" ui-sref="#">双的后台管理</a>
@@ -34,21 +35,18 @@ pageEncoding="UTF-8"%>
 			<li><a ui-sref="photo">传照片</a></li>
 		</ul>
 	</nav>
-	
-	<div class="lsn-center">
-		<div class="container-fluid">
 
+	<div class="back-center">
+		
+		<div class="container">
 		    <!-- 界面注入 ============================== -->
 		    <div ui-view></div>
 
 		</div>
-
 	</div>
 	
-
 	<%@ include file="/static/html/public/footer.html" %>
-
-
+</div>
 
 	<!-- START js框架 一定要注意某些js文件的调用顺序，否则会出现不能完全加载的情况======================= -->
 		<!-- start simditor框架 -->
@@ -71,6 +69,6 @@ pageEncoding="UTF-8"%>
 	<script type="text/javascript" src="<%=web_domain %>/static/js/back-end/controllers.js"></script>
 	<script type="text/javascript" src="<%=web_domain %>/static/js/back-end/directives.js"></script>
 	<script type="text/javascript" src="<%=web_domain %>/static/js/back-end/services.js"></script>
-	<script type="text/javascript" src="<%=web_domain %>static/js/back-end/jquery-back.js"></script>
+	<script type="text/javascript" src="<%=web_domain %>/static/js/back-end/jquery-back.js"></script>
 </body>
 </html>

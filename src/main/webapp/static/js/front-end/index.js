@@ -2,37 +2,17 @@ $(document).ready(function(){
 	$(".title").html("Newbie's Homepage");
 	$(".viceTitle").html("NEWBIE的个人主页");
 	$(".signature").html("生活残忍，待之以温柔&nbsp;&nbsp;: )");
+	
 
-
-	// $.ajax({
-	// 	type : 'GET',
-	// 	url : 'index',
-	// 	dataType:'json',
-	// 	beforeSend: loadFunction,
-	// 	success : succFunction,
-	// 	error: erryFunction
-	// });
-
-	// // 加载过程中
-	// function loadFunction(){
-	    
-	// };
-
-	// // 加载成功
-	// function succFunction(data){
-	   
-	// };
-
-	// // 加载失败
-	// function erryFunction(jqXHR){
-	    
-	// };
+	$(window).resize(function () {          //当浏览器大小变化时
+		$(".snowbg .snow").remove();
+	});
 
 	/*
 	*JQuery雪花下落函数，非原创
 	*/
 	$(function(){
-	  var d="<div class='snow'>❅<div>"
+	  var d="<div class='snow'>❅<div>";
 	  // var d="<div class='snow'>☸<div>"
 	  var snowSpeed = 150;//设置下雪的速度，越小雪花越多，下的越快
 		setInterval(function(){

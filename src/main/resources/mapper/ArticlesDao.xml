@@ -5,24 +5,24 @@
 <mapper namespace="cn.cuit.lsn.dao.ArticlesDao">
 
 	<insert id="save" parameterType="cn.cuit.lsn.pojo.Article">
-		insert into articles(article_id,article_title,article_author,article_brief,article_content,article_permission,article_type) values(
-			#{articleId},#{articleTitle},#{articleAuthor},#{articleBrief},#{articleContent},#{articlePermission},#{articleType}
+		insert into article(article_title,article_author,article_brief,article_content,article_permission,article_type) values(
+			#{articleTitle},#{articleAuthor},#{articleBrief},#{articleContent},#{articlePermission},#{articleType}
 		)
 	</insert>
 	
 	<select id="queryByTitle" resultType="cn.cuit.lsn.dto.ArticleDto" parameterType="String">
-		select article_id,article_title,article_author,create_time,article_content from articles
+		select article_id,article_title,article_author,create_time,article_content from article
 		where article_title = #{articleTitle}
 	</select>
 	
 	<select id="queryByID" resultType="cn.cuit.lsn.dto.ArticleDto" parameterType="Integer">
-		select article_id,article_title,article_author,create_time,article_content from articles
+		select article_id,article_title,article_author,create_time,article_content from article
 		where article_id = #{articleId}
 	</select>
 	
 	<select id="queryAllArticles" resultType="cn.cuit.lsn.dto.ArticleBriefDto">
 		select article_id,article_title,article_author,create_time,article_brief
-		from articles 
+		from article
 		where article_type = #{0}
 		order by create_time desc
 	</select>

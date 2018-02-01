@@ -30,14 +30,13 @@ footer{
 
 .post-content{
 	text-align: left;
-	text-indent:2em;
 	font-size: 18px;
 	margin:20px 30px 10px 30px;
 	line-height: 2.7;
 }
 
 .lsn-rights{
-	text-indent:3em;
+	text-indent:2em;
 }
 
 #comment{

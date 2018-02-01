@@ -1,10 +1,40 @@
+html{
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+}
+
  .lsn-navbar { 
  	border-radius:0; 
  }
 
  #lsn-title {
- 	width: 100%;
+ 	width: 75%;
  	height: 70px;
+ 	margin:0 auto;
+ }
+
+ .back-main{
+ 	height: 100%;
+ }
+
+ .back-center{
+ 	height: 86%;
+ 	background-image: url(/static/img/bgi.jpg);
+	background-color: #f4f4f4; 
+	background-position: left top; 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+
+	/*  源自知乎的div垂直居中方法 */
+	display:flex;/*Flex布局*/
+	display: -webkit-flex; /* Safari */
+	align-items:center;/*指定垂直居中*/
  }
 
  textarea {
@@ -20,12 +50,12 @@
  	font-size: 1.8em;
  	height: 50px;
  	display:block;
- 	background: transparent;
  	border: 0;
  	/*去除点击后的边框*/
  	box-shadow: none;
  	outline: none;
- 	border-bottom:1 solid black;
+ 	border-bottom:1px solid black;
+     background: #ffffff;
  }
 
  #lsn-info{
@@ -34,11 +64,6 @@
  	margin:0 auto;
  }
 
-#lsn-confirm{
-	width: 100%;
-}
-
 #lsn-confirm input{
- 	margin:0 90%;
- 	display:block;
+ 	float:right;
 }

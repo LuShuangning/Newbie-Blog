@@ -4,10 +4,5 @@ $(document).ready(function(){
 	$(".signature").html("文章详情页&nbsp;&nbsp;: )");
 	$("#module-index").attr("href","http://www.sunnylu.me/essays/brief/学习记录");
 
-	var header = $(".main-header").height();
-	var nav = $(".main-navigation").height();
-	var footer = $(".bottom").height();
-	var lsn_height = $(document).height() - header - nav - footer - 38;
-	$(".lsn-center").css("min-height",lsn_height);
 
 });

@@ -22,7 +22,6 @@ pageEncoding="UTF-8"%>
 		<%@ include file="/static/html/public/header.html" %>
 		<%@ include file="/static/html/public/main-navigation.html" %>
 		<div class="lsn-center">
-			
 			<main class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -50,7 +49,7 @@ pageEncoding="UTF-8"%>
 								</h4>
 
 								<h4 class="lsn-rights">
-									建网站不易，点击<a href="<%=web_domain %>/articles/sponsor">这里</a>赞助NEWBIE
+									建网站不易，点击<a href="<%=web_domain %>/article/sponsor">这里</a>赞助NEWBIE
 								</h4>
 							</footer>
 						</article>

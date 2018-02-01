@@ -27,7 +27,7 @@ public class BackController {
 	
 	private static final Logger logger = Logger.getLogger(BackController.class);
 	
-	@RequestMapping("/contro")
+	@RequestMapping("/control")
 	public String backEnd(){
 		
 		return "back/back-end";

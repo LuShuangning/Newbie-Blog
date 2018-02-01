@@ -5,11 +5,6 @@ $(document).ready(function(){
 
 	$("#module-index").attr("href","http://www.sunnylu.me/articles/brief/学习记录");
 
-	var header = $(".main-header").height();
-	var nav = $(".main-navigation").height();
-	var footer = $(".bottom").height();
-	// var lsn_height = $(document).height() - header - nav - footer - 38;
-	// $(".lsn-center").css("min-height",lsn_height);
 
 	function repeat(){
 		var list_view=$('<div class="list-view"><div class="panel panel-default"><div class="panel-body"><div class="piece"></div></div></div></div>');
@@ -22,8 +17,8 @@ $(document).ready(function(){
 	};
 
 	$.ajax({
-        type : 'GET',
-        url : 'http://www.jacksonlu.me/articles/brief/学习记录/1/3',
+        type : 'POST',
+        url : 'http://127.0.0.1/article/brief/干货数据库/1/5',
         beforeSend: loadFunction,
         dataType: 'json',
         success : succFunction,
@@ -42,8 +37,8 @@ $(document).ready(function(){
 			if(hasNextPage == true){
 				page = page + 1;
 				$.ajax({
-			        type : 'GET',
-			        url : 'http://www.jacksonlu.me/articles/brief/学习记录/' + page + '/' + 3,
+			        type : 'POST',
+			        url : 'http://127.0.0.1/article/brief/干货数据库/' + page + '/' + 5,
 			        dataType: 'json',
 			        beforeSend: loadFunction,
 			        success : succFunction,
@@ -61,6 +56,7 @@ $(document).ready(function(){
     function loadFunction(){
     	var more=$('<div class="more"><h4>更多文章加载中</h4></div>');
         $(".list .list-view:last-child").append(more);
+
     };
 
     // 加载成功
